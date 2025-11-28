@@ -1,7 +1,9 @@
+using MovieAppApi.Src.Core.Database;
 using MovieAppApi.Src.Core.Services.Environment;
 using MovieAppApi.Src.Core.Services.FetchMovies;
 using MovieAppApi.Src.Core.Services.FetchMovies.Tmdb;
 using MovieAppApi.Src.Core.Services.Movie;
+using Microsoft.EntityFrameworkCore;
 
 namespace MovieAppApi;
 
@@ -29,6 +31,11 @@ public class Program
         // Register fetch and movie services
         builder.Services.AddScoped<IFetchMoviesService, TmdbService>();
         builder.Services.AddScoped<IMovieService, MovieService>();
+
+        // Register Database Context (SQLite)
+        builder.Services.AddDbContext<AppDbContext>(options =>
+            options.UseSqlite("Data Source=movieapp.db"));
+
 
         // Add controllers and Swagger
         builder.Services.AddControllers();
