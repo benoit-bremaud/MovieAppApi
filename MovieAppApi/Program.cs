@@ -1,4 +1,7 @@
 using MovieAppApi.Src.Core.Services.Environment;
+using MovieAppApi.Src.Core.Services.FetchMovies;
+using MovieAppApi.Src.Core.Services.FetchMovies.Tmdb;
+using MovieAppApi.Src.Core.Services.Movie;
 
 namespace MovieAppApi;
 
@@ -19,6 +22,13 @@ public class Program
 
         // Register environment service
         builder.Services.AddSingleton<IEnvService, EnvService>();
+
+        // Register HTTP client for TMDB
+        builder.Services.AddHttpClient();
+
+        // Register fetch and movie services
+        builder.Services.AddScoped<IFetchMoviesService, TmdbService>();
+        builder.Services.AddScoped<IMovieService, MovieService>();
 
         // Add controllers and Swagger
         builder.Services.AddControllers();
