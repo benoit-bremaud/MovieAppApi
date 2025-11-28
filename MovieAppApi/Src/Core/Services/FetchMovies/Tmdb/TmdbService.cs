@@ -5,6 +5,7 @@ using MovieAppApi.Src.Core.Services.Environment;
 using MovieAppApi.Src.Core.Services.Fetch;
 using MovieAppApi.Src.Models.Movie;
 using MovieAppApi.Src.Models.SearchMovies;
+using MovieAppApi.Src.Views.DTO.SearchMovies;
 
 namespace MovieAppApi.Src.Core.Services.FetchMovies.Tmdb;
 
@@ -38,7 +39,6 @@ public class TmdbService : IFetchMoviesService
     /// <param name="query">The search query containing the movie title and preferred language.</param>
     /// <returns>A <see cref="SearchMoviesResultModel"/> containing paginated search results.</returns>
     /// <exception cref="HttpRequestException">Thrown when the TMDB API returns a non-success status code.</exception>
-    /// <exception cref="NullReferenceException">Thrown when the API response cannot be deserialized.</exception>
     /// <remarks>
     /// Measures and logs the API response time for performance monitoring.
     /// Includes detailed logging at various stages of the search process for debugging.
@@ -87,7 +87,25 @@ public class TmdbService : IFetchMoviesService
                 dto.results.Count
             );
 
-            var result = dto.ToModel();
+            // Map DTO to Model
+            var result = new SearchMoviesResultModel(
+                dto.page,
+                dto.results.Select(m => new MovieModel(
+                    m.id,
+                    m.original_language ?? "en",             // originalLanguage
+                    m.original_title ?? "Unknown",           // originalTitle
+                    m.overview ?? string.Empty,              // overview
+                    m.popularity,                            // popularity
+                    m.release_date,                          // releaseDate
+                    m.title ?? "Unknown Title",              // title
+                    m.vote_average,                          // voteAverage
+                    m.vote_count,                            // voteCount
+                    m.poster_path                            // posterPath (nullable, OK)
+                )).ToList(),
+                dto.total_pages,
+                dto.total_results
+            );
+
             _logger.LogDebug("Converted TMDB DTO to SearchMoviesResultModel");
             return result;
         }
@@ -135,12 +153,26 @@ public class TmdbService : IFetchMoviesService
             }
 
             var content = await response.Content.ReadAsStringAsync();
-            var movieDto = JsonSerializer.Deserialize<TmdbMovieDto>(content,
+            var movieDto = JsonSerializer.Deserialize<MovieDto>(content,
                 new JsonSerializerOptions { PropertyNameCaseInsensitive = true })
                 ?? throw new TmdbApiException("Failed to parse TMDB movie response");
 
+            var movie = new MovieModel(
+                movieDto.id,
+                movieDto.original_language ?? "en",      // originalLanguage
+                movieDto.original_title ?? "Unknown",    // originalTitle
+                movieDto.overview ?? string.Empty,       // overview
+                movieDto.popularity,                     // popularity
+                movieDto.release_date,                   // releaseDate (peut être null)
+                movieDto.title ?? "Unknown Title",       // title
+                movieDto.vote_average,                   // voteAverage
+                movieDto.vote_count,                     // voteCount
+                movieDto.poster_path                     // posterPath (peut être null, c'est un string?)
+            );
+
+
             _logger.LogInformation("✅ Successfully parsed TMDB movie - Title: {Title}", movieDto.title);
-            return movieDto.ToModel();
+            return movie;
         }
         catch (Exception ex)
         {
