@@ -44,4 +44,36 @@ public class MiddlewareTests
         Assert.StartsWith("application/json", context.Response.ContentType);
     }
 
+    [Fact]
+    public async Task Middleware_Returns400_ForArgumentException()
+    {
+        // Arrange
+        var context = new DefaultHttpContext();
+        var loggerMock = new Mock<ILogger<ExceptionHandlingMiddleware>>();
+
+        var responseBody = new MemoryStream();
+        context.Response.Body = responseBody;
+
+        // Simulate a next delegate that throws ArgumentException
+        RequestDelegate next = (ctx) => throw new ArgumentException("Invalid input parameter");
+
+        var middleware = new ExceptionHandlingMiddleware(next, loggerMock.Object);
+
+        // Act
+        await middleware.InvokeAsync(context);
+
+        // Assert
+        Assert.Equal((int)HttpStatusCode.BadRequest, context.Response.StatusCode);
+
+        responseBody.Seek(0, SeekOrigin.Begin);
+        using var reader = new StreamReader(responseBody);
+        var bodyString = await reader.ReadToEndAsync();
+
+        var json = JsonDocument.Parse(bodyString).RootElement;
+
+        Assert.Equal("Invalid argument", json.GetProperty("message").GetString());
+        Assert.Equal("Invalid input parameter", json.GetProperty("details").GetString());
+        Assert.StartsWith("application/json", context.Response.ContentType);
+    }
+
 }
