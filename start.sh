@@ -6,8 +6,9 @@ cd MovieAppApi
 dotnet run &
 API_PID=$!
 
-# Start DocFX in background
-docfx docfx_project/docfx.json --serve &
+# Go back to root and start DocFX
+cd ..
+~/.dotnet/tools/docfx docfx.json --serve &
 DOC_PID=$!
 
 echo "✅ API running on http://localhost:5174"
