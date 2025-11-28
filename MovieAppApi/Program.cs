@@ -4,6 +4,7 @@ using MovieAppApi.Src.Core.Services.FetchMovies;
 using MovieAppApi.Src.Core.Services.FetchMovies.Tmdb;
 using MovieAppApi.Src.Core.Services.Movie;
 using Microsoft.EntityFrameworkCore;
+using MovieAppApi.Src.Core.Repositories;
 
 namespace MovieAppApi;
 
@@ -33,9 +34,10 @@ public class Program
         builder.Services.AddScoped<IMovieService, MovieService>();
 
         // Register Database Context (SQLite)
-        builder.Services.AddDbContext<AppDbContext>(options =>
-            options.UseSqlite("Data Source=movieapp.db"));
+        builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlite("Data Source=movieapp.db"));
 
+        // Register Repositories
+        builder.Services.AddScoped<IPlaylistRepository, PlaylistRepository>();
 
         // Add controllers and Swagger
         builder.Services.AddControllers();
