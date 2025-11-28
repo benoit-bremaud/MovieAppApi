@@ -9,9 +9,17 @@ using MovieAppApi.Src.Middlewares;
 
 
 namespace MovieAppApi;
-
+/// <summary>
+/// Entry point class for the MovieApp API application.
+/// Configures the ASP.NET Core host, dependency injection container, and middleware pipeline.
+/// </summary>
 public class Program
 {
+    /// <summary>
+    /// Main entry point for the MovieApp API application.
+    /// Sets up services, database contexts, logging, and starts the web application.
+    /// </summary>
+    /// <param name="args">Command-line arguments passed to the application.</param>
     public static void Main(string[] args)
     {
         var builder = WebApplication.CreateBuilder(args);
