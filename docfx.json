@@ -4,30 +4,38 @@
     {
       "src": [
         {
-          "src": "../src",
+          "src": "MovieAppApi",
           "files": [
-            "**/*.csproj"
+            "MovieAppApi.csproj"
           ]
         }
       ],
-      "dest": "api"
+      "output": "api"
     }
   ],
   "build": {
     "content": [
       {
         "files": [
-          "**/*.{md,yml}"
-        ],
-        "exclude": [
-          "_site/**"
+          "api/**/*.yml",
+          "api/**.yml"
+        ]
+      },
+      {
+        "files": [
+          "docfx_project/articles/**/*.md"
+        ]
+      },
+      {
+        "files": [
+          "*.md"
         ]
       }
     ],
     "resource": [
       {
         "files": [
-          "images/**"
+          "docfx_project/images/**"
         ]
       }
     ],
@@ -37,10 +45,10 @@
       "modern"
     ],
     "globalMetadata": {
-      "_appName": "",
-      "_appTitle": "",
+      "_appName": "MovieApp",
+      "_appTitle": "MovieApp API Documentation",
       "_enableSearch": true,
-      "pdf": true
+      "pdf": false
     }
   }
 }
