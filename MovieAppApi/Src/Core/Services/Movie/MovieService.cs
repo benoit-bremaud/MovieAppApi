@@ -1,4 +1,5 @@
 using MovieAppApi.Src.Core.Services.FetchMovies;
+using MovieAppApi.Src.Models.Movie;
 using MovieAppApi.Src.Models.SearchMovies;
 
 namespace MovieAppApi.Src.Core.Services.Movie;
@@ -50,4 +51,11 @@ public class MovieService : IMovieService
             throw;
         }
     }
+
+    public async Task<MovieModel> GetMovieByIdAsync(int tmdbId, string language = "en")
+    {
+        _logger.LogInformation("Getting movie details - TmdbId: {TmdbId}, Language: {Language}", tmdbId, language);
+        return await _fetchMoviesService.GetMovieByIdAsync(tmdbId, language);
+    }
+
 }

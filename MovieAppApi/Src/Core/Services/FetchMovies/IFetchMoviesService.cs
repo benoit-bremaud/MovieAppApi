@@ -1,3 +1,4 @@
+using MovieAppApi.Src.Models.Movie;
 using MovieAppApi.Src.Models.SearchMovies;
 
 namespace MovieAppApi.Src.Core.Services.FetchMovies;
@@ -13,4 +14,10 @@ public interface IFetchMoviesService
     /// <param name="query">Search query containing search term and language</param>
     /// <returns>Search results with list of movies</returns>
     Task<SearchMoviesResultModel> SearchMoviesAsync(SearchMoviesRequestQueryModel query);
+
+        /// <summary>
+    /// Gets movie details by TMDB ID
+    /// </summary>
+    Task<MovieModel> GetMovieByIdAsync(int tmdbId, string language = "en");
 }
+

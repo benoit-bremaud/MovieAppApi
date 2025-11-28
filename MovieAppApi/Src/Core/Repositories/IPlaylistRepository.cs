@@ -36,4 +36,9 @@ public interface IPlaylistRepository
     /// Removes a specific movie from a playlist
     /// </summary>
     Task<bool> RemoveMovieAsync(int playlistId, int tmdbId);
+
+    /// <summary>
+    /// Updates a playlist name
+    /// </summary>
+    Task<PlaylistEntity> UpdateAsync(int id, string newName);
 }

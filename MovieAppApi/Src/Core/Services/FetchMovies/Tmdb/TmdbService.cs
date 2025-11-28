@@ -1,6 +1,9 @@
 using System.Diagnostics;
+using System.Text.Json;
+using MovieAppApi.Src.Core.Exceptions;
 using MovieAppApi.Src.Core.Services.Environment;
 using MovieAppApi.Src.Core.Services.Fetch;
+using MovieAppApi.Src.Models.Movie;
 using MovieAppApi.Src.Models.SearchMovies;
 
 namespace MovieAppApi.Src.Core.Services.FetchMovies.Tmdb;
@@ -81,4 +84,43 @@ public class TmdbService : IFetchMoviesService
             throw;
         }
     }
+
+    public async Task<MovieModel> GetMovieByIdAsync(int tmdbId, string language = "en")
+    {
+        _logger.LogInformation("🎬 Fetching movie details - TmdbId: {TmdbId}, Language: {Language}", tmdbId, language);
+
+        try
+        {
+            var url = $"{_baseUrl}/movie/{tmdbId}?api_key={_apiKey}&language={language}";
+            var startTime = DateTime.UtcNow;
+
+            var response = await _httpClient.GetAsync(url);
+            var duration = (DateTime.UtcNow - startTime).TotalMilliseconds;
+
+            _logger.LogInformation("📡 TMDB response received in {DurationMs}ms - StatusCode: {StatusCode}", duration, (int)response.StatusCode);
+
+            if (!response.IsSuccessStatusCode)
+            {
+                throw new TmdbApiException(
+                    $"Failed to fetch movie details from TMDB: {response.StatusCode}", 
+                    (int)response.StatusCode);
+            }
+
+            var content = await response.Content.ReadAsStringAsync();
+            var movieDto = JsonSerializer.Deserialize<TmdbMovieDto>(content,
+                new JsonSerializerOptions { PropertyNameCaseInsensitive = true })
+                ?? throw new TmdbApiException("Failed to parse TMDB movie response");
+
+            _logger.LogInformation("✅ Successfully parsed TMDB movie - Title: {Title}", movieDto.title);
+
+            return movieDto.ToModel();
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "❌ Error fetching movie details - TmdbId: {TmdbId}", tmdbId);
+            throw;
+        }
+    }
+
+
 }

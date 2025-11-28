@@ -86,5 +86,22 @@ public class PlaylistRepository : IPlaylistRepository
         await _context.SaveChangesAsync();
         return true;
     }
+
+    public async Task<PlaylistEntity> UpdateAsync(int id, string newName)
+    {
+        var playlist = await _context.Playlists.FindAsync(id);
+        if (playlist == null) throw new KeyNotFoundException($"Playlist {id} not found");
+
+        _logger.LogInformation("Updating playlist {PlaylistId} name to {NewName}", id, newName);
+
+        playlist.Name = newName;
+        playlist.UpdatedAt = DateTime.UtcNow;
+
+        _context.Playlists.Update(playlist);
+        await _context.SaveChangesAsync();
+
+        return playlist;
+    }
+
 }
 

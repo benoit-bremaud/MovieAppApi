@@ -75,6 +75,25 @@ public class PlaylistsController : BaseController<PlaylistsController>
         }
     }
 
+    [HttpPut("{id}")]
+    [ProducesResponseType(typeof(PlaylistResponseDto), StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    public async Task<IActionResult> Update(int id, [FromBody] UpdatePlaylistRequestDto request)
+    {
+        Logger.LogInformation("Updating playlist {PlaylistId} with new name: {NewName}", id, request.Name);
+
+        try
+        {
+            var updated = await _playlistRepository.UpdateAsync(id, request.Name);
+            return Ok(MapToDto(updated));
+        }
+        catch (KeyNotFoundException)
+        {
+            return NotFound(new { message = "Playlist not found" });
+        }
+    }
+
+
     [HttpDelete("{id}")]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]

@@ -5,6 +5,8 @@ using MovieAppApi.Src.Core.Services.FetchMovies.Tmdb;
 using MovieAppApi.Src.Core.Services.Movie;
 using Microsoft.EntityFrameworkCore;
 using MovieAppApi.Src.Core.Repositories;
+using MovieAppApi.Src.Middlewares;
+
 
 namespace MovieAppApi;
 
@@ -44,6 +46,28 @@ public class Program
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
 
+        // Configure CORS
+        builder.Services.AddCors(options =>
+        {
+            options.AddPolicy("AllowAll", builder =>
+            {
+                builder.AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader();
+            });
+
+            options.AddPolicy("AllowLocalhost", builder =>
+            {
+                builder.WithOrigins(
+                    "http://localhost:3000",
+                    "http://localhost:5173",
+                    "http://localhost:5174",
+                    "http://localhost:8080")
+                    .AllowAnyMethod()
+                    .AllowAnyHeader();
+            });
+        });
+
         var app = builder.Build();
 
         // Verify environment configuration on startup
@@ -60,8 +84,11 @@ public class Program
             app.UseSwaggerUI();
         }
 
+        app.UseCors("AllowLocalhost");
+
         app.UseHttpsRedirection();
         app.UseAuthorization();
+        app.UseMiddleware<ExceptionHandlingMiddleware>();
         app.MapControllers();
 
         app.Run();

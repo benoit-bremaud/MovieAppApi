@@ -2,6 +2,7 @@ using MovieAppApi.Src.Core.Services.Movie;
 using MovieAppApi.Src.Models.SearchMovies;
 using MovieAppApi.Src.Views.DTO.SearchMovies;
 using Microsoft.AspNetCore.Mvc;
+using MovieAppApi.Src.Core.Exceptions;
 
 namespace MovieAppApi.Src.Controllers;
 
@@ -61,4 +62,31 @@ public class MoviesController : BaseController<MoviesController>
             return StatusCode(StatusCodes.Status500InternalServerError, new { message = "An error occurred while searching for movies" });
         }
     }
+
+    [HttpGet("{id}")]
+    [ProducesResponseType(typeof(MovieDto), StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    public async Task<IActionResult> GetMovieById(int id, [FromQuery] string language = "en")
+    {
+        Logger.LogInformation("Getting movie details - TmdbId: {MovieId}, Language: {Language}", id, language);
+
+        try
+        {
+            var movie = await _movieService.GetMovieByIdAsync(id, language);
+            Logger.LogInformation("Retrieved movie {MovieTitle}", movie.Title);
+            return Ok(movie);
+        }
+        catch (MovieNotFoundException ex)
+        {
+            Logger.LogWarning("Movie {MovieId} not found", id);
+            return NotFound(new { message = ex.Message });
+        }
+        catch (Exception ex)
+        {
+            Logger.LogError(ex, "Error retrieving movie {MovieId}", id);
+            return StatusCode(StatusCodes.Status500InternalServerError, 
+                new { message = "Error retrieving movie" });
+        }
+    }
+
 }
