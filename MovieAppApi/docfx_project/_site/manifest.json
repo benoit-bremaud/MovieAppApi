@@ -1,0 +1,738 @@
+{
+  "source_base_path": "/home/vev/Documents/03_school/ynov/M1 - Web full stack/MovieApp/MovieAppApi/docfx_project",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MovieAppApi.Migrations.InitialCreate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MovieAppApi.Migrations.InitialCreate.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MovieAppApi.Migrations.InitialCreate",
+      "Summary": "<p sourcefile=\"api/MovieAppApi.Migrations.InitialCreate.yml\" sourcestartlinenumber=\"1\">A base class inherited by each EF Core migration.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MovieAppApi.Migrations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MovieAppApi.Migrations.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MovieAppApi.Migrations",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MovieAppApi.Program.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MovieAppApi.Program.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MovieAppApi.Program",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MovieAppApi.Src.Controllers.BaseController-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MovieAppApi.Src.Controllers.BaseController-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MovieAppApi.Src.Controllers.BaseController<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MovieAppApi.Src.Controllers.HealthController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MovieAppApi.Src.Controllers.HealthController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MovieAppApi.Src.Controllers.HealthController",
+      "Summary": "<p sourcefile=\"api/MovieAppApi.Src.Controllers.HealthController.yml\" sourcestartlinenumber=\"1\">Controller for checking API health status</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MovieAppApi.Src.Controllers.MoviesController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MovieAppApi.Src.Controllers.MoviesController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MovieAppApi.Src.Controllers.MoviesController",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MovieAppApi.Src.Controllers.PlaylistsController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MovieAppApi.Src.Controllers.PlaylistsController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MovieAppApi.Src.Controllers.PlaylistsController",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MovieAppApi.Src.Controllers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MovieAppApi.Src.Controllers.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MovieAppApi.Src.Controllers",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MovieAppApi.Src.Core.Database.AppDbContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MovieAppApi.Src.Core.Database.AppDbContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MovieAppApi.Src.Core.Database.AppDbContext",
+      "Summary": "<p sourcefile=\"api/MovieAppApi.Src.Core.Database.AppDbContext.yml\" sourcestartlinenumber=\"1\">Database context for the application</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MovieAppApi.Src.Core.Database.Entities.PlaylistEntity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MovieAppApi.Src.Core.Database.Entities.PlaylistEntity.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MovieAppApi.Src.Core.Database.Entities.PlaylistEntity",
+      "Summary": "<p sourcefile=\"api/MovieAppApi.Src.Core.Database.Entities.PlaylistEntity.yml\" sourcestartlinenumber=\"1\">Database entity representing a user playlist</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity",
+      "Summary": "<p sourcefile=\"api/MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.yml\" sourcestartlinenumber=\"1\">Database entity representing a movie within a playlist</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MovieAppApi.Src.Core.Database.Entities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MovieAppApi.Src.Core.Database.Entities.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MovieAppApi.Src.Core.Database.Entities",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MovieAppApi.Src.Core.Database.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MovieAppApi.Src.Core.Database.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MovieAppApi.Src.Core.Database",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MovieAppApi.Src.Core.Exceptions.MovieNotFoundException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MovieAppApi.Src.Core.Exceptions.MovieNotFoundException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MovieAppApi.Src.Core.Exceptions.MovieNotFoundException",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MovieAppApi.Src.Core.Exceptions.PlaylistNotFoundException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MovieAppApi.Src.Core.Exceptions.PlaylistNotFoundException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MovieAppApi.Src.Core.Exceptions.PlaylistNotFoundException",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MovieAppApi.Src.Core.Exceptions.TmdbApiException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MovieAppApi.Src.Core.Exceptions.TmdbApiException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MovieAppApi.Src.Core.Exceptions.TmdbApiException",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MovieAppApi.Src.Core.Exceptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MovieAppApi.Src.Core.Exceptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MovieAppApi.Src.Core.Exceptions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MovieAppApi.Src.Core.Repositories.IPlaylistRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MovieAppApi.Src.Core.Repositories.IPlaylistRepository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MovieAppApi.Src.Core.Repositories.IPlaylistRepository",
+      "Summary": "<p sourcefile=\"api/MovieAppApi.Src.Core.Repositories.IPlaylistRepository.yml\" sourcestartlinenumber=\"1\">Repository interface for managing Playlist entities</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MovieAppApi.Src.Core.Repositories.PlaylistRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MovieAppApi.Src.Core.Repositories.PlaylistRepository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MovieAppApi.Src.Core.Repositories.PlaylistRepository",
+      "Summary": "<p sourcefile=\"api/MovieAppApi.Src.Core.Repositories.PlaylistRepository.yml\" sourcestartlinenumber=\"1\">Implementation of IPlaylistRepository using EF Core</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MovieAppApi.Src.Core.Repositories.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MovieAppApi.Src.Core.Repositories.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MovieAppApi.Src.Core.Repositories",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MovieAppApi.Src.Core.Services.Environment.EnvService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MovieAppApi.Src.Core.Services.Environment.EnvService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MovieAppApi.Src.Core.Services.Environment.EnvService",
+      "Summary": "<p sourcefile=\"api/MovieAppApi.Src.Core.Services.Environment.EnvService.yml\" sourcestartlinenumber=\"1\">Implementation of IEnvService that loads environment variables from .env file</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MovieAppApi.Src.Core.Services.Environment.IEnvService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MovieAppApi.Src.Core.Services.Environment.IEnvService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MovieAppApi.Src.Core.Services.Environment.IEnvService",
+      "Summary": "<p sourcefile=\"api/MovieAppApi.Src.Core.Services.Environment.IEnvService.yml\" sourcestartlinenumber=\"1\">Service responsible for managing environment variables</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MovieAppApi.Src.Core.Services.Environment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MovieAppApi.Src.Core.Services.Environment.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MovieAppApi.Src.Core.Services.Environment",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto",
+      "Summary": "<p sourcefile=\"api/MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.yml\" sourcestartlinenumber=\"1\">Data Transfer Object representing a movie as received from TMDB API</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MovieAppApi.Src.Core.Services.Fetch.TmdbSearchMoviesResultDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MovieAppApi.Src.Core.Services.Fetch.TmdbSearchMoviesResultDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MovieAppApi.Src.Core.Services.Fetch.TmdbSearchMoviesResultDto",
+      "Summary": "<p sourcefile=\"api/MovieAppApi.Src.Core.Services.Fetch.TmdbSearchMoviesResultDto.yml\" sourcestartlinenumber=\"1\">Data Transfer Object representing search results as received from TMDB API</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MovieAppApi.Src.Core.Services.Fetch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MovieAppApi.Src.Core.Services.Fetch.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MovieAppApi.Src.Core.Services.Fetch",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MovieAppApi.Src.Core.Services.FetchMovies.IFetchMoviesService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MovieAppApi.Src.Core.Services.FetchMovies.IFetchMoviesService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MovieAppApi.Src.Core.Services.FetchMovies.IFetchMoviesService",
+      "Summary": "<p sourcefile=\"api/MovieAppApi.Src.Core.Services.FetchMovies.IFetchMoviesService.yml\" sourcestartlinenumber=\"1\">Service interface for fetching movies from external sources (e.g., TMDB)</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MovieAppApi.Src.Core.Services.FetchMovies.Tmdb.TmdbService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MovieAppApi.Src.Core.Services.FetchMovies.Tmdb.TmdbService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MovieAppApi.Src.Core.Services.FetchMovies.Tmdb.TmdbService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MovieAppApi.Src.Core.Services.FetchMovies.Tmdb.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MovieAppApi.Src.Core.Services.FetchMovies.Tmdb.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MovieAppApi.Src.Core.Services.FetchMovies.Tmdb",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MovieAppApi.Src.Core.Services.FetchMovies.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MovieAppApi.Src.Core.Services.FetchMovies.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MovieAppApi.Src.Core.Services.FetchMovies",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MovieAppApi.Src.Core.Services.Movie.IMovieService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MovieAppApi.Src.Core.Services.Movie.IMovieService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MovieAppApi.Src.Core.Services.Movie.IMovieService",
+      "Summary": "<p sourcefile=\"api/MovieAppApi.Src.Core.Services.Movie.IMovieService.yml\" sourcestartlinenumber=\"1\">Service interface for movie-related business logic</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MovieAppApi.Src.Core.Services.Movie.MovieService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MovieAppApi.Src.Core.Services.Movie.MovieService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MovieAppApi.Src.Core.Services.Movie.MovieService",
+      "Summary": "<p sourcefile=\"api/MovieAppApi.Src.Core.Services.Movie.MovieService.yml\" sourcestartlinenumber=\"1\">Implementation of IMovieService - orchestrates movie search operations</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MovieAppApi.Src.Core.Services.Movie.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MovieAppApi.Src.Core.Services.Movie.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MovieAppApi.Src.Core.Services.Movie",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MovieAppApi.Src.Middlewares.ExceptionHandlingMiddleware.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MovieAppApi.Src.Middlewares.ExceptionHandlingMiddleware.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MovieAppApi.Src.Middlewares.ExceptionHandlingMiddleware",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MovieAppApi.Src.Middlewares.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MovieAppApi.Src.Middlewares.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MovieAppApi.Src.Middlewares",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MovieAppApi.Src.Models.Movie.MovieModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MovieAppApi.Src.Models.Movie.MovieModel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MovieAppApi.Src.Models.Movie.MovieModel",
+      "Summary": "<p sourcefile=\"api/MovieAppApi.Src.Models.Movie.MovieModel.yml\" sourcestartlinenumber=\"1\">Internal domain model representing a movie</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MovieAppApi.Src.Models.Movie.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MovieAppApi.Src.Models.Movie.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MovieAppApi.Src.Models.Movie",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MovieAppApi.Src.Models.SearchMovies.SearchMoviesRequestQueryModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MovieAppApi.Src.Models.SearchMovies.SearchMoviesRequestQueryModel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MovieAppApi.Src.Models.SearchMovies.SearchMoviesRequestQueryModel",
+      "Summary": "<p sourcefile=\"api/MovieAppApi.Src.Models.SearchMovies.SearchMoviesRequestQueryModel.yml\" sourcestartlinenumber=\"1\">Internal domain model for movie search query parameters</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MovieAppApi.Src.Models.SearchMovies.SearchMoviesResultModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MovieAppApi.Src.Models.SearchMovies.SearchMoviesResultModel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MovieAppApi.Src.Models.SearchMovies.SearchMoviesResultModel",
+      "Summary": "<p sourcefile=\"api/MovieAppApi.Src.Models.SearchMovies.SearchMoviesResultModel.yml\" sourcestartlinenumber=\"1\">Internal model representing the result of a movie search</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MovieAppApi.Src.Models.SearchMovies.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MovieAppApi.Src.Models.SearchMovies.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MovieAppApi.Src.Models.SearchMovies",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MovieAppApi.Src.Views.DTO.Playlists.AddMovieToPlaylistRequestDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MovieAppApi.Src.Views.DTO.Playlists.AddMovieToPlaylistRequestDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MovieAppApi.Src.Views.DTO.Playlists.AddMovieToPlaylistRequestDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MovieAppApi.Src.Views.DTO.Playlists.CreatePlaylistRequestDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MovieAppApi.Src.Views.DTO.Playlists.CreatePlaylistRequestDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MovieAppApi.Src.Views.DTO.Playlists.CreatePlaylistRequestDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MovieAppApi.Src.Views.DTO.Playlists.PlaylistMovieResponseDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MovieAppApi.Src.Views.DTO.Playlists.PlaylistMovieResponseDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MovieAppApi.Src.Views.DTO.Playlists.PlaylistMovieResponseDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MovieAppApi.Src.Views.DTO.Playlists.PlaylistResponseDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MovieAppApi.Src.Views.DTO.Playlists.PlaylistResponseDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MovieAppApi.Src.Views.DTO.Playlists.PlaylistResponseDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MovieAppApi.Src.Views.DTO.Playlists.UpdatePlaylistRequestDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MovieAppApi.Src.Views.DTO.Playlists.UpdatePlaylistRequestDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MovieAppApi.Src.Views.DTO.Playlists.UpdatePlaylistRequestDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MovieAppApi.Src.Views.DTO.Playlists.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MovieAppApi.Src.Views.DTO.Playlists.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MovieAppApi.Src.Views.DTO.Playlists",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MovieAppApi.Src.Views.DTO.SearchMovies.MovieDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MovieAppApi.Src.Views.DTO.SearchMovies.MovieDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MovieAppApi.Src.Views.DTO.SearchMovies.MovieDto",
+      "Summary": "<p sourcefile=\"api/MovieAppApi.Src.Views.DTO.SearchMovies.MovieDto.yml\" sourcestartlinenumber=\"1\">Data Transfer Object for representing a movie in API responses</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MovieAppApi.Src.Views.DTO.SearchMovies.SearchMoviesRequestQueryDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MovieAppApi.Src.Views.DTO.SearchMovies.SearchMoviesRequestQueryDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MovieAppApi.Src.Views.DTO.SearchMovies.SearchMoviesRequestQueryDto",
+      "Summary": "<p sourcefile=\"api/MovieAppApi.Src.Views.DTO.SearchMovies.SearchMoviesRequestQueryDto.yml\" sourcestartlinenumber=\"1\">Data Transfer Object for movie search request query parameters</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MovieAppApi.Src.Views.DTO.SearchMovies.SearchMoviesResponseDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MovieAppApi.Src.Views.DTO.SearchMovies.SearchMoviesResponseDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MovieAppApi.Src.Views.DTO.SearchMovies.SearchMoviesResponseDto",
+      "Summary": "<p sourcefile=\"api/MovieAppApi.Src.Views.DTO.SearchMovies.SearchMoviesResponseDto.yml\" sourcestartlinenumber=\"1\">Data Transfer Object for movie search API response</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MovieAppApi.Src.Views.DTO.SearchMovies.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MovieAppApi.Src.Views.DTO.SearchMovies.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MovieAppApi.Src.Views.DTO.SearchMovies",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MovieAppApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MovieAppApi.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MovieAppApi",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

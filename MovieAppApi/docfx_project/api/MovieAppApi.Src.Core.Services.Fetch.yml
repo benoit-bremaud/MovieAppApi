@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: MovieAppApi.Src.Core.Services.Fetch
+  commentId: N:MovieAppApi.Src.Core.Services.Fetch
+  id: MovieAppApi.Src.Core.Services.Fetch
+  children:
+  - MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto
+  - MovieAppApi.Src.Core.Services.Fetch.TmdbSearchMoviesResultDto
+  langs:
+  - csharp
+  - vb
+  name: MovieAppApi.Src.Core.Services.Fetch
+  nameWithType: MovieAppApi.Src.Core.Services.Fetch
+  fullName: MovieAppApi.Src.Core.Services.Fetch
+  type: Namespace
+  assemblies:
+  - MovieAppApi
+references:
+- uid: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto
+  commentId: T:MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto
+  href: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.html
+  name: TmdbMovieDto
+  nameWithType: TmdbMovieDto
+  fullName: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto
+- uid: MovieAppApi.Src.Core.Services.Fetch.TmdbSearchMoviesResultDto
+  commentId: T:MovieAppApi.Src.Core.Services.Fetch.TmdbSearchMoviesResultDto
+  href: MovieAppApi.Src.Core.Services.Fetch.TmdbSearchMoviesResultDto.html
+  name: TmdbSearchMoviesResultDto
+  nameWithType: TmdbSearchMoviesResultDto
+  fullName: MovieAppApi.Src.Core.Services.Fetch.TmdbSearchMoviesResultDto

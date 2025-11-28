@@ -1,0 +1,62 @@
+### YamlMime:ManagedReference
+items:
+- uid: MovieAppApi.Src.Core.Database
+  commentId: N:MovieAppApi.Src.Core.Database
+  id: MovieAppApi.Src.Core.Database
+  children:
+  - MovieAppApi.Src.Core.Database.AppDbContext
+  langs:
+  - csharp
+  - vb
+  name: MovieAppApi.Src.Core.Database
+  nameWithType: MovieAppApi.Src.Core.Database
+  fullName: MovieAppApi.Src.Core.Database
+  type: Namespace
+  assemblies:
+  - MovieAppApi
+references:
+- uid: MovieAppApi.Src.Core.Database.AppDbContext
+  commentId: T:MovieAppApi.Src.Core.Database.AppDbContext
+  parent: MovieAppApi.Src.Core.Database
+  href: MovieAppApi.Src.Core.Database.AppDbContext.html
+  name: AppDbContext
+  nameWithType: AppDbContext
+  fullName: MovieAppApi.Src.Core.Database.AppDbContext
+- uid: MovieAppApi.Src.Core.Database
+  commentId: N:MovieAppApi.Src.Core.Database
+  href: MovieAppApi.html
+  name: MovieAppApi.Src.Core.Database
+  nameWithType: MovieAppApi.Src.Core.Database
+  fullName: MovieAppApi.Src.Core.Database
+  spec.csharp:
+  - uid: MovieAppApi
+    name: MovieAppApi
+    href: MovieAppApi.html
+  - name: .
+  - uid: MovieAppApi.Src
+    name: Src
+    href: MovieAppApi.Src.html
+  - name: .
+  - uid: MovieAppApi.Src.Core
+    name: Core
+    href: MovieAppApi.Src.Core.html
+  - name: .
+  - uid: MovieAppApi.Src.Core.Database
+    name: Database
+    href: MovieAppApi.Src.Core.Database.html
+  spec.vb:
+  - uid: MovieAppApi
+    name: MovieAppApi
+    href: MovieAppApi.html
+  - name: .
+  - uid: MovieAppApi.Src
+    name: Src
+    href: MovieAppApi.Src.html
+  - name: .
+  - uid: MovieAppApi.Src.Core
+    name: Core
+    href: MovieAppApi.Src.Core.html
+  - name: .
+  - uid: MovieAppApi.Src.Core.Database
+    name: Database
+    href: MovieAppApi.Src.Core.Database.html

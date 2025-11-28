@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: MovieAppApi
+  commentId: N:MovieAppApi
+  id: MovieAppApi
+  children:
+  - MovieAppApi.Program
+  langs:
+  - csharp
+  - vb
+  name: MovieAppApi
+  nameWithType: MovieAppApi
+  fullName: MovieAppApi
+  type: Namespace
+  assemblies:
+  - MovieAppApi
+references:
+- uid: MovieAppApi.Program
+  commentId: T:MovieAppApi.Program
+  href: MovieAppApi.Program.html
+  name: Program
+  nameWithType: Program
+  fullName: MovieAppApi.Program

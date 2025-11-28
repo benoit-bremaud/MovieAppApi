@@ -1,0 +1,63 @@
+### YamlMime:ManagedReference
+items:
+- uid: MovieAppApi.Src.Controllers
+  commentId: N:MovieAppApi.Src.Controllers
+  id: MovieAppApi.Src.Controllers
+  children:
+  - MovieAppApi.Src.Controllers.BaseController`1
+  - MovieAppApi.Src.Controllers.HealthController
+  - MovieAppApi.Src.Controllers.MoviesController
+  - MovieAppApi.Src.Controllers.PlaylistsController
+  langs:
+  - csharp
+  - vb
+  name: MovieAppApi.Src.Controllers
+  nameWithType: MovieAppApi.Src.Controllers
+  fullName: MovieAppApi.Src.Controllers
+  type: Namespace
+  assemblies:
+  - MovieAppApi
+references:
+- uid: MovieAppApi.Src.Controllers.BaseController`1
+  commentId: T:MovieAppApi.Src.Controllers.BaseController`1
+  href: MovieAppApi.Src.Controllers.BaseController-1.html
+  name: BaseController<T>
+  nameWithType: BaseController<T>
+  fullName: MovieAppApi.Src.Controllers.BaseController<T>
+  nameWithType.vb: BaseController(Of T)
+  fullName.vb: MovieAppApi.Src.Controllers.BaseController(Of T)
+  name.vb: BaseController(Of T)
+  spec.csharp:
+  - uid: MovieAppApi.Src.Controllers.BaseController`1
+    name: BaseController
+    href: MovieAppApi.Src.Controllers.BaseController-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: MovieAppApi.Src.Controllers.BaseController`1
+    name: BaseController
+    href: MovieAppApi.Src.Controllers.BaseController-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MovieAppApi.Src.Controllers.HealthController
+  commentId: T:MovieAppApi.Src.Controllers.HealthController
+  href: MovieAppApi.Src.Controllers.HealthController.html
+  name: HealthController
+  nameWithType: HealthController
+  fullName: MovieAppApi.Src.Controllers.HealthController
+- uid: MovieAppApi.Src.Controllers.MoviesController
+  commentId: T:MovieAppApi.Src.Controllers.MoviesController
+  href: MovieAppApi.Src.Controllers.MoviesController.html
+  name: MoviesController
+  nameWithType: MoviesController
+  fullName: MovieAppApi.Src.Controllers.MoviesController
+- uid: MovieAppApi.Src.Controllers.PlaylistsController
+  commentId: T:MovieAppApi.Src.Controllers.PlaylistsController
+  href: MovieAppApi.Src.Controllers.PlaylistsController.html
+  name: PlaylistsController
+  nameWithType: PlaylistsController
+  fullName: MovieAppApi.Src.Controllers.PlaylistsController

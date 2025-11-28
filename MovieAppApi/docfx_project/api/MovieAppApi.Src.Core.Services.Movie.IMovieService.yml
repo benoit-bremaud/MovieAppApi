@@ -1,0 +1,369 @@
+### YamlMime:ManagedReference
+items:
+- uid: MovieAppApi.Src.Core.Services.Movie.IMovieService
+  commentId: T:MovieAppApi.Src.Core.Services.Movie.IMovieService
+  id: IMovieService
+  parent: MovieAppApi.Src.Core.Services.Movie
+  children:
+  - MovieAppApi.Src.Core.Services.Movie.IMovieService.GetMovieByIdAsync(System.Int32,System.String)
+  - MovieAppApi.Src.Core.Services.Movie.IMovieService.SearchMoviesAsync(MovieAppApi.Src.Models.SearchMovies.SearchMoviesRequestQueryModel)
+  langs:
+  - csharp
+  - vb
+  name: IMovieService
+  nameWithType: IMovieService
+  fullName: MovieAppApi.Src.Core.Services.Movie.IMovieService
+  type: Interface
+  source:
+    remote:
+      path: MovieAppApi/Src/Core/Services/Movie/IMovieService.cs
+      branch: main
+      repo: git@github.com:benoit-bremaud/MovieAppApi.git
+    id: IMovieService
+    path: ../Src/Core/Services/Movie/IMovieService.cs
+    startLine: 8
+  assemblies:
+  - MovieAppApi
+  namespace: MovieAppApi.Src.Core.Services.Movie
+  summary: Service interface for movie-related business logic
+  example: []
+  syntax:
+    content: public interface IMovieService
+    content.vb: Public Interface IMovieService
+- uid: MovieAppApi.Src.Core.Services.Movie.IMovieService.SearchMoviesAsync(MovieAppApi.Src.Models.SearchMovies.SearchMoviesRequestQueryModel)
+  commentId: M:MovieAppApi.Src.Core.Services.Movie.IMovieService.SearchMoviesAsync(MovieAppApi.Src.Models.SearchMovies.SearchMoviesRequestQueryModel)
+  id: SearchMoviesAsync(MovieAppApi.Src.Models.SearchMovies.SearchMoviesRequestQueryModel)
+  parent: MovieAppApi.Src.Core.Services.Movie.IMovieService
+  langs:
+  - csharp
+  - vb
+  name: SearchMoviesAsync(SearchMoviesRequestQueryModel)
+  nameWithType: IMovieService.SearchMoviesAsync(SearchMoviesRequestQueryModel)
+  fullName: MovieAppApi.Src.Core.Services.Movie.IMovieService.SearchMoviesAsync(MovieAppApi.Src.Models.SearchMovies.SearchMoviesRequestQueryModel)
+  type: Method
+  source:
+    remote:
+      path: MovieAppApi/Src/Core/Services/Movie/IMovieService.cs
+      branch: main
+      repo: git@github.com:benoit-bremaud/MovieAppApi.git
+    id: SearchMoviesAsync
+    path: ../Src/Core/Services/Movie/IMovieService.cs
+    startLine: 15
+  assemblies:
+  - MovieAppApi
+  namespace: MovieAppApi.Src.Core.Services.Movie
+  summary: Searches for movies and returns results
+  example: []
+  syntax:
+    content: Task<SearchMoviesResultModel> SearchMoviesAsync(SearchMoviesRequestQueryModel query)
+    parameters:
+    - id: query
+      type: MovieAppApi.Src.Models.SearchMovies.SearchMoviesRequestQueryModel
+      description: Search query with term and language
+    return:
+      type: System.Threading.Tasks.Task{MovieAppApi.Src.Models.SearchMovies.SearchMoviesResultModel}
+      description: Search results
+    content.vb: Function SearchMoviesAsync(query As SearchMoviesRequestQueryModel) As Task(Of SearchMoviesResultModel)
+  overload: MovieAppApi.Src.Core.Services.Movie.IMovieService.SearchMoviesAsync*
+- uid: MovieAppApi.Src.Core.Services.Movie.IMovieService.GetMovieByIdAsync(System.Int32,System.String)
+  commentId: M:MovieAppApi.Src.Core.Services.Movie.IMovieService.GetMovieByIdAsync(System.Int32,System.String)
+  id: GetMovieByIdAsync(System.Int32,System.String)
+  parent: MovieAppApi.Src.Core.Services.Movie.IMovieService
+  langs:
+  - csharp
+  - vb
+  name: GetMovieByIdAsync(int, string)
+  nameWithType: IMovieService.GetMovieByIdAsync(int, string)
+  fullName: MovieAppApi.Src.Core.Services.Movie.IMovieService.GetMovieByIdAsync(int, string)
+  type: Method
+  source:
+    remote:
+      path: MovieAppApi/Src/Core/Services/Movie/IMovieService.cs
+      branch: main
+      repo: git@github.com:benoit-bremaud/MovieAppApi.git
+    id: GetMovieByIdAsync
+    path: ../Src/Core/Services/Movie/IMovieService.cs
+    startLine: 20
+  assemblies:
+  - MovieAppApi
+  namespace: MovieAppApi.Src.Core.Services.Movie
+  summary: Gets movie details by TMDB ID
+  example: []
+  syntax:
+    content: Task<MovieModel> GetMovieByIdAsync(int tmdbId, string language = "en")
+    parameters:
+    - id: tmdbId
+      type: System.Int32
+    - id: language
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{MovieAppApi.Src.Models.Movie.MovieModel}
+    content.vb: Function GetMovieByIdAsync(tmdbId As Integer, language As String = "en") As Task(Of MovieModel)
+  overload: MovieAppApi.Src.Core.Services.Movie.IMovieService.GetMovieByIdAsync*
+  nameWithType.vb: IMovieService.GetMovieByIdAsync(Integer, String)
+  fullName.vb: MovieAppApi.Src.Core.Services.Movie.IMovieService.GetMovieByIdAsync(Integer, String)
+  name.vb: GetMovieByIdAsync(Integer, String)
+references:
+- uid: MovieAppApi.Src.Core.Services.Movie
+  commentId: N:MovieAppApi.Src.Core.Services.Movie
+  href: MovieAppApi.html
+  name: MovieAppApi.Src.Core.Services.Movie
+  nameWithType: MovieAppApi.Src.Core.Services.Movie
+  fullName: MovieAppApi.Src.Core.Services.Movie
+  spec.csharp:
+  - uid: MovieAppApi
+    name: MovieAppApi
+    href: MovieAppApi.html
+  - name: .
+  - uid: MovieAppApi.Src
+    name: Src
+    href: MovieAppApi.Src.html
+  - name: .
+  - uid: MovieAppApi.Src.Core
+    name: Core
+    href: MovieAppApi.Src.Core.html
+  - name: .
+  - uid: MovieAppApi.Src.Core.Services
+    name: Services
+    href: MovieAppApi.Src.Core.Services.html
+  - name: .
+  - uid: MovieAppApi.Src.Core.Services.Movie
+    name: Movie
+    href: MovieAppApi.Src.Core.Services.Movie.html
+  spec.vb:
+  - uid: MovieAppApi
+    name: MovieAppApi
+    href: MovieAppApi.html
+  - name: .
+  - uid: MovieAppApi.Src
+    name: Src
+    href: MovieAppApi.Src.html
+  - name: .
+  - uid: MovieAppApi.Src.Core
+    name: Core
+    href: MovieAppApi.Src.Core.html
+  - name: .
+  - uid: MovieAppApi.Src.Core.Services
+    name: Services
+    href: MovieAppApi.Src.Core.Services.html
+  - name: .
+  - uid: MovieAppApi.Src.Core.Services.Movie
+    name: Movie
+    href: MovieAppApi.Src.Core.Services.Movie.html
+- uid: MovieAppApi.Src.Core.Services.Movie.IMovieService.SearchMoviesAsync*
+  commentId: Overload:MovieAppApi.Src.Core.Services.Movie.IMovieService.SearchMoviesAsync
+  href: MovieAppApi.Src.Core.Services.Movie.IMovieService.html#MovieAppApi_Src_Core_Services_Movie_IMovieService_SearchMoviesAsync_MovieAppApi_Src_Models_SearchMovies_SearchMoviesRequestQueryModel_
+  name: SearchMoviesAsync
+  nameWithType: IMovieService.SearchMoviesAsync
+  fullName: MovieAppApi.Src.Core.Services.Movie.IMovieService.SearchMoviesAsync
+- uid: MovieAppApi.Src.Models.SearchMovies.SearchMoviesRequestQueryModel
+  commentId: T:MovieAppApi.Src.Models.SearchMovies.SearchMoviesRequestQueryModel
+  parent: MovieAppApi.Src.Models.SearchMovies
+  href: MovieAppApi.Src.Models.SearchMovies.SearchMoviesRequestQueryModel.html
+  name: SearchMoviesRequestQueryModel
+  nameWithType: SearchMoviesRequestQueryModel
+  fullName: MovieAppApi.Src.Models.SearchMovies.SearchMoviesRequestQueryModel
+- uid: System.Threading.Tasks.Task{MovieAppApi.Src.Models.SearchMovies.SearchMoviesResultModel}
+  commentId: T:System.Threading.Tasks.Task{MovieAppApi.Src.Models.SearchMovies.SearchMoviesResultModel}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<SearchMoviesResultModel>
+  nameWithType: Task<SearchMoviesResultModel>
+  fullName: System.Threading.Tasks.Task<MovieAppApi.Src.Models.SearchMovies.SearchMoviesResultModel>
+  nameWithType.vb: Task(Of SearchMoviesResultModel)
+  fullName.vb: System.Threading.Tasks.Task(Of MovieAppApi.Src.Models.SearchMovies.SearchMoviesResultModel)
+  name.vb: Task(Of SearchMoviesResultModel)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: MovieAppApi.Src.Models.SearchMovies.SearchMoviesResultModel
+    name: SearchMoviesResultModel
+    href: MovieAppApi.Src.Models.SearchMovies.SearchMoviesResultModel.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MovieAppApi.Src.Models.SearchMovies.SearchMoviesResultModel
+    name: SearchMoviesResultModel
+    href: MovieAppApi.Src.Models.SearchMovies.SearchMoviesResultModel.html
+  - name: )
+- uid: MovieAppApi.Src.Models.SearchMovies
+  commentId: N:MovieAppApi.Src.Models.SearchMovies
+  href: MovieAppApi.html
+  name: MovieAppApi.Src.Models.SearchMovies
+  nameWithType: MovieAppApi.Src.Models.SearchMovies
+  fullName: MovieAppApi.Src.Models.SearchMovies
+  spec.csharp:
+  - uid: MovieAppApi
+    name: MovieAppApi
+    href: MovieAppApi.html
+  - name: .
+  - uid: MovieAppApi.Src
+    name: Src
+    href: MovieAppApi.Src.html
+  - name: .
+  - uid: MovieAppApi.Src.Models
+    name: Models
+    href: MovieAppApi.Src.Models.html
+  - name: .
+  - uid: MovieAppApi.Src.Models.SearchMovies
+    name: SearchMovies
+    href: MovieAppApi.Src.Models.SearchMovies.html
+  spec.vb:
+  - uid: MovieAppApi
+    name: MovieAppApi
+    href: MovieAppApi.html
+  - name: .
+  - uid: MovieAppApi.Src
+    name: Src
+    href: MovieAppApi.Src.html
+  - name: .
+  - uid: MovieAppApi.Src.Models
+    name: Models
+    href: MovieAppApi.Src.Models.html
+  - name: .
+  - uid: MovieAppApi.Src.Models.SearchMovies
+    name: SearchMovies
+    href: MovieAppApi.Src.Models.SearchMovies.html
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: MovieAppApi.Src.Core.Services.Movie.IMovieService.GetMovieByIdAsync*
+  commentId: Overload:MovieAppApi.Src.Core.Services.Movie.IMovieService.GetMovieByIdAsync
+  href: MovieAppApi.Src.Core.Services.Movie.IMovieService.html#MovieAppApi_Src_Core_Services_Movie_IMovieService_GetMovieByIdAsync_System_Int32_System_String_
+  name: GetMovieByIdAsync
+  nameWithType: IMovieService.GetMovieByIdAsync
+  fullName: MovieAppApi.Src.Core.Services.Movie.IMovieService.GetMovieByIdAsync
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task{MovieAppApi.Src.Models.Movie.MovieModel}
+  commentId: T:System.Threading.Tasks.Task{MovieAppApi.Src.Models.Movie.MovieModel}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<MovieModel>
+  nameWithType: Task<MovieModel>
+  fullName: System.Threading.Tasks.Task<MovieAppApi.Src.Models.Movie.MovieModel>
+  nameWithType.vb: Task(Of MovieModel)
+  fullName.vb: System.Threading.Tasks.Task(Of MovieAppApi.Src.Models.Movie.MovieModel)
+  name.vb: Task(Of MovieModel)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: MovieAppApi.Src.Models.Movie.MovieModel
+    name: MovieModel
+    href: MovieAppApi.Src.Models.Movie.MovieModel.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MovieAppApi.Src.Models.Movie.MovieModel
+    name: MovieModel
+    href: MovieAppApi.Src.Models.Movie.MovieModel.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

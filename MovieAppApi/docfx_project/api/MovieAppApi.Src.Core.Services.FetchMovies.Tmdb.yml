@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: MovieAppApi.Src.Core.Services.FetchMovies.Tmdb
+  commentId: N:MovieAppApi.Src.Core.Services.FetchMovies.Tmdb
+  id: MovieAppApi.Src.Core.Services.FetchMovies.Tmdb
+  children:
+  - MovieAppApi.Src.Core.Services.FetchMovies.Tmdb.TmdbService
+  langs:
+  - csharp
+  - vb
+  name: MovieAppApi.Src.Core.Services.FetchMovies.Tmdb
+  nameWithType: MovieAppApi.Src.Core.Services.FetchMovies.Tmdb
+  fullName: MovieAppApi.Src.Core.Services.FetchMovies.Tmdb
+  type: Namespace
+  assemblies:
+  - MovieAppApi
+references:
+- uid: MovieAppApi.Src.Core.Services.FetchMovies.Tmdb.TmdbService
+  commentId: T:MovieAppApi.Src.Core.Services.FetchMovies.Tmdb.TmdbService
+  href: MovieAppApi.Src.Core.Services.FetchMovies.Tmdb.TmdbService.html
+  name: TmdbService
+  nameWithType: TmdbService
+  fullName: MovieAppApi.Src.Core.Services.FetchMovies.Tmdb.TmdbService

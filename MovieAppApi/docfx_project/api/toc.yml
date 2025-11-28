@@ -1,0 +1,173 @@
+### YamlMime:TableOfContent
+items:
+- uid: MovieAppApi
+  name: MovieAppApi
+  type: Namespace
+  items:
+  - uid: MovieAppApi.Program
+    name: Program
+    type: Class
+- uid: MovieAppApi.Migrations
+  name: MovieAppApi.Migrations
+  type: Namespace
+  items:
+  - uid: MovieAppApi.Migrations.InitialCreate
+    name: InitialCreate
+    type: Class
+- uid: MovieAppApi.Src.Controllers
+  name: MovieAppApi.Src.Controllers
+  type: Namespace
+  items:
+  - uid: MovieAppApi.Src.Controllers.BaseController`1
+    name: BaseController<T>
+    type: Class
+  - uid: MovieAppApi.Src.Controllers.HealthController
+    name: HealthController
+    type: Class
+  - uid: MovieAppApi.Src.Controllers.MoviesController
+    name: MoviesController
+    type: Class
+  - uid: MovieAppApi.Src.Controllers.PlaylistsController
+    name: PlaylistsController
+    type: Class
+- uid: MovieAppApi.Src.Core.Database
+  name: MovieAppApi.Src.Core.Database
+  type: Namespace
+  items:
+  - uid: MovieAppApi.Src.Core.Database.AppDbContext
+    name: AppDbContext
+    type: Class
+- uid: MovieAppApi.Src.Core.Database.Entities
+  name: MovieAppApi.Src.Core.Database.Entities
+  type: Namespace
+  items:
+  - uid: MovieAppApi.Src.Core.Database.Entities.PlaylistEntity
+    name: PlaylistEntity
+    type: Class
+  - uid: MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity
+    name: PlaylistMovieEntity
+    type: Class
+- uid: MovieAppApi.Src.Core.Exceptions
+  name: MovieAppApi.Src.Core.Exceptions
+  type: Namespace
+  items:
+  - uid: MovieAppApi.Src.Core.Exceptions.MovieNotFoundException
+    name: MovieNotFoundException
+    type: Class
+  - uid: MovieAppApi.Src.Core.Exceptions.PlaylistNotFoundException
+    name: PlaylistNotFoundException
+    type: Class
+  - uid: MovieAppApi.Src.Core.Exceptions.TmdbApiException
+    name: TmdbApiException
+    type: Class
+- uid: MovieAppApi.Src.Core.Repositories
+  name: MovieAppApi.Src.Core.Repositories
+  type: Namespace
+  items:
+  - uid: MovieAppApi.Src.Core.Repositories.IPlaylistRepository
+    name: IPlaylistRepository
+    type: Interface
+  - uid: MovieAppApi.Src.Core.Repositories.PlaylistRepository
+    name: PlaylistRepository
+    type: Class
+- uid: MovieAppApi.Src.Core.Services.Environment
+  name: MovieAppApi.Src.Core.Services.Environment
+  type: Namespace
+  items:
+  - uid: MovieAppApi.Src.Core.Services.Environment.EnvService
+    name: EnvService
+    type: Class
+  - uid: MovieAppApi.Src.Core.Services.Environment.IEnvService
+    name: IEnvService
+    type: Interface
+- uid: MovieAppApi.Src.Core.Services.Fetch
+  name: MovieAppApi.Src.Core.Services.Fetch
+  type: Namespace
+  items:
+  - uid: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto
+    name: TmdbMovieDto
+    type: Class
+  - uid: MovieAppApi.Src.Core.Services.Fetch.TmdbSearchMoviesResultDto
+    name: TmdbSearchMoviesResultDto
+    type: Class
+- uid: MovieAppApi.Src.Core.Services.FetchMovies
+  name: MovieAppApi.Src.Core.Services.FetchMovies
+  type: Namespace
+  items:
+  - uid: MovieAppApi.Src.Core.Services.FetchMovies.IFetchMoviesService
+    name: IFetchMoviesService
+    type: Interface
+- uid: MovieAppApi.Src.Core.Services.FetchMovies.Tmdb
+  name: MovieAppApi.Src.Core.Services.FetchMovies.Tmdb
+  type: Namespace
+  items:
+  - uid: MovieAppApi.Src.Core.Services.FetchMovies.Tmdb.TmdbService
+    name: TmdbService
+    type: Class
+- uid: MovieAppApi.Src.Core.Services.Movie
+  name: MovieAppApi.Src.Core.Services.Movie
+  type: Namespace
+  items:
+  - uid: MovieAppApi.Src.Core.Services.Movie.IMovieService
+    name: IMovieService
+    type: Interface
+  - uid: MovieAppApi.Src.Core.Services.Movie.MovieService
+    name: MovieService
+    type: Class
+- uid: MovieAppApi.Src.Middlewares
+  name: MovieAppApi.Src.Middlewares
+  type: Namespace
+  items:
+  - uid: MovieAppApi.Src.Middlewares.ExceptionHandlingMiddleware
+    name: ExceptionHandlingMiddleware
+    type: Class
+- uid: MovieAppApi.Src.Models.Movie
+  name: MovieAppApi.Src.Models.Movie
+  type: Namespace
+  items:
+  - uid: MovieAppApi.Src.Models.Movie.MovieModel
+    name: MovieModel
+    type: Class
+- uid: MovieAppApi.Src.Models.SearchMovies
+  name: MovieAppApi.Src.Models.SearchMovies
+  type: Namespace
+  items:
+  - uid: MovieAppApi.Src.Models.SearchMovies.SearchMoviesRequestQueryModel
+    name: SearchMoviesRequestQueryModel
+    type: Class
+  - uid: MovieAppApi.Src.Models.SearchMovies.SearchMoviesResultModel
+    name: SearchMoviesResultModel
+    type: Class
+- uid: MovieAppApi.Src.Views.DTO.Playlists
+  name: MovieAppApi.Src.Views.DTO.Playlists
+  type: Namespace
+  items:
+  - uid: MovieAppApi.Src.Views.DTO.Playlists.AddMovieToPlaylistRequestDto
+    name: AddMovieToPlaylistRequestDto
+    type: Class
+  - uid: MovieAppApi.Src.Views.DTO.Playlists.CreatePlaylistRequestDto
+    name: CreatePlaylistRequestDto
+    type: Class
+  - uid: MovieAppApi.Src.Views.DTO.Playlists.PlaylistMovieResponseDto
+    name: PlaylistMovieResponseDto
+    type: Class
+  - uid: MovieAppApi.Src.Views.DTO.Playlists.PlaylistResponseDto
+    name: PlaylistResponseDto
+    type: Class
+  - uid: MovieAppApi.Src.Views.DTO.Playlists.UpdatePlaylistRequestDto
+    name: UpdatePlaylistRequestDto
+    type: Class
+- uid: MovieAppApi.Src.Views.DTO.SearchMovies
+  name: MovieAppApi.Src.Views.DTO.SearchMovies
+  type: Namespace
+  items:
+  - uid: MovieAppApi.Src.Views.DTO.SearchMovies.MovieDto
+    name: MovieDto
+    type: Class
+  - uid: MovieAppApi.Src.Views.DTO.SearchMovies.SearchMoviesRequestQueryDto
+    name: SearchMoviesRequestQueryDto
+    type: Class
+  - uid: MovieAppApi.Src.Views.DTO.SearchMovies.SearchMoviesResponseDto
+    name: SearchMoviesResponseDto
+    type: Class
+memberLayout: SamePage

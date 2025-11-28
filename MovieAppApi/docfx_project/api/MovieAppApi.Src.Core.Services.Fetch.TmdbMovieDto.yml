@@ -1,0 +1,929 @@
+### YamlMime:ManagedReference
+items:
+- uid: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto
+  commentId: T:MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto
+  id: TmdbMovieDto
+  parent: MovieAppApi.Src.Core.Services.Fetch
+  children:
+  - MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.ToModel
+  - MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.id
+  - MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.original_language
+  - MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.original_title
+  - MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.overview
+  - MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.popularity
+  - MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.poster_path
+  - MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.release_date
+  - MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.title
+  - MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.vote_average
+  - MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.vote_count
+  langs:
+  - csharp
+  - vb
+  name: TmdbMovieDto
+  nameWithType: TmdbMovieDto
+  fullName: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto
+  type: Class
+  source:
+    remote:
+      path: MovieAppApi/Src/Core/Services/Fetch/TmdbMovieDto.cs
+      branch: main
+      repo: git@github.com:benoit-bremaud/MovieAppApi.git
+    id: TmdbMovieDto
+    path: ../Src/Core/Services/Fetch/TmdbMovieDto.cs
+    startLine: 8
+  assemblies:
+  - MovieAppApi
+  namespace: MovieAppApi.Src.Core.Services.Fetch
+  summary: Data Transfer Object representing a movie as received from TMDB API
+  example: []
+  syntax:
+    content: public class TmdbMovieDto
+    content.vb: Public Class TmdbMovieDto
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.id
+  commentId: P:MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.id
+  id: id
+  parent: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto
+  langs:
+  - csharp
+  - vb
+  name: id
+  nameWithType: TmdbMovieDto.id
+  fullName: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.id
+  type: Property
+  source:
+    remote:
+      path: MovieAppApi/Src/Core/Services/Fetch/TmdbMovieDto.cs
+      branch: main
+      repo: git@github.com:benoit-bremaud/MovieAppApi.git
+    id: id
+    path: ../Src/Core/Services/Fetch/TmdbMovieDto.cs
+    startLine: 13
+  assemblies:
+  - MovieAppApi
+  namespace: MovieAppApi.Src.Core.Services.Fetch
+  summary: Movie ID from TMDB
+  example: []
+  syntax:
+    content: >-
+      [Required]
+
+      public required int id { get; init; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <Required>
+
+      Public Property id As Integer
+  overload: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.id*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+- uid: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.original_language
+  commentId: P:MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.original_language
+  id: original_language
+  parent: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto
+  langs:
+  - csharp
+  - vb
+  name: original_language
+  nameWithType: TmdbMovieDto.original_language
+  fullName: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.original_language
+  type: Property
+  source:
+    remote:
+      path: MovieAppApi/Src/Core/Services/Fetch/TmdbMovieDto.cs
+      branch: main
+      repo: git@github.com:benoit-bremaud/MovieAppApi.git
+    id: original_language
+    path: ../Src/Core/Services/Fetch/TmdbMovieDto.cs
+    startLine: 19
+  assemblies:
+  - MovieAppApi
+  namespace: MovieAppApi.Src.Core.Services.Fetch
+  summary: Original language code
+  example: []
+  syntax:
+    content: >-
+      [Required]
+
+      public required string original_language { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Required>
+
+      Public Property original_language As String
+  overload: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.original_language*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+- uid: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.original_title
+  commentId: P:MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.original_title
+  id: original_title
+  parent: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto
+  langs:
+  - csharp
+  - vb
+  name: original_title
+  nameWithType: TmdbMovieDto.original_title
+  fullName: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.original_title
+  type: Property
+  source:
+    remote:
+      path: MovieAppApi/Src/Core/Services/Fetch/TmdbMovieDto.cs
+      branch: main
+      repo: git@github.com:benoit-bremaud/MovieAppApi.git
+    id: original_title
+    path: ../Src/Core/Services/Fetch/TmdbMovieDto.cs
+    startLine: 25
+  assemblies:
+  - MovieAppApi
+  namespace: MovieAppApi.Src.Core.Services.Fetch
+  summary: Original title
+  example: []
+  syntax:
+    content: >-
+      [Required]
+
+      public required string original_title { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Required>
+
+      Public Property original_title As String
+  overload: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.original_title*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+- uid: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.overview
+  commentId: P:MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.overview
+  id: overview
+  parent: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto
+  langs:
+  - csharp
+  - vb
+  name: overview
+  nameWithType: TmdbMovieDto.overview
+  fullName: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.overview
+  type: Property
+  source:
+    remote:
+      path: MovieAppApi/Src/Core/Services/Fetch/TmdbMovieDto.cs
+      branch: main
+      repo: git@github.com:benoit-bremaud/MovieAppApi.git
+    id: overview
+    path: ../Src/Core/Services/Fetch/TmdbMovieDto.cs
+    startLine: 31
+  assemblies:
+  - MovieAppApi
+  namespace: MovieAppApi.Src.Core.Services.Fetch
+  summary: Movie overview (can be empty string)
+  example: []
+  syntax:
+    content: >-
+      [Required(AllowEmptyStrings = true)]
+
+      public required string overview { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Required(AllowEmptyStrings:=True)>
+
+      Public Property overview As String
+  overload: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.overview*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: AllowEmptyStrings
+      type: System.Boolean
+      value: true
+- uid: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.popularity
+  commentId: P:MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.popularity
+  id: popularity
+  parent: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto
+  langs:
+  - csharp
+  - vb
+  name: popularity
+  nameWithType: TmdbMovieDto.popularity
+  fullName: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.popularity
+  type: Property
+  source:
+    remote:
+      path: MovieAppApi/Src/Core/Services/Fetch/TmdbMovieDto.cs
+      branch: main
+      repo: git@github.com:benoit-bremaud/MovieAppApi.git
+    id: popularity
+    path: ../Src/Core/Services/Fetch/TmdbMovieDto.cs
+    startLine: 37
+  assemblies:
+  - MovieAppApi
+  namespace: MovieAppApi.Src.Core.Services.Fetch
+  summary: Popularity metric
+  example: []
+  syntax:
+    content: >-
+      [Required]
+
+      public required double popularity { get; init; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: >-
+      <Required>
+
+      Public Property popularity As Double
+  overload: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.popularity*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+- uid: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.release_date
+  commentId: P:MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.release_date
+  id: release_date
+  parent: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto
+  langs:
+  - csharp
+  - vb
+  name: release_date
+  nameWithType: TmdbMovieDto.release_date
+  fullName: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.release_date
+  type: Property
+  source:
+    remote:
+      path: MovieAppApi/Src/Core/Services/Fetch/TmdbMovieDto.cs
+      branch: main
+      repo: git@github.com:benoit-bremaud/MovieAppApi.git
+    id: release_date
+    path: ../Src/Core/Services/Fetch/TmdbMovieDto.cs
+    startLine: 43
+  assemblies:
+  - MovieAppApi
+  namespace: MovieAppApi.Src.Core.Services.Fetch
+  summary: Release date (can be empty string)
+  example: []
+  syntax:
+    content: >-
+      [Required(AllowEmptyStrings = true)]
+
+      public required string release_date { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Required(AllowEmptyStrings:=True)>
+
+      Public Property release_date As String
+  overload: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.release_date*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: AllowEmptyStrings
+      type: System.Boolean
+      value: true
+- uid: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.title
+  commentId: P:MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.title
+  id: title
+  parent: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto
+  langs:
+  - csharp
+  - vb
+  name: title
+  nameWithType: TmdbMovieDto.title
+  fullName: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.title
+  type: Property
+  source:
+    remote:
+      path: MovieAppApi/Src/Core/Services/Fetch/TmdbMovieDto.cs
+      branch: main
+      repo: git@github.com:benoit-bremaud/MovieAppApi.git
+    id: title
+    path: ../Src/Core/Services/Fetch/TmdbMovieDto.cs
+    startLine: 49
+  assemblies:
+  - MovieAppApi
+  namespace: MovieAppApi.Src.Core.Services.Fetch
+  summary: Localized title
+  example: []
+  syntax:
+    content: >-
+      [Required]
+
+      public required string title { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Required>
+
+      Public Property title As String
+  overload: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.title*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+- uid: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.vote_average
+  commentId: P:MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.vote_average
+  id: vote_average
+  parent: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto
+  langs:
+  - csharp
+  - vb
+  name: vote_average
+  nameWithType: TmdbMovieDto.vote_average
+  fullName: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.vote_average
+  type: Property
+  source:
+    remote:
+      path: MovieAppApi/Src/Core/Services/Fetch/TmdbMovieDto.cs
+      branch: main
+      repo: git@github.com:benoit-bremaud/MovieAppApi.git
+    id: vote_average
+    path: ../Src/Core/Services/Fetch/TmdbMovieDto.cs
+    startLine: 55
+  assemblies:
+  - MovieAppApi
+  namespace: MovieAppApi.Src.Core.Services.Fetch
+  summary: Vote average (0-10)
+  example: []
+  syntax:
+    content: >-
+      [Required]
+
+      public required double vote_average { get; init; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: >-
+      <Required>
+
+      Public Property vote_average As Double
+  overload: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.vote_average*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+- uid: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.vote_count
+  commentId: P:MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.vote_count
+  id: vote_count
+  parent: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto
+  langs:
+  - csharp
+  - vb
+  name: vote_count
+  nameWithType: TmdbMovieDto.vote_count
+  fullName: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.vote_count
+  type: Property
+  source:
+    remote:
+      path: MovieAppApi/Src/Core/Services/Fetch/TmdbMovieDto.cs
+      branch: main
+      repo: git@github.com:benoit-bremaud/MovieAppApi.git
+    id: vote_count
+    path: ../Src/Core/Services/Fetch/TmdbMovieDto.cs
+    startLine: 61
+  assemblies:
+  - MovieAppApi
+  namespace: MovieAppApi.Src.Core.Services.Fetch
+  summary: Number of votes
+  example: []
+  syntax:
+    content: >-
+      [Required]
+
+      public required int vote_count { get; init; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <Required>
+
+      Public Property vote_count As Integer
+  overload: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.vote_count*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+- uid: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.poster_path
+  commentId: P:MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.poster_path
+  id: poster_path
+  parent: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto
+  langs:
+  - csharp
+  - vb
+  name: poster_path
+  nameWithType: TmdbMovieDto.poster_path
+  fullName: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.poster_path
+  type: Property
+  source:
+    remote:
+      path: MovieAppApi/Src/Core/Services/Fetch/TmdbMovieDto.cs
+      branch: main
+      repo: git@github.com:benoit-bremaud/MovieAppApi.git
+    id: poster_path
+    path: ../Src/Core/Services/Fetch/TmdbMovieDto.cs
+    startLine: 67
+  assemblies:
+  - MovieAppApi
+  namespace: MovieAppApi.Src.Core.Services.Fetch
+  summary: Poster image path (nullable)
+  example: []
+  syntax:
+    content: public string? poster_path { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property poster_path As String
+  overload: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.poster_path*
+- uid: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.ToModel
+  commentId: M:MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.ToModel
+  id: ToModel
+  parent: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto
+  langs:
+  - csharp
+  - vb
+  name: ToModel()
+  nameWithType: TmdbMovieDto.ToModel()
+  fullName: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.ToModel()
+  type: Method
+  source:
+    remote:
+      path: MovieAppApi/Src/Core/Services/Fetch/TmdbMovieDto.cs
+      branch: main
+      repo: git@github.com:benoit-bremaud/MovieAppApi.git
+    id: ToModel
+    path: ../Src/Core/Services/Fetch/TmdbMovieDto.cs
+    startLine: 74
+  assemblies:
+  - MovieAppApi
+  namespace: MovieAppApi.Src.Core.Services.Fetch
+  summary: Converts this TMDB DTO to an internal MovieModel
+  example: []
+  syntax:
+    content: public MovieModel ToModel()
+    return:
+      type: MovieAppApi.Src.Models.Movie.MovieModel
+      description: MovieModel instance with validated data
+    content.vb: Public Function ToModel() As MovieModel
+  overload: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.ToModel*
+  exceptions:
+  - type: System.ComponentModel.DataAnnotations.ValidationException
+    commentId: T:System.ComponentModel.DataAnnotations.ValidationException
+    description: Thrown if DTO data is invalid
+references:
+- uid: MovieAppApi.Src.Core.Services.Fetch
+  commentId: N:MovieAppApi.Src.Core.Services.Fetch
+  href: MovieAppApi.html
+  name: MovieAppApi.Src.Core.Services.Fetch
+  nameWithType: MovieAppApi.Src.Core.Services.Fetch
+  fullName: MovieAppApi.Src.Core.Services.Fetch
+  spec.csharp:
+  - uid: MovieAppApi
+    name: MovieAppApi
+    href: MovieAppApi.html
+  - name: .
+  - uid: MovieAppApi.Src
+    name: Src
+    href: MovieAppApi.Src.html
+  - name: .
+  - uid: MovieAppApi.Src.Core
+    name: Core
+    href: MovieAppApi.Src.Core.html
+  - name: .
+  - uid: MovieAppApi.Src.Core.Services
+    name: Services
+    href: MovieAppApi.Src.Core.Services.html
+  - name: .
+  - uid: MovieAppApi.Src.Core.Services.Fetch
+    name: Fetch
+    href: MovieAppApi.Src.Core.Services.Fetch.html
+  spec.vb:
+  - uid: MovieAppApi
+    name: MovieAppApi
+    href: MovieAppApi.html
+  - name: .
+  - uid: MovieAppApi.Src
+    name: Src
+    href: MovieAppApi.Src.html
+  - name: .
+  - uid: MovieAppApi.Src.Core
+    name: Core
+    href: MovieAppApi.Src.Core.html
+  - name: .
+  - uid: MovieAppApi.Src.Core.Services
+    name: Services
+    href: MovieAppApi.Src.Core.Services.html
+  - name: .
+  - uid: MovieAppApi.Src.Core.Services.Fetch
+    name: Fetch
+    href: MovieAppApi.Src.Core.Services.Fetch.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.id*
+  commentId: Overload:MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.id
+  href: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.html#MovieAppApi_Src_Core_Services_Fetch_TmdbMovieDto_id
+  name: id
+  nameWithType: TmdbMovieDto.id
+  fullName: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.id
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.original_language*
+  commentId: Overload:MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.original_language
+  href: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.html#MovieAppApi_Src_Core_Services_Fetch_TmdbMovieDto_original_language
+  name: original_language
+  nameWithType: TmdbMovieDto.original_language
+  fullName: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.original_language
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.original_title*
+  commentId: Overload:MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.original_title
+  href: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.html#MovieAppApi_Src_Core_Services_Fetch_TmdbMovieDto_original_title
+  name: original_title
+  nameWithType: TmdbMovieDto.original_title
+  fullName: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.original_title
+- uid: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.overview*
+  commentId: Overload:MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.overview
+  href: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.html#MovieAppApi_Src_Core_Services_Fetch_TmdbMovieDto_overview
+  name: overview
+  nameWithType: TmdbMovieDto.overview
+  fullName: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.overview
+- uid: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.popularity*
+  commentId: Overload:MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.popularity
+  href: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.html#MovieAppApi_Src_Core_Services_Fetch_TmdbMovieDto_popularity
+  name: popularity
+  nameWithType: TmdbMovieDto.popularity
+  fullName: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.popularity
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.release_date*
+  commentId: Overload:MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.release_date
+  href: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.html#MovieAppApi_Src_Core_Services_Fetch_TmdbMovieDto_release_date
+  name: release_date
+  nameWithType: TmdbMovieDto.release_date
+  fullName: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.release_date
+- uid: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.title*
+  commentId: Overload:MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.title
+  href: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.html#MovieAppApi_Src_Core_Services_Fetch_TmdbMovieDto_title
+  name: title
+  nameWithType: TmdbMovieDto.title
+  fullName: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.title
+- uid: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.vote_average*
+  commentId: Overload:MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.vote_average
+  href: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.html#MovieAppApi_Src_Core_Services_Fetch_TmdbMovieDto_vote_average
+  name: vote_average
+  nameWithType: TmdbMovieDto.vote_average
+  fullName: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.vote_average
+- uid: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.vote_count*
+  commentId: Overload:MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.vote_count
+  href: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.html#MovieAppApi_Src_Core_Services_Fetch_TmdbMovieDto_vote_count
+  name: vote_count
+  nameWithType: TmdbMovieDto.vote_count
+  fullName: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.vote_count
+- uid: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.poster_path*
+  commentId: Overload:MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.poster_path
+  href: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.html#MovieAppApi_Src_Core_Services_Fetch_TmdbMovieDto_poster_path
+  name: poster_path
+  nameWithType: TmdbMovieDto.poster_path
+  fullName: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.poster_path
+- uid: System.ComponentModel.DataAnnotations.ValidationException
+  commentId: T:System.ComponentModel.DataAnnotations.ValidationException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.dataannotations.validationexception
+  name: ValidationException
+  nameWithType: ValidationException
+  fullName: System.ComponentModel.DataAnnotations.ValidationException
+- uid: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.ToModel*
+  commentId: Overload:MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.ToModel
+  href: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.html#MovieAppApi_Src_Core_Services_Fetch_TmdbMovieDto_ToModel
+  name: ToModel
+  nameWithType: TmdbMovieDto.ToModel
+  fullName: MovieAppApi.Src.Core.Services.Fetch.TmdbMovieDto.ToModel
+- uid: MovieAppApi.Src.Models.Movie.MovieModel
+  commentId: T:MovieAppApi.Src.Models.Movie.MovieModel
+  parent: MovieAppApi.Src.Models.Movie
+  href: MovieAppApi.Src.Models.Movie.MovieModel.html
+  name: MovieModel
+  nameWithType: MovieModel
+  fullName: MovieAppApi.Src.Models.Movie.MovieModel
+- uid: MovieAppApi.Src.Models.Movie
+  commentId: N:MovieAppApi.Src.Models.Movie
+  href: MovieAppApi.html
+  name: MovieAppApi.Src.Models.Movie
+  nameWithType: MovieAppApi.Src.Models.Movie
+  fullName: MovieAppApi.Src.Models.Movie
+  spec.csharp:
+  - uid: MovieAppApi
+    name: MovieAppApi
+    href: MovieAppApi.html
+  - name: .
+  - uid: MovieAppApi.Src
+    name: Src
+    href: MovieAppApi.Src.html
+  - name: .
+  - uid: MovieAppApi.Src.Models
+    name: Models
+    href: MovieAppApi.Src.Models.html
+  - name: .
+  - uid: MovieAppApi.Src.Models.Movie
+    name: Movie
+    href: MovieAppApi.Src.Models.Movie.html
+  spec.vb:
+  - uid: MovieAppApi
+    name: MovieAppApi
+    href: MovieAppApi.html
+  - name: .
+  - uid: MovieAppApi.Src
+    name: Src
+    href: MovieAppApi.Src.html
+  - name: .
+  - uid: MovieAppApi.Src.Models
+    name: Models
+    href: MovieAppApi.Src.Models.html
+  - name: .
+  - uid: MovieAppApi.Src.Models.Movie
+    name: Movie
+    href: MovieAppApi.Src.Models.Movie.html

@@ -1,0 +1,69 @@
+### YamlMime:ManagedReference
+items:
+- uid: MovieAppApi.Src.Core.Repositories
+  commentId: N:MovieAppApi.Src.Core.Repositories
+  id: MovieAppApi.Src.Core.Repositories
+  children:
+  - MovieAppApi.Src.Core.Repositories.IPlaylistRepository
+  - MovieAppApi.Src.Core.Repositories.PlaylistRepository
+  langs:
+  - csharp
+  - vb
+  name: MovieAppApi.Src.Core.Repositories
+  nameWithType: MovieAppApi.Src.Core.Repositories
+  fullName: MovieAppApi.Src.Core.Repositories
+  type: Namespace
+  assemblies:
+  - MovieAppApi
+references:
+- uid: MovieAppApi.Src.Core.Repositories.IPlaylistRepository
+  commentId: T:MovieAppApi.Src.Core.Repositories.IPlaylistRepository
+  parent: MovieAppApi.Src.Core.Repositories
+  href: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.html
+  name: IPlaylistRepository
+  nameWithType: IPlaylistRepository
+  fullName: MovieAppApi.Src.Core.Repositories.IPlaylistRepository
+- uid: MovieAppApi.Src.Core.Repositories.PlaylistRepository
+  commentId: T:MovieAppApi.Src.Core.Repositories.PlaylistRepository
+  href: MovieAppApi.Src.Core.Repositories.PlaylistRepository.html
+  name: PlaylistRepository
+  nameWithType: PlaylistRepository
+  fullName: MovieAppApi.Src.Core.Repositories.PlaylistRepository
+- uid: MovieAppApi.Src.Core.Repositories
+  commentId: N:MovieAppApi.Src.Core.Repositories
+  href: MovieAppApi.html
+  name: MovieAppApi.Src.Core.Repositories
+  nameWithType: MovieAppApi.Src.Core.Repositories
+  fullName: MovieAppApi.Src.Core.Repositories
+  spec.csharp:
+  - uid: MovieAppApi
+    name: MovieAppApi
+    href: MovieAppApi.html
+  - name: .
+  - uid: MovieAppApi.Src
+    name: Src
+    href: MovieAppApi.Src.html
+  - name: .
+  - uid: MovieAppApi.Src.Core
+    name: Core
+    href: MovieAppApi.Src.Core.html
+  - name: .
+  - uid: MovieAppApi.Src.Core.Repositories
+    name: Repositories
+    href: MovieAppApi.Src.Core.Repositories.html
+  spec.vb:
+  - uid: MovieAppApi
+    name: MovieAppApi
+    href: MovieAppApi.html
+  - name: .
+  - uid: MovieAppApi.Src
+    name: Src
+    href: MovieAppApi.Src.html
+  - name: .
+  - uid: MovieAppApi.Src.Core
+    name: Core
+    href: MovieAppApi.Src.Core.html
+  - name: .
+  - uid: MovieAppApi.Src.Core.Repositories
+    name: Repositories
+    href: MovieAppApi.Src.Core.Repositories.html

@@ -1,0 +1,842 @@
+### YamlMime:ManagedReference
+items:
+- uid: MovieAppApi.Src.Models.Movie.MovieModel
+  commentId: T:MovieAppApi.Src.Models.Movie.MovieModel
+  id: MovieModel
+  parent: MovieAppApi.Src.Models.Movie
+  children:
+  - MovieAppApi.Src.Models.Movie.MovieModel.#ctor(System.Int32,System.String,System.String,System.String,System.Double,System.Nullable{System.DateTime},System.String,System.Double,System.Int32,System.String)
+  - MovieAppApi.Src.Models.Movie.MovieModel.Id
+  - MovieAppApi.Src.Models.Movie.MovieModel.OriginalLanguage
+  - MovieAppApi.Src.Models.Movie.MovieModel.OriginalTitle
+  - MovieAppApi.Src.Models.Movie.MovieModel.Overview
+  - MovieAppApi.Src.Models.Movie.MovieModel.Popularity
+  - MovieAppApi.Src.Models.Movie.MovieModel.PosterPath
+  - MovieAppApi.Src.Models.Movie.MovieModel.ReleaseDate
+  - MovieAppApi.Src.Models.Movie.MovieModel.Title
+  - MovieAppApi.Src.Models.Movie.MovieModel.VoteAverage
+  - MovieAppApi.Src.Models.Movie.MovieModel.VoteCount
+  langs:
+  - csharp
+  - vb
+  name: MovieModel
+  nameWithType: MovieModel
+  fullName: MovieAppApi.Src.Models.Movie.MovieModel
+  type: Class
+  source:
+    remote:
+      path: MovieAppApi/Src/Models/Movie/MovieModel.cs
+      branch: main
+      repo: git@github.com:benoit-bremaud/MovieAppApi.git
+    id: MovieModel
+    path: ../Src/Models/Movie/MovieModel.cs
+    startLine: 5
+  assemblies:
+  - MovieAppApi
+  namespace: MovieAppApi.Src.Models.Movie
+  summary: Internal domain model representing a movie
+  example: []
+  syntax:
+    content: public class MovieModel
+    content.vb: Public Class MovieModel
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: MovieAppApi.Src.Models.Movie.MovieModel.Id
+  commentId: P:MovieAppApi.Src.Models.Movie.MovieModel.Id
+  id: Id
+  parent: MovieAppApi.Src.Models.Movie.MovieModel
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: MovieModel.Id
+  fullName: MovieAppApi.Src.Models.Movie.MovieModel.Id
+  type: Property
+  source:
+    remote:
+      path: MovieAppApi/Src/Models/Movie/MovieModel.cs
+      branch: main
+      repo: git@github.com:benoit-bremaud/MovieAppApi.git
+    id: Id
+    path: ../Src/Models/Movie/MovieModel.cs
+    startLine: 10
+  assemblies:
+  - MovieAppApi
+  namespace: MovieAppApi.Src.Models.Movie
+  summary: Unique identifier for the movie
+  example: []
+  syntax:
+    content: public int Id { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Id As Integer
+  overload: MovieAppApi.Src.Models.Movie.MovieModel.Id*
+- uid: MovieAppApi.Src.Models.Movie.MovieModel.OriginalLanguage
+  commentId: P:MovieAppApi.Src.Models.Movie.MovieModel.OriginalLanguage
+  id: OriginalLanguage
+  parent: MovieAppApi.Src.Models.Movie.MovieModel
+  langs:
+  - csharp
+  - vb
+  name: OriginalLanguage
+  nameWithType: MovieModel.OriginalLanguage
+  fullName: MovieAppApi.Src.Models.Movie.MovieModel.OriginalLanguage
+  type: Property
+  source:
+    remote:
+      path: MovieAppApi/Src/Models/Movie/MovieModel.cs
+      branch: main
+      repo: git@github.com:benoit-bremaud/MovieAppApi.git
+    id: OriginalLanguage
+    path: ../Src/Models/Movie/MovieModel.cs
+    startLine: 15
+  assemblies:
+  - MovieAppApi
+  namespace: MovieAppApi.Src.Models.Movie
+  summary: Original language code (e.g., "en", "fr")
+  example: []
+  syntax:
+    content: public string OriginalLanguage { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property OriginalLanguage As String
+  overload: MovieAppApi.Src.Models.Movie.MovieModel.OriginalLanguage*
+- uid: MovieAppApi.Src.Models.Movie.MovieModel.OriginalTitle
+  commentId: P:MovieAppApi.Src.Models.Movie.MovieModel.OriginalTitle
+  id: OriginalTitle
+  parent: MovieAppApi.Src.Models.Movie.MovieModel
+  langs:
+  - csharp
+  - vb
+  name: OriginalTitle
+  nameWithType: MovieModel.OriginalTitle
+  fullName: MovieAppApi.Src.Models.Movie.MovieModel.OriginalTitle
+  type: Property
+  source:
+    remote:
+      path: MovieAppApi/Src/Models/Movie/MovieModel.cs
+      branch: main
+      repo: git@github.com:benoit-bremaud/MovieAppApi.git
+    id: OriginalTitle
+    path: ../Src/Models/Movie/MovieModel.cs
+    startLine: 20
+  assemblies:
+  - MovieAppApi
+  namespace: MovieAppApi.Src.Models.Movie
+  summary: Original title in the source language
+  example: []
+  syntax:
+    content: public string OriginalTitle { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property OriginalTitle As String
+  overload: MovieAppApi.Src.Models.Movie.MovieModel.OriginalTitle*
+- uid: MovieAppApi.Src.Models.Movie.MovieModel.Overview
+  commentId: P:MovieAppApi.Src.Models.Movie.MovieModel.Overview
+  id: Overview
+  parent: MovieAppApi.Src.Models.Movie.MovieModel
+  langs:
+  - csharp
+  - vb
+  name: Overview
+  nameWithType: MovieModel.Overview
+  fullName: MovieAppApi.Src.Models.Movie.MovieModel.Overview
+  type: Property
+  source:
+    remote:
+      path: MovieAppApi/Src/Models/Movie/MovieModel.cs
+      branch: main
+      repo: git@github.com:benoit-bremaud/MovieAppApi.git
+    id: Overview
+    path: ../Src/Models/Movie/MovieModel.cs
+    startLine: 25
+  assemblies:
+  - MovieAppApi
+  namespace: MovieAppApi.Src.Models.Movie
+  summary: Movie description or summary
+  example: []
+  syntax:
+    content: public string Overview { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Overview As String
+  overload: MovieAppApi.Src.Models.Movie.MovieModel.Overview*
+- uid: MovieAppApi.Src.Models.Movie.MovieModel.Popularity
+  commentId: P:MovieAppApi.Src.Models.Movie.MovieModel.Popularity
+  id: Popularity
+  parent: MovieAppApi.Src.Models.Movie.MovieModel
+  langs:
+  - csharp
+  - vb
+  name: Popularity
+  nameWithType: MovieModel.Popularity
+  fullName: MovieAppApi.Src.Models.Movie.MovieModel.Popularity
+  type: Property
+  source:
+    remote:
+      path: MovieAppApi/Src/Models/Movie/MovieModel.cs
+      branch: main
+      repo: git@github.com:benoit-bremaud/MovieAppApi.git
+    id: Popularity
+    path: ../Src/Models/Movie/MovieModel.cs
+    startLine: 30
+  assemblies:
+  - MovieAppApi
+  namespace: MovieAppApi.Src.Models.Movie
+  summary: Popularity score from TMDB
+  example: []
+  syntax:
+    content: public double Popularity { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property Popularity As Double
+  overload: MovieAppApi.Src.Models.Movie.MovieModel.Popularity*
+- uid: MovieAppApi.Src.Models.Movie.MovieModel.PosterPath
+  commentId: P:MovieAppApi.Src.Models.Movie.MovieModel.PosterPath
+  id: PosterPath
+  parent: MovieAppApi.Src.Models.Movie.MovieModel
+  langs:
+  - csharp
+  - vb
+  name: PosterPath
+  nameWithType: MovieModel.PosterPath
+  fullName: MovieAppApi.Src.Models.Movie.MovieModel.PosterPath
+  type: Property
+  source:
+    remote:
+      path: MovieAppApi/Src/Models/Movie/MovieModel.cs
+      branch: main
+      repo: git@github.com:benoit-bremaud/MovieAppApi.git
+    id: PosterPath
+    path: ../Src/Models/Movie/MovieModel.cs
+    startLine: 35
+  assemblies:
+  - MovieAppApi
+  namespace: MovieAppApi.Src.Models.Movie
+  summary: URL path to the poster image (nullable)
+  example: []
+  syntax:
+    content: public string? PosterPath { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property PosterPath As String
+  overload: MovieAppApi.Src.Models.Movie.MovieModel.PosterPath*
+- uid: MovieAppApi.Src.Models.Movie.MovieModel.ReleaseDate
+  commentId: P:MovieAppApi.Src.Models.Movie.MovieModel.ReleaseDate
+  id: ReleaseDate
+  parent: MovieAppApi.Src.Models.Movie.MovieModel
+  langs:
+  - csharp
+  - vb
+  name: ReleaseDate
+  nameWithType: MovieModel.ReleaseDate
+  fullName: MovieAppApi.Src.Models.Movie.MovieModel.ReleaseDate
+  type: Property
+  source:
+    remote:
+      path: MovieAppApi/Src/Models/Movie/MovieModel.cs
+      branch: main
+      repo: git@github.com:benoit-bremaud/MovieAppApi.git
+    id: ReleaseDate
+    path: ../Src/Models/Movie/MovieModel.cs
+    startLine: 40
+  assemblies:
+  - MovieAppApi
+  namespace: MovieAppApi.Src.Models.Movie
+  summary: Movie release date (nullable)
+  example: []
+  syntax:
+    content: public DateTime? ReleaseDate { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTime}
+    content.vb: Public ReadOnly Property ReleaseDate As Date?
+  overload: MovieAppApi.Src.Models.Movie.MovieModel.ReleaseDate*
+- uid: MovieAppApi.Src.Models.Movie.MovieModel.Title
+  commentId: P:MovieAppApi.Src.Models.Movie.MovieModel.Title
+  id: Title
+  parent: MovieAppApi.Src.Models.Movie.MovieModel
+  langs:
+  - csharp
+  - vb
+  name: Title
+  nameWithType: MovieModel.Title
+  fullName: MovieAppApi.Src.Models.Movie.MovieModel.Title
+  type: Property
+  source:
+    remote:
+      path: MovieAppApi/Src/Models/Movie/MovieModel.cs
+      branch: main
+      repo: git@github.com:benoit-bremaud/MovieAppApi.git
+    id: Title
+    path: ../Src/Models/Movie/MovieModel.cs
+    startLine: 45
+  assemblies:
+  - MovieAppApi
+  namespace: MovieAppApi.Src.Models.Movie
+  summary: Localized title for the specified language
+  example: []
+  syntax:
+    content: public string Title { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Title As String
+  overload: MovieAppApi.Src.Models.Movie.MovieModel.Title*
+- uid: MovieAppApi.Src.Models.Movie.MovieModel.VoteAverage
+  commentId: P:MovieAppApi.Src.Models.Movie.MovieModel.VoteAverage
+  id: VoteAverage
+  parent: MovieAppApi.Src.Models.Movie.MovieModel
+  langs:
+  - csharp
+  - vb
+  name: VoteAverage
+  nameWithType: MovieModel.VoteAverage
+  fullName: MovieAppApi.Src.Models.Movie.MovieModel.VoteAverage
+  type: Property
+  source:
+    remote:
+      path: MovieAppApi/Src/Models/Movie/MovieModel.cs
+      branch: main
+      repo: git@github.com:benoit-bremaud/MovieAppApi.git
+    id: VoteAverage
+    path: ../Src/Models/Movie/MovieModel.cs
+    startLine: 50
+  assemblies:
+  - MovieAppApi
+  namespace: MovieAppApi.Src.Models.Movie
+  summary: Average vote score (0.0 to 10.0)
+  example: []
+  syntax:
+    content: public double VoteAverage { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property VoteAverage As Double
+  overload: MovieAppApi.Src.Models.Movie.MovieModel.VoteAverage*
+- uid: MovieAppApi.Src.Models.Movie.MovieModel.VoteCount
+  commentId: P:MovieAppApi.Src.Models.Movie.MovieModel.VoteCount
+  id: VoteCount
+  parent: MovieAppApi.Src.Models.Movie.MovieModel
+  langs:
+  - csharp
+  - vb
+  name: VoteCount
+  nameWithType: MovieModel.VoteCount
+  fullName: MovieAppApi.Src.Models.Movie.MovieModel.VoteCount
+  type: Property
+  source:
+    remote:
+      path: MovieAppApi/Src/Models/Movie/MovieModel.cs
+      branch: main
+      repo: git@github.com:benoit-bremaud/MovieAppApi.git
+    id: VoteCount
+    path: ../Src/Models/Movie/MovieModel.cs
+    startLine: 55
+  assemblies:
+  - MovieAppApi
+  namespace: MovieAppApi.Src.Models.Movie
+  summary: Total number of votes received
+  example: []
+  syntax:
+    content: public int VoteCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property VoteCount As Integer
+  overload: MovieAppApi.Src.Models.Movie.MovieModel.VoteCount*
+- uid: MovieAppApi.Src.Models.Movie.MovieModel.#ctor(System.Int32,System.String,System.String,System.String,System.Double,System.Nullable{System.DateTime},System.String,System.Double,System.Int32,System.String)
+  commentId: M:MovieAppApi.Src.Models.Movie.MovieModel.#ctor(System.Int32,System.String,System.String,System.String,System.Double,System.Nullable{System.DateTime},System.String,System.Double,System.Int32,System.String)
+  id: '#ctor(System.Int32,System.String,System.String,System.String,System.Double,System.Nullable{System.DateTime},System.String,System.Double,System.Int32,System.String)'
+  parent: MovieAppApi.Src.Models.Movie.MovieModel
+  langs:
+  - csharp
+  - vb
+  name: MovieModel(int, string, string, string, double, DateTime?, string, double, int, string?)
+  nameWithType: MovieModel.MovieModel(int, string, string, string, double, DateTime?, string, double, int, string?)
+  fullName: MovieAppApi.Src.Models.Movie.MovieModel.MovieModel(int, string, string, string, double, System.DateTime?, string, double, int, string?)
+  type: Constructor
+  source:
+    remote:
+      path: MovieAppApi/Src/Models/Movie/MovieModel.cs
+      branch: main
+      repo: git@github.com:benoit-bremaud/MovieAppApi.git
+    id: .ctor
+    path: ../Src/Models/Movie/MovieModel.cs
+    startLine: 60
+  assemblies:
+  - MovieAppApi
+  namespace: MovieAppApi.Src.Models.Movie
+  summary: Constructor for creating a MovieModel instance
+  example: []
+  syntax:
+    content: public MovieModel(int id, string originalLanguage, string originalTitle, string overview, double popularity, DateTime? releaseDate, string title, double voteAverage, int voteCount, string? posterPath)
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: originalLanguage
+      type: System.String
+    - id: originalTitle
+      type: System.String
+    - id: overview
+      type: System.String
+    - id: popularity
+      type: System.Double
+    - id: releaseDate
+      type: System.Nullable{System.DateTime}
+    - id: title
+      type: System.String
+    - id: voteAverage
+      type: System.Double
+    - id: voteCount
+      type: System.Int32
+    - id: posterPath
+      type: System.String
+    content.vb: Public Sub New(id As Integer, originalLanguage As String, originalTitle As String, overview As String, popularity As Double, releaseDate As Date?, title As String, voteAverage As Double, voteCount As Integer, posterPath As String)
+  overload: MovieAppApi.Src.Models.Movie.MovieModel.#ctor*
+  nameWithType.vb: MovieModel.New(Integer, String, String, String, Double, Date?, String, Double, Integer, String)
+  fullName.vb: MovieAppApi.Src.Models.Movie.MovieModel.New(Integer, String, String, String, Double, Date?, String, Double, Integer, String)
+  name.vb: New(Integer, String, String, String, Double, Date?, String, Double, Integer, String)
+references:
+- uid: MovieAppApi.Src.Models.Movie
+  commentId: N:MovieAppApi.Src.Models.Movie
+  href: MovieAppApi.html
+  name: MovieAppApi.Src.Models.Movie
+  nameWithType: MovieAppApi.Src.Models.Movie
+  fullName: MovieAppApi.Src.Models.Movie
+  spec.csharp:
+  - uid: MovieAppApi
+    name: MovieAppApi
+    href: MovieAppApi.html
+  - name: .
+  - uid: MovieAppApi.Src
+    name: Src
+    href: MovieAppApi.Src.html
+  - name: .
+  - uid: MovieAppApi.Src.Models
+    name: Models
+    href: MovieAppApi.Src.Models.html
+  - name: .
+  - uid: MovieAppApi.Src.Models.Movie
+    name: Movie
+    href: MovieAppApi.Src.Models.Movie.html
+  spec.vb:
+  - uid: MovieAppApi
+    name: MovieAppApi
+    href: MovieAppApi.html
+  - name: .
+  - uid: MovieAppApi.Src
+    name: Src
+    href: MovieAppApi.Src.html
+  - name: .
+  - uid: MovieAppApi.Src.Models
+    name: Models
+    href: MovieAppApi.Src.Models.html
+  - name: .
+  - uid: MovieAppApi.Src.Models.Movie
+    name: Movie
+    href: MovieAppApi.Src.Models.Movie.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MovieAppApi.Src.Models.Movie.MovieModel.Id*
+  commentId: Overload:MovieAppApi.Src.Models.Movie.MovieModel.Id
+  href: MovieAppApi.Src.Models.Movie.MovieModel.html#MovieAppApi_Src_Models_Movie_MovieModel_Id
+  name: Id
+  nameWithType: MovieModel.Id
+  fullName: MovieAppApi.Src.Models.Movie.MovieModel.Id
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: MovieAppApi.Src.Models.Movie.MovieModel.OriginalLanguage*
+  commentId: Overload:MovieAppApi.Src.Models.Movie.MovieModel.OriginalLanguage
+  href: MovieAppApi.Src.Models.Movie.MovieModel.html#MovieAppApi_Src_Models_Movie_MovieModel_OriginalLanguage
+  name: OriginalLanguage
+  nameWithType: MovieModel.OriginalLanguage
+  fullName: MovieAppApi.Src.Models.Movie.MovieModel.OriginalLanguage
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: MovieAppApi.Src.Models.Movie.MovieModel.OriginalTitle*
+  commentId: Overload:MovieAppApi.Src.Models.Movie.MovieModel.OriginalTitle
+  href: MovieAppApi.Src.Models.Movie.MovieModel.html#MovieAppApi_Src_Models_Movie_MovieModel_OriginalTitle
+  name: OriginalTitle
+  nameWithType: MovieModel.OriginalTitle
+  fullName: MovieAppApi.Src.Models.Movie.MovieModel.OriginalTitle
+- uid: MovieAppApi.Src.Models.Movie.MovieModel.Overview*
+  commentId: Overload:MovieAppApi.Src.Models.Movie.MovieModel.Overview
+  href: MovieAppApi.Src.Models.Movie.MovieModel.html#MovieAppApi_Src_Models_Movie_MovieModel_Overview
+  name: Overview
+  nameWithType: MovieModel.Overview
+  fullName: MovieAppApi.Src.Models.Movie.MovieModel.Overview
+- uid: MovieAppApi.Src.Models.Movie.MovieModel.Popularity*
+  commentId: Overload:MovieAppApi.Src.Models.Movie.MovieModel.Popularity
+  href: MovieAppApi.Src.Models.Movie.MovieModel.html#MovieAppApi_Src_Models_Movie_MovieModel_Popularity
+  name: Popularity
+  nameWithType: MovieModel.Popularity
+  fullName: MovieAppApi.Src.Models.Movie.MovieModel.Popularity
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: MovieAppApi.Src.Models.Movie.MovieModel.PosterPath*
+  commentId: Overload:MovieAppApi.Src.Models.Movie.MovieModel.PosterPath
+  href: MovieAppApi.Src.Models.Movie.MovieModel.html#MovieAppApi_Src_Models_Movie_MovieModel_PosterPath
+  name: PosterPath
+  nameWithType: MovieModel.PosterPath
+  fullName: MovieAppApi.Src.Models.Movie.MovieModel.PosterPath
+- uid: MovieAppApi.Src.Models.Movie.MovieModel.ReleaseDate*
+  commentId: Overload:MovieAppApi.Src.Models.Movie.MovieModel.ReleaseDate
+  href: MovieAppApi.Src.Models.Movie.MovieModel.html#MovieAppApi_Src_Models_Movie_MovieModel_ReleaseDate
+  name: ReleaseDate
+  nameWithType: MovieModel.ReleaseDate
+  fullName: MovieAppApi.Src.Models.Movie.MovieModel.ReleaseDate
+- uid: System.Nullable{System.DateTime}
+  commentId: T:System.Nullable{System.DateTime}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime?
+  nameWithType: DateTime?
+  fullName: System.DateTime?
+  nameWithType.vb: Date?
+  fullName.vb: Date?
+  name.vb: Date?
+  spec.csharp:
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: '?'
+  spec.vb:
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MovieAppApi.Src.Models.Movie.MovieModel.Title*
+  commentId: Overload:MovieAppApi.Src.Models.Movie.MovieModel.Title
+  href: MovieAppApi.Src.Models.Movie.MovieModel.html#MovieAppApi_Src_Models_Movie_MovieModel_Title
+  name: Title
+  nameWithType: MovieModel.Title
+  fullName: MovieAppApi.Src.Models.Movie.MovieModel.Title
+- uid: MovieAppApi.Src.Models.Movie.MovieModel.VoteAverage*
+  commentId: Overload:MovieAppApi.Src.Models.Movie.MovieModel.VoteAverage
+  href: MovieAppApi.Src.Models.Movie.MovieModel.html#MovieAppApi_Src_Models_Movie_MovieModel_VoteAverage
+  name: VoteAverage
+  nameWithType: MovieModel.VoteAverage
+  fullName: MovieAppApi.Src.Models.Movie.MovieModel.VoteAverage
+- uid: MovieAppApi.Src.Models.Movie.MovieModel.VoteCount*
+  commentId: Overload:MovieAppApi.Src.Models.Movie.MovieModel.VoteCount
+  href: MovieAppApi.Src.Models.Movie.MovieModel.html#MovieAppApi_Src_Models_Movie_MovieModel_VoteCount
+  name: VoteCount
+  nameWithType: MovieModel.VoteCount
+  fullName: MovieAppApi.Src.Models.Movie.MovieModel.VoteCount
+- uid: MovieAppApi.Src.Models.Movie.MovieModel.#ctor*
+  commentId: Overload:MovieAppApi.Src.Models.Movie.MovieModel.#ctor
+  href: MovieAppApi.Src.Models.Movie.MovieModel.html#MovieAppApi_Src_Models_Movie_MovieModel__ctor_System_Int32_System_String_System_String_System_String_System_Double_System_Nullable_System_DateTime__System_String_System_Double_System_Int32_System_String_
+  name: MovieModel
+  nameWithType: MovieModel.MovieModel
+  fullName: MovieAppApi.Src.Models.Movie.MovieModel.MovieModel
+  nameWithType.vb: MovieModel.New
+  fullName.vb: MovieAppApi.Src.Models.Movie.MovieModel.New
+  name.vb: New

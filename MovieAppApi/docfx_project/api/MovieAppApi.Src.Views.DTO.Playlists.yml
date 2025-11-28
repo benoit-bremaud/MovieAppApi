@@ -1,0 +1,101 @@
+### YamlMime:ManagedReference
+items:
+- uid: MovieAppApi.Src.Views.DTO.Playlists
+  commentId: N:MovieAppApi.Src.Views.DTO.Playlists
+  id: MovieAppApi.Src.Views.DTO.Playlists
+  children:
+  - MovieAppApi.Src.Views.DTO.Playlists.AddMovieToPlaylistRequestDto
+  - MovieAppApi.Src.Views.DTO.Playlists.CreatePlaylistRequestDto
+  - MovieAppApi.Src.Views.DTO.Playlists.PlaylistMovieResponseDto
+  - MovieAppApi.Src.Views.DTO.Playlists.PlaylistResponseDto
+  - MovieAppApi.Src.Views.DTO.Playlists.UpdatePlaylistRequestDto
+  langs:
+  - csharp
+  - vb
+  name: MovieAppApi.Src.Views.DTO.Playlists
+  nameWithType: MovieAppApi.Src.Views.DTO.Playlists
+  fullName: MovieAppApi.Src.Views.DTO.Playlists
+  type: Namespace
+  assemblies:
+  - MovieAppApi
+references:
+- uid: MovieAppApi.Src.Views.DTO.Playlists.AddMovieToPlaylistRequestDto
+  commentId: T:MovieAppApi.Src.Views.DTO.Playlists.AddMovieToPlaylistRequestDto
+  parent: MovieAppApi.Src.Views.DTO.Playlists
+  href: MovieAppApi.Src.Views.DTO.Playlists.AddMovieToPlaylistRequestDto.html
+  name: AddMovieToPlaylistRequestDto
+  nameWithType: AddMovieToPlaylistRequestDto
+  fullName: MovieAppApi.Src.Views.DTO.Playlists.AddMovieToPlaylistRequestDto
+- uid: MovieAppApi.Src.Views.DTO.Playlists.CreatePlaylistRequestDto
+  commentId: T:MovieAppApi.Src.Views.DTO.Playlists.CreatePlaylistRequestDto
+  parent: MovieAppApi.Src.Views.DTO.Playlists
+  href: MovieAppApi.Src.Views.DTO.Playlists.CreatePlaylistRequestDto.html
+  name: CreatePlaylistRequestDto
+  nameWithType: CreatePlaylistRequestDto
+  fullName: MovieAppApi.Src.Views.DTO.Playlists.CreatePlaylistRequestDto
+- uid: MovieAppApi.Src.Views.DTO.Playlists.PlaylistMovieResponseDto
+  commentId: T:MovieAppApi.Src.Views.DTO.Playlists.PlaylistMovieResponseDto
+  href: MovieAppApi.Src.Views.DTO.Playlists.PlaylistMovieResponseDto.html
+  name: PlaylistMovieResponseDto
+  nameWithType: PlaylistMovieResponseDto
+  fullName: MovieAppApi.Src.Views.DTO.Playlists.PlaylistMovieResponseDto
+- uid: MovieAppApi.Src.Views.DTO.Playlists.PlaylistResponseDto
+  commentId: T:MovieAppApi.Src.Views.DTO.Playlists.PlaylistResponseDto
+  parent: MovieAppApi.Src.Views.DTO.Playlists
+  href: MovieAppApi.Src.Views.DTO.Playlists.PlaylistResponseDto.html
+  name: PlaylistResponseDto
+  nameWithType: PlaylistResponseDto
+  fullName: MovieAppApi.Src.Views.DTO.Playlists.PlaylistResponseDto
+- uid: MovieAppApi.Src.Views.DTO.Playlists.UpdatePlaylistRequestDto
+  commentId: T:MovieAppApi.Src.Views.DTO.Playlists.UpdatePlaylistRequestDto
+  parent: MovieAppApi.Src.Views.DTO.Playlists
+  href: MovieAppApi.Src.Views.DTO.Playlists.UpdatePlaylistRequestDto.html
+  name: UpdatePlaylistRequestDto
+  nameWithType: UpdatePlaylistRequestDto
+  fullName: MovieAppApi.Src.Views.DTO.Playlists.UpdatePlaylistRequestDto
+- uid: MovieAppApi.Src.Views.DTO.Playlists
+  commentId: N:MovieAppApi.Src.Views.DTO.Playlists
+  href: MovieAppApi.html
+  name: MovieAppApi.Src.Views.DTO.Playlists
+  nameWithType: MovieAppApi.Src.Views.DTO.Playlists
+  fullName: MovieAppApi.Src.Views.DTO.Playlists
+  spec.csharp:
+  - uid: MovieAppApi
+    name: MovieAppApi
+    href: MovieAppApi.html
+  - name: .
+  - uid: MovieAppApi.Src
+    name: Src
+    href: MovieAppApi.Src.html
+  - name: .
+  - uid: MovieAppApi.Src.Views
+    name: Views
+    href: MovieAppApi.Src.Views.html
+  - name: .
+  - uid: MovieAppApi.Src.Views.DTO
+    name: DTO
+    href: MovieAppApi.Src.Views.DTO.html
+  - name: .
+  - uid: MovieAppApi.Src.Views.DTO.Playlists
+    name: Playlists
+    href: MovieAppApi.Src.Views.DTO.Playlists.html
+  spec.vb:
+  - uid: MovieAppApi
+    name: MovieAppApi
+    href: MovieAppApi.html
+  - name: .
+  - uid: MovieAppApi.Src
+    name: Src
+    href: MovieAppApi.Src.html
+  - name: .
+  - uid: MovieAppApi.Src.Views
+    name: Views
+    href: MovieAppApi.Src.Views.html
+  - name: .
+  - uid: MovieAppApi.Src.Views.DTO
+    name: DTO
+    href: MovieAppApi.Src.Views.DTO.html
+  - name: .
+  - uid: MovieAppApi.Src.Views.DTO.Playlists
+    name: Playlists
+    href: MovieAppApi.Src.Views.DTO.Playlists.html

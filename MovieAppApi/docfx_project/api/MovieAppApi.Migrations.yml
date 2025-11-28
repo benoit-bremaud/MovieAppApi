@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: MovieAppApi.Migrations
+  commentId: N:MovieAppApi.Migrations
+  id: MovieAppApi.Migrations
+  children:
+  - MovieAppApi.Migrations.InitialCreate
+  langs:
+  - csharp
+  - vb
+  name: MovieAppApi.Migrations
+  nameWithType: MovieAppApi.Migrations
+  fullName: MovieAppApi.Migrations
+  type: Namespace
+  assemblies:
+  - MovieAppApi
+references:
+- uid: MovieAppApi.Migrations.InitialCreate
+  commentId: T:MovieAppApi.Migrations.InitialCreate
+  href: MovieAppApi.Migrations.InitialCreate.html
+  name: InitialCreate
+  nameWithType: InitialCreate
+  fullName: MovieAppApi.Migrations.InitialCreate

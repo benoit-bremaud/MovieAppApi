@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: MovieAppApi.Src.Core.Exceptions
+  commentId: N:MovieAppApi.Src.Core.Exceptions
+  id: MovieAppApi.Src.Core.Exceptions
+  children:
+  - MovieAppApi.Src.Core.Exceptions.MovieNotFoundException
+  - MovieAppApi.Src.Core.Exceptions.PlaylistNotFoundException
+  - MovieAppApi.Src.Core.Exceptions.TmdbApiException
+  langs:
+  - csharp
+  - vb
+  name: MovieAppApi.Src.Core.Exceptions
+  nameWithType: MovieAppApi.Src.Core.Exceptions
+  fullName: MovieAppApi.Src.Core.Exceptions
+  type: Namespace
+  assemblies:
+  - MovieAppApi
+references:
+- uid: MovieAppApi.Src.Core.Exceptions.MovieNotFoundException
+  commentId: T:MovieAppApi.Src.Core.Exceptions.MovieNotFoundException
+  href: MovieAppApi.Src.Core.Exceptions.MovieNotFoundException.html
+  name: MovieNotFoundException
+  nameWithType: MovieNotFoundException
+  fullName: MovieAppApi.Src.Core.Exceptions.MovieNotFoundException
+- uid: MovieAppApi.Src.Core.Exceptions.PlaylistNotFoundException
+  commentId: T:MovieAppApi.Src.Core.Exceptions.PlaylistNotFoundException
+  href: MovieAppApi.Src.Core.Exceptions.PlaylistNotFoundException.html
+  name: PlaylistNotFoundException
+  nameWithType: PlaylistNotFoundException
+  fullName: MovieAppApi.Src.Core.Exceptions.PlaylistNotFoundException
+- uid: MovieAppApi.Src.Core.Exceptions.TmdbApiException
+  commentId: T:MovieAppApi.Src.Core.Exceptions.TmdbApiException
+  href: MovieAppApi.Src.Core.Exceptions.TmdbApiException.html
+  name: TmdbApiException
+  nameWithType: TmdbApiException
+  fullName: MovieAppApi.Src.Core.Exceptions.TmdbApiException

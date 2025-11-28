@@ -1,0 +1,674 @@
+### YamlMime:ManagedReference
+items:
+- uid: MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity
+  commentId: T:MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity
+  id: PlaylistMovieEntity
+  parent: MovieAppApi.Src.Core.Database.Entities
+  children:
+  - MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.AddedAt
+  - MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.Id
+  - MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.Playlist
+  - MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.PlaylistId
+  - MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.Title
+  - MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.TmdbId
+  langs:
+  - csharp
+  - vb
+  name: PlaylistMovieEntity
+  nameWithType: PlaylistMovieEntity
+  fullName: MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity
+  type: Class
+  source:
+    remote:
+      path: MovieAppApi/Src/Core/Database/Entities/PlaylistMovieEntity.cs
+      branch: main
+      repo: git@github.com:benoit-bremaud/MovieAppApi.git
+    id: PlaylistMovieEntity
+    path: ../Src/Core/Database/Entities/PlaylistMovieEntity.cs
+    startLine: 8
+  assemblies:
+  - MovieAppApi
+  namespace: MovieAppApi.Src.Core.Database.Entities
+  summary: Database entity representing a movie within a playlist
+  example: []
+  syntax:
+    content: >-
+      [Table("PlaylistMovies")]
+
+      public class PlaylistMovieEntity
+    content.vb: >-
+      <Table("PlaylistMovies")>
+
+      Public Class PlaylistMovieEntity
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.Schema.TableAttribute
+    ctor: System.ComponentModel.DataAnnotations.Schema.TableAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: PlaylistMovies
+- uid: MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.Id
+  commentId: P:MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.Id
+  id: Id
+  parent: MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: PlaylistMovieEntity.Id
+  fullName: MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.Id
+  type: Property
+  source:
+    remote:
+      path: MovieAppApi/Src/Core/Database/Entities/PlaylistMovieEntity.cs
+      branch: main
+      repo: git@github.com:benoit-bremaud/MovieAppApi.git
+    id: Id
+    path: ../Src/Core/Database/Entities/PlaylistMovieEntity.cs
+    startLine: 14
+  assemblies:
+  - MovieAppApi
+  namespace: MovieAppApi.Src.Core.Database.Entities
+  summary: Primary Key
+  example: []
+  syntax:
+    content: >-
+      [Key]
+
+      [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+
+      public int Id { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <Key>
+
+      <DatabaseGenerated(DatabaseGeneratedOption.Identity)>
+
+      Public Property Id As Integer
+  overload: MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.Id*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.KeyAttribute
+    ctor: System.ComponentModel.DataAnnotations.KeyAttribute.#ctor
+    arguments: []
+  - type: System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedAttribute
+    ctor: System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedAttribute.#ctor(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption)
+    arguments:
+    - type: System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption
+      value: 1
+- uid: MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.TmdbId
+  commentId: P:MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.TmdbId
+  id: TmdbId
+  parent: MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity
+  langs:
+  - csharp
+  - vb
+  name: TmdbId
+  nameWithType: PlaylistMovieEntity.TmdbId
+  fullName: MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.TmdbId
+  type: Property
+  source:
+    remote:
+      path: MovieAppApi/Src/Core/Database/Entities/PlaylistMovieEntity.cs
+      branch: main
+      repo: git@github.com:benoit-bremaud/MovieAppApi.git
+    id: TmdbId
+    path: ../Src/Core/Database/Entities/PlaylistMovieEntity.cs
+    startLine: 21
+  assemblies:
+  - MovieAppApi
+  namespace: MovieAppApi.Src.Core.Database.Entities
+  summary: TMDB Movie ID
+  example: []
+  syntax:
+    content: >-
+      [Required]
+
+      public int TmdbId { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <Required>
+
+      Public Property TmdbId As Integer
+  overload: MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.TmdbId*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+- uid: MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.Title
+  commentId: P:MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.Title
+  id: Title
+  parent: MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity
+  langs:
+  - csharp
+  - vb
+  name: Title
+  nameWithType: PlaylistMovieEntity.Title
+  fullName: MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.Title
+  type: Property
+  source:
+    remote:
+      path: MovieAppApi/Src/Core/Database/Entities/PlaylistMovieEntity.cs
+      branch: main
+      repo: git@github.com:benoit-bremaud/MovieAppApi.git
+    id: Title
+    path: ../Src/Core/Database/Entities/PlaylistMovieEntity.cs
+    startLine: 27
+  assemblies:
+  - MovieAppApi
+  namespace: MovieAppApi.Src.Core.Database.Entities
+  summary: Movie Title (cached for display)
+  example: []
+  syntax:
+    content: >-
+      [Required]
+
+      [MaxLength(200)]
+
+      public required string Title { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Required>
+
+      <MaxLength(200)>
+
+      Public Property Title As String
+  overload: MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.Title*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+  - type: System.ComponentModel.DataAnnotations.MaxLengthAttribute
+    ctor: System.ComponentModel.DataAnnotations.MaxLengthAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 200
+- uid: MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.AddedAt
+  commentId: P:MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.AddedAt
+  id: AddedAt
+  parent: MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity
+  langs:
+  - csharp
+  - vb
+  name: AddedAt
+  nameWithType: PlaylistMovieEntity.AddedAt
+  fullName: MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.AddedAt
+  type: Property
+  source:
+    remote:
+      path: MovieAppApi/Src/Core/Database/Entities/PlaylistMovieEntity.cs
+      branch: main
+      repo: git@github.com:benoit-bremaud/MovieAppApi.git
+    id: AddedAt
+    path: ../Src/Core/Database/Entities/PlaylistMovieEntity.cs
+    startLine: 34
+  assemblies:
+  - MovieAppApi
+  namespace: MovieAppApi.Src.Core.Database.Entities
+  summary: Date added to playlist
+  example: []
+  syntax:
+    content: public DateTime AddedAt { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property AddedAt As Date
+  overload: MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.AddedAt*
+- uid: MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.PlaylistId
+  commentId: P:MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.PlaylistId
+  id: PlaylistId
+  parent: MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity
+  langs:
+  - csharp
+  - vb
+  name: PlaylistId
+  nameWithType: PlaylistMovieEntity.PlaylistId
+  fullName: MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.PlaylistId
+  type: Property
+  source:
+    remote:
+      path: MovieAppApi/Src/Core/Database/Entities/PlaylistMovieEntity.cs
+      branch: main
+      repo: git@github.com:benoit-bremaud/MovieAppApi.git
+    id: PlaylistId
+    path: ../Src/Core/Database/Entities/PlaylistMovieEntity.cs
+    startLine: 39
+  assemblies:
+  - MovieAppApi
+  namespace: MovieAppApi.Src.Core.Database.Entities
+  summary: Foreign Key to Playlist
+  example: []
+  syntax:
+    content: >-
+      [Required]
+
+      public int PlaylistId { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <Required>
+
+      Public Property PlaylistId As Integer
+  overload: MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.PlaylistId*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+- uid: MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.Playlist
+  commentId: P:MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.Playlist
+  id: Playlist
+  parent: MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity
+  langs:
+  - csharp
+  - vb
+  name: Playlist
+  nameWithType: PlaylistMovieEntity.Playlist
+  fullName: MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.Playlist
+  type: Property
+  source:
+    remote:
+      path: MovieAppApi/Src/Core/Database/Entities/PlaylistMovieEntity.cs
+      branch: main
+      repo: git@github.com:benoit-bremaud/MovieAppApi.git
+    id: Playlist
+    path: ../Src/Core/Database/Entities/PlaylistMovieEntity.cs
+    startLine: 45
+  assemblies:
+  - MovieAppApi
+  namespace: MovieAppApi.Src.Core.Database.Entities
+  summary: Navigation property back to Playlist
+  example: []
+  syntax:
+    content: >-
+      [ForeignKey("PlaylistId")]
+
+      public PlaylistEntity? Playlist { get; set; }
+    parameters: []
+    return:
+      type: MovieAppApi.Src.Core.Database.Entities.PlaylistEntity
+    content.vb: >-
+      <ForeignKey("PlaylistId")>
+
+      Public Property Playlist As PlaylistEntity
+  overload: MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.Playlist*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute
+    ctor: System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: PlaylistId
+references:
+- uid: MovieAppApi.Src.Core.Database.Entities
+  commentId: N:MovieAppApi.Src.Core.Database.Entities
+  href: MovieAppApi.html
+  name: MovieAppApi.Src.Core.Database.Entities
+  nameWithType: MovieAppApi.Src.Core.Database.Entities
+  fullName: MovieAppApi.Src.Core.Database.Entities
+  spec.csharp:
+  - uid: MovieAppApi
+    name: MovieAppApi
+    href: MovieAppApi.html
+  - name: .
+  - uid: MovieAppApi.Src
+    name: Src
+    href: MovieAppApi.Src.html
+  - name: .
+  - uid: MovieAppApi.Src.Core
+    name: Core
+    href: MovieAppApi.Src.Core.html
+  - name: .
+  - uid: MovieAppApi.Src.Core.Database
+    name: Database
+    href: MovieAppApi.Src.Core.Database.html
+  - name: .
+  - uid: MovieAppApi.Src.Core.Database.Entities
+    name: Entities
+    href: MovieAppApi.Src.Core.Database.Entities.html
+  spec.vb:
+  - uid: MovieAppApi
+    name: MovieAppApi
+    href: MovieAppApi.html
+  - name: .
+  - uid: MovieAppApi.Src
+    name: Src
+    href: MovieAppApi.Src.html
+  - name: .
+  - uid: MovieAppApi.Src.Core
+    name: Core
+    href: MovieAppApi.Src.Core.html
+  - name: .
+  - uid: MovieAppApi.Src.Core.Database
+    name: Database
+    href: MovieAppApi.Src.Core.Database.html
+  - name: .
+  - uid: MovieAppApi.Src.Core.Database.Entities
+    name: Entities
+    href: MovieAppApi.Src.Core.Database.Entities.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.Id*
+  commentId: Overload:MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.Id
+  href: MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.html#MovieAppApi_Src_Core_Database_Entities_PlaylistMovieEntity_Id
+  name: Id
+  nameWithType: PlaylistMovieEntity.Id
+  fullName: MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.Id
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.TmdbId*
+  commentId: Overload:MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.TmdbId
+  href: MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.html#MovieAppApi_Src_Core_Database_Entities_PlaylistMovieEntity_TmdbId
+  name: TmdbId
+  nameWithType: PlaylistMovieEntity.TmdbId
+  fullName: MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.TmdbId
+- uid: MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.Title*
+  commentId: Overload:MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.Title
+  href: MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.html#MovieAppApi_Src_Core_Database_Entities_PlaylistMovieEntity_Title
+  name: Title
+  nameWithType: PlaylistMovieEntity.Title
+  fullName: MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.Title
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.AddedAt*
+  commentId: Overload:MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.AddedAt
+  href: MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.html#MovieAppApi_Src_Core_Database_Entities_PlaylistMovieEntity_AddedAt
+  name: AddedAt
+  nameWithType: PlaylistMovieEntity.AddedAt
+  fullName: MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.AddedAt
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.PlaylistId*
+  commentId: Overload:MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.PlaylistId
+  href: MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.html#MovieAppApi_Src_Core_Database_Entities_PlaylistMovieEntity_PlaylistId
+  name: PlaylistId
+  nameWithType: PlaylistMovieEntity.PlaylistId
+  fullName: MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.PlaylistId
+- uid: MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.Playlist*
+  commentId: Overload:MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.Playlist
+  href: MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.html#MovieAppApi_Src_Core_Database_Entities_PlaylistMovieEntity_Playlist
+  name: Playlist
+  nameWithType: PlaylistMovieEntity.Playlist
+  fullName: MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.Playlist
+- uid: MovieAppApi.Src.Core.Database.Entities.PlaylistEntity
+  commentId: T:MovieAppApi.Src.Core.Database.Entities.PlaylistEntity
+  parent: MovieAppApi.Src.Core.Database.Entities
+  href: MovieAppApi.Src.Core.Database.Entities.PlaylistEntity.html
+  name: PlaylistEntity
+  nameWithType: PlaylistEntity
+  fullName: MovieAppApi.Src.Core.Database.Entities.PlaylistEntity

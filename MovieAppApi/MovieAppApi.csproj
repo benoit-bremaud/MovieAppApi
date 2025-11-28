@@ -1,16 +1,40 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
+    <!-- Target Framework: .NET 9.0 -->
     <TargetFramework>net9.0</TargetFramework>
+    
+    <!-- Enable nullable reference types for stricter null checking -->
     <Nullable>enable</Nullable>
+    
+    <!-- Enable implicit using statements (reduces boilerplate) -->
     <ImplicitUsings>enable</ImplicitUsings>
+
+    <!-- Generate XML documentation file for DocFX and Swagger -->
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    
+    <!-- Display CS1591 warnings for undocumented public members (educational purposes) -->
+    <!-- Uncomment the line below to treat missing XML comments as build errors (enforces 100% documentation) -->
+    <!-- <WarningsAsErrors>CS1591</WarningsAsErrors> -->
+    
+    <!-- Suppress other common warnings that are not relevant to this project -->
+    <!-- <NoWarn>$(NoWarn);1701;1702</NoWarn> -->
   </PropertyGroup>
 
   <ItemGroup>
+    <!-- Environment variables loader (.env file support) -->
     <PackageReference Include="DotNetEnv" Version="3.1.1" />
+    
+    <!-- Swagger/OpenAPI API documentation and UI -->
     <PackageReference Include="Swashbuckle.AspNetCore" Version="10.0.1" />
+    
+    <!-- Entity Framework Core ORM -->
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0" />
+    
+    <!-- SQLite database provider for EF Core -->
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.0" />
+    
+    <!-- EF Core design-time tools (migrations, scaffolding) -->
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.0" />
   </ItemGroup>
 

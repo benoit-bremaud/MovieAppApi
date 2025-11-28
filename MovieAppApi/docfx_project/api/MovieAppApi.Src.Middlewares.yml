@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: MovieAppApi.Src.Middlewares
+  commentId: N:MovieAppApi.Src.Middlewares
+  id: MovieAppApi.Src.Middlewares
+  children:
+  - MovieAppApi.Src.Middlewares.ExceptionHandlingMiddleware
+  langs:
+  - csharp
+  - vb
+  name: MovieAppApi.Src.Middlewares
+  nameWithType: MovieAppApi.Src.Middlewares
+  fullName: MovieAppApi.Src.Middlewares
+  type: Namespace
+  assemblies:
+  - MovieAppApi
+references:
+- uid: MovieAppApi.Src.Middlewares.ExceptionHandlingMiddleware
+  commentId: T:MovieAppApi.Src.Middlewares.ExceptionHandlingMiddleware
+  href: MovieAppApi.Src.Middlewares.ExceptionHandlingMiddleware.html
+  name: ExceptionHandlingMiddleware
+  nameWithType: ExceptionHandlingMiddleware
+  fullName: MovieAppApi.Src.Middlewares.ExceptionHandlingMiddleware

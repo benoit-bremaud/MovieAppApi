@@ -1,0 +1,70 @@
+### YamlMime:ManagedReference
+items:
+- uid: MovieAppApi.Src.Core.Services.FetchMovies
+  commentId: N:MovieAppApi.Src.Core.Services.FetchMovies
+  id: MovieAppApi.Src.Core.Services.FetchMovies
+  children:
+  - MovieAppApi.Src.Core.Services.FetchMovies.IFetchMoviesService
+  langs:
+  - csharp
+  - vb
+  name: MovieAppApi.Src.Core.Services.FetchMovies
+  nameWithType: MovieAppApi.Src.Core.Services.FetchMovies
+  fullName: MovieAppApi.Src.Core.Services.FetchMovies
+  type: Namespace
+  assemblies:
+  - MovieAppApi
+references:
+- uid: MovieAppApi.Src.Core.Services.FetchMovies.IFetchMoviesService
+  commentId: T:MovieAppApi.Src.Core.Services.FetchMovies.IFetchMoviesService
+  parent: MovieAppApi.Src.Core.Services.FetchMovies
+  href: MovieAppApi.Src.Core.Services.FetchMovies.IFetchMoviesService.html
+  name: IFetchMoviesService
+  nameWithType: IFetchMoviesService
+  fullName: MovieAppApi.Src.Core.Services.FetchMovies.IFetchMoviesService
+- uid: MovieAppApi.Src.Core.Services.FetchMovies
+  commentId: N:MovieAppApi.Src.Core.Services.FetchMovies
+  href: MovieAppApi.html
+  name: MovieAppApi.Src.Core.Services.FetchMovies
+  nameWithType: MovieAppApi.Src.Core.Services.FetchMovies
+  fullName: MovieAppApi.Src.Core.Services.FetchMovies
+  spec.csharp:
+  - uid: MovieAppApi
+    name: MovieAppApi
+    href: MovieAppApi.html
+  - name: .
+  - uid: MovieAppApi.Src
+    name: Src
+    href: MovieAppApi.Src.html
+  - name: .
+  - uid: MovieAppApi.Src.Core
+    name: Core
+    href: MovieAppApi.Src.Core.html
+  - name: .
+  - uid: MovieAppApi.Src.Core.Services
+    name: Services
+    href: MovieAppApi.Src.Core.Services.html
+  - name: .
+  - uid: MovieAppApi.Src.Core.Services.FetchMovies
+    name: FetchMovies
+    href: MovieAppApi.Src.Core.Services.FetchMovies.html
+  spec.vb:
+  - uid: MovieAppApi
+    name: MovieAppApi
+    href: MovieAppApi.html
+  - name: .
+  - uid: MovieAppApi.Src
+    name: Src
+    href: MovieAppApi.Src.html
+  - name: .
+  - uid: MovieAppApi.Src.Core
+    name: Core
+    href: MovieAppApi.Src.Core.html
+  - name: .
+  - uid: MovieAppApi.Src.Core.Services
+    name: Services
+    href: MovieAppApi.Src.Core.Services.html
+  - name: .
+  - uid: MovieAppApi.Src.Core.Services.FetchMovies
+    name: FetchMovies
+    href: MovieAppApi.Src.Core.Services.FetchMovies.html

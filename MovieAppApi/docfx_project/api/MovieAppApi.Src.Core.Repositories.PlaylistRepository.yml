@@ -1,0 +1,1327 @@
+### YamlMime:ManagedReference
+items:
+- uid: MovieAppApi.Src.Core.Repositories.PlaylistRepository
+  commentId: T:MovieAppApi.Src.Core.Repositories.PlaylistRepository
+  id: PlaylistRepository
+  parent: MovieAppApi.Src.Core.Repositories
+  children:
+  - MovieAppApi.Src.Core.Repositories.PlaylistRepository.#ctor(MovieAppApi.Src.Core.Database.AppDbContext,Microsoft.Extensions.Logging.ILogger{MovieAppApi.Src.Core.Repositories.PlaylistRepository})
+  - MovieAppApi.Src.Core.Repositories.PlaylistRepository.AddMovieAsync(System.Int32,MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity)
+  - MovieAppApi.Src.Core.Repositories.PlaylistRepository.CreateAsync(MovieAppApi.Src.Core.Database.Entities.PlaylistEntity)
+  - MovieAppApi.Src.Core.Repositories.PlaylistRepository.DeleteAsync(System.Int32)
+  - MovieAppApi.Src.Core.Repositories.PlaylistRepository.GetAllAsync
+  - MovieAppApi.Src.Core.Repositories.PlaylistRepository.GetByIdAsync(System.Int32)
+  - MovieAppApi.Src.Core.Repositories.PlaylistRepository.RemoveMovieAsync(System.Int32,System.Int32)
+  - MovieAppApi.Src.Core.Repositories.PlaylistRepository.UpdateAsync(System.Int32,System.String)
+  langs:
+  - csharp
+  - vb
+  name: PlaylistRepository
+  nameWithType: PlaylistRepository
+  fullName: MovieAppApi.Src.Core.Repositories.PlaylistRepository
+  type: Class
+  source:
+    remote:
+      path: MovieAppApi/Src/Core/Repositories/PlaylistRepository.cs
+      branch: main
+      repo: git@github.com:benoit-bremaud/MovieAppApi.git
+    id: PlaylistRepository
+    path: ../Src/Core/Repositories/PlaylistRepository.cs
+    startLine: 9
+  assemblies:
+  - MovieAppApi
+  namespace: MovieAppApi.Src.Core.Repositories
+  summary: Implementation of IPlaylistRepository using EF Core
+  example: []
+  syntax:
+    content: 'public class PlaylistRepository : IPlaylistRepository'
+    content.vb: Public Class PlaylistRepository Implements IPlaylistRepository
+  inheritance:
+  - System.Object
+  implements:
+  - MovieAppApi.Src.Core.Repositories.IPlaylistRepository
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: MovieAppApi.Src.Core.Repositories.PlaylistRepository.#ctor(MovieAppApi.Src.Core.Database.AppDbContext,Microsoft.Extensions.Logging.ILogger{MovieAppApi.Src.Core.Repositories.PlaylistRepository})
+  commentId: M:MovieAppApi.Src.Core.Repositories.PlaylistRepository.#ctor(MovieAppApi.Src.Core.Database.AppDbContext,Microsoft.Extensions.Logging.ILogger{MovieAppApi.Src.Core.Repositories.PlaylistRepository})
+  id: '#ctor(MovieAppApi.Src.Core.Database.AppDbContext,Microsoft.Extensions.Logging.ILogger{MovieAppApi.Src.Core.Repositories.PlaylistRepository})'
+  parent: MovieAppApi.Src.Core.Repositories.PlaylistRepository
+  langs:
+  - csharp
+  - vb
+  name: PlaylistRepository(AppDbContext, ILogger<PlaylistRepository>)
+  nameWithType: PlaylistRepository.PlaylistRepository(AppDbContext, ILogger<PlaylistRepository>)
+  fullName: MovieAppApi.Src.Core.Repositories.PlaylistRepository.PlaylistRepository(MovieAppApi.Src.Core.Database.AppDbContext, Microsoft.Extensions.Logging.ILogger<MovieAppApi.Src.Core.Repositories.PlaylistRepository>)
+  type: Constructor
+  source:
+    remote:
+      path: MovieAppApi/Src/Core/Repositories/PlaylistRepository.cs
+      branch: main
+      repo: git@github.com:benoit-bremaud/MovieAppApi.git
+    id: .ctor
+    path: ../Src/Core/Repositories/PlaylistRepository.cs
+    startLine: 14
+  assemblies:
+  - MovieAppApi
+  namespace: MovieAppApi.Src.Core.Repositories
+  syntax:
+    content: public PlaylistRepository(AppDbContext context, ILogger<PlaylistRepository> logger)
+    parameters:
+    - id: context
+      type: MovieAppApi.Src.Core.Database.AppDbContext
+    - id: logger
+      type: Microsoft.Extensions.Logging.ILogger{MovieAppApi.Src.Core.Repositories.PlaylistRepository}
+    content.vb: Public Sub New(context As AppDbContext, logger As ILogger(Of PlaylistRepository))
+  overload: MovieAppApi.Src.Core.Repositories.PlaylistRepository.#ctor*
+  nameWithType.vb: PlaylistRepository.New(AppDbContext, ILogger(Of PlaylistRepository))
+  fullName.vb: MovieAppApi.Src.Core.Repositories.PlaylistRepository.New(MovieAppApi.Src.Core.Database.AppDbContext, Microsoft.Extensions.Logging.ILogger(Of MovieAppApi.Src.Core.Repositories.PlaylistRepository))
+  name.vb: New(AppDbContext, ILogger(Of PlaylistRepository))
+- uid: MovieAppApi.Src.Core.Repositories.PlaylistRepository.GetAllAsync
+  commentId: M:MovieAppApi.Src.Core.Repositories.PlaylistRepository.GetAllAsync
+  id: GetAllAsync
+  parent: MovieAppApi.Src.Core.Repositories.PlaylistRepository
+  langs:
+  - csharp
+  - vb
+  name: GetAllAsync()
+  nameWithType: PlaylistRepository.GetAllAsync()
+  fullName: MovieAppApi.Src.Core.Repositories.PlaylistRepository.GetAllAsync()
+  type: Method
+  source:
+    remote:
+      path: MovieAppApi/Src/Core/Repositories/PlaylistRepository.cs
+      branch: main
+      repo: git@github.com:benoit-bremaud/MovieAppApi.git
+    id: GetAllAsync
+    path: ../Src/Core/Repositories/PlaylistRepository.cs
+    startLine: 20
+  assemblies:
+  - MovieAppApi
+  namespace: MovieAppApi.Src.Core.Repositories
+  summary: Gets all playlists with their movies
+  example: []
+  syntax:
+    content: public Task<List<PlaylistEntity>> GetAllAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{MovieAppApi.Src.Core.Database.Entities.PlaylistEntity}}
+    content.vb: Public Function GetAllAsync() As Task(Of List(Of PlaylistEntity))
+  overload: MovieAppApi.Src.Core.Repositories.PlaylistRepository.GetAllAsync*
+  implements:
+  - MovieAppApi.Src.Core.Repositories.IPlaylistRepository.GetAllAsync
+- uid: MovieAppApi.Src.Core.Repositories.PlaylistRepository.GetByIdAsync(System.Int32)
+  commentId: M:MovieAppApi.Src.Core.Repositories.PlaylistRepository.GetByIdAsync(System.Int32)
+  id: GetByIdAsync(System.Int32)
+  parent: MovieAppApi.Src.Core.Repositories.PlaylistRepository
+  langs:
+  - csharp
+  - vb
+  name: GetByIdAsync(int)
+  nameWithType: PlaylistRepository.GetByIdAsync(int)
+  fullName: MovieAppApi.Src.Core.Repositories.PlaylistRepository.GetByIdAsync(int)
+  type: Method
+  source:
+    remote:
+      path: MovieAppApi/Src/Core/Repositories/PlaylistRepository.cs
+      branch: main
+      repo: git@github.com:benoit-bremaud/MovieAppApi.git
+    id: GetByIdAsync
+    path: ../Src/Core/Repositories/PlaylistRepository.cs
+    startLine: 28
+  assemblies:
+  - MovieAppApi
+  namespace: MovieAppApi.Src.Core.Repositories
+  summary: Gets a specific playlist by ID including its movies
+  example: []
+  syntax:
+    content: public Task<PlaylistEntity?> GetByIdAsync(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Threading.Tasks.Task{MovieAppApi.Src.Core.Database.Entities.PlaylistEntity}
+    content.vb: Public Function GetByIdAsync(id As Integer) As Task(Of PlaylistEntity)
+  overload: MovieAppApi.Src.Core.Repositories.PlaylistRepository.GetByIdAsync*
+  implements:
+  - MovieAppApi.Src.Core.Repositories.IPlaylistRepository.GetByIdAsync(System.Int32)
+  nameWithType.vb: PlaylistRepository.GetByIdAsync(Integer)
+  fullName.vb: MovieAppApi.Src.Core.Repositories.PlaylistRepository.GetByIdAsync(Integer)
+  name.vb: GetByIdAsync(Integer)
+- uid: MovieAppApi.Src.Core.Repositories.PlaylistRepository.CreateAsync(MovieAppApi.Src.Core.Database.Entities.PlaylistEntity)
+  commentId: M:MovieAppApi.Src.Core.Repositories.PlaylistRepository.CreateAsync(MovieAppApi.Src.Core.Database.Entities.PlaylistEntity)
+  id: CreateAsync(MovieAppApi.Src.Core.Database.Entities.PlaylistEntity)
+  parent: MovieAppApi.Src.Core.Repositories.PlaylistRepository
+  langs:
+  - csharp
+  - vb
+  name: CreateAsync(PlaylistEntity)
+  nameWithType: PlaylistRepository.CreateAsync(PlaylistEntity)
+  fullName: MovieAppApi.Src.Core.Repositories.PlaylistRepository.CreateAsync(MovieAppApi.Src.Core.Database.Entities.PlaylistEntity)
+  type: Method
+  source:
+    remote:
+      path: MovieAppApi/Src/Core/Repositories/PlaylistRepository.cs
+      branch: main
+      repo: git@github.com:benoit-bremaud/MovieAppApi.git
+    id: CreateAsync
+    path: ../Src/Core/Repositories/PlaylistRepository.cs
+    startLine: 35
+  assemblies:
+  - MovieAppApi
+  namespace: MovieAppApi.Src.Core.Repositories
+  summary: Creates a new playlist
+  example: []
+  syntax:
+    content: public Task<PlaylistEntity> CreateAsync(PlaylistEntity playlist)
+    parameters:
+    - id: playlist
+      type: MovieAppApi.Src.Core.Database.Entities.PlaylistEntity
+    return:
+      type: System.Threading.Tasks.Task{MovieAppApi.Src.Core.Database.Entities.PlaylistEntity}
+    content.vb: Public Function CreateAsync(playlist As PlaylistEntity) As Task(Of PlaylistEntity)
+  overload: MovieAppApi.Src.Core.Repositories.PlaylistRepository.CreateAsync*
+  implements:
+  - MovieAppApi.Src.Core.Repositories.IPlaylistRepository.CreateAsync(MovieAppApi.Src.Core.Database.Entities.PlaylistEntity)
+- uid: MovieAppApi.Src.Core.Repositories.PlaylistRepository.AddMovieAsync(System.Int32,MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity)
+  commentId: M:MovieAppApi.Src.Core.Repositories.PlaylistRepository.AddMovieAsync(System.Int32,MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity)
+  id: AddMovieAsync(System.Int32,MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity)
+  parent: MovieAppApi.Src.Core.Repositories.PlaylistRepository
+  langs:
+  - csharp
+  - vb
+  name: AddMovieAsync(int, PlaylistMovieEntity)
+  nameWithType: PlaylistRepository.AddMovieAsync(int, PlaylistMovieEntity)
+  fullName: MovieAppApi.Src.Core.Repositories.PlaylistRepository.AddMovieAsync(int, MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity)
+  type: Method
+  source:
+    remote:
+      path: MovieAppApi/Src/Core/Repositories/PlaylistRepository.cs
+      branch: main
+      repo: git@github.com:benoit-bremaud/MovieAppApi.git
+    id: AddMovieAsync
+    path: ../Src/Core/Repositories/PlaylistRepository.cs
+    startLine: 45
+  assemblies:
+  - MovieAppApi
+  namespace: MovieAppApi.Src.Core.Repositories
+  summary: Adds a movie to an existing playlist
+  example: []
+  syntax:
+    content: public Task AddMovieAsync(int playlistId, PlaylistMovieEntity movie)
+    parameters:
+    - id: playlistId
+      type: System.Int32
+    - id: movie
+      type: MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function AddMovieAsync(playlistId As Integer, movie As PlaylistMovieEntity) As Task
+  overload: MovieAppApi.Src.Core.Repositories.PlaylistRepository.AddMovieAsync*
+  implements:
+  - MovieAppApi.Src.Core.Repositories.IPlaylistRepository.AddMovieAsync(System.Int32,MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity)
+  nameWithType.vb: PlaylistRepository.AddMovieAsync(Integer, PlaylistMovieEntity)
+  fullName.vb: MovieAppApi.Src.Core.Repositories.PlaylistRepository.AddMovieAsync(Integer, MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity)
+  name.vb: AddMovieAsync(Integer, PlaylistMovieEntity)
+- uid: MovieAppApi.Src.Core.Repositories.PlaylistRepository.DeleteAsync(System.Int32)
+  commentId: M:MovieAppApi.Src.Core.Repositories.PlaylistRepository.DeleteAsync(System.Int32)
+  id: DeleteAsync(System.Int32)
+  parent: MovieAppApi.Src.Core.Repositories.PlaylistRepository
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync(int)
+  nameWithType: PlaylistRepository.DeleteAsync(int)
+  fullName: MovieAppApi.Src.Core.Repositories.PlaylistRepository.DeleteAsync(int)
+  type: Method
+  source:
+    remote:
+      path: MovieAppApi/Src/Core/Repositories/PlaylistRepository.cs
+      branch: main
+      repo: git@github.com:benoit-bremaud/MovieAppApi.git
+    id: DeleteAsync
+    path: ../Src/Core/Repositories/PlaylistRepository.cs
+    startLine: 59
+  assemblies:
+  - MovieAppApi
+  namespace: MovieAppApi.Src.Core.Repositories
+  summary: Deletes a playlist by ID
+  example: []
+  syntax:
+    content: public Task<bool> DeleteAsync(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Public Function DeleteAsync(id As Integer) As Task(Of Boolean)
+  overload: MovieAppApi.Src.Core.Repositories.PlaylistRepository.DeleteAsync*
+  implements:
+  - MovieAppApi.Src.Core.Repositories.IPlaylistRepository.DeleteAsync(System.Int32)
+  nameWithType.vb: PlaylistRepository.DeleteAsync(Integer)
+  fullName.vb: MovieAppApi.Src.Core.Repositories.PlaylistRepository.DeleteAsync(Integer)
+  name.vb: DeleteAsync(Integer)
+- uid: MovieAppApi.Src.Core.Repositories.PlaylistRepository.RemoveMovieAsync(System.Int32,System.Int32)
+  commentId: M:MovieAppApi.Src.Core.Repositories.PlaylistRepository.RemoveMovieAsync(System.Int32,System.Int32)
+  id: RemoveMovieAsync(System.Int32,System.Int32)
+  parent: MovieAppApi.Src.Core.Repositories.PlaylistRepository
+  langs:
+  - csharp
+  - vb
+  name: RemoveMovieAsync(int, int)
+  nameWithType: PlaylistRepository.RemoveMovieAsync(int, int)
+  fullName: MovieAppApi.Src.Core.Repositories.PlaylistRepository.RemoveMovieAsync(int, int)
+  type: Method
+  source:
+    remote:
+      path: MovieAppApi/Src/Core/Repositories/PlaylistRepository.cs
+      branch: main
+      repo: git@github.com:benoit-bremaud/MovieAppApi.git
+    id: RemoveMovieAsync
+    path: ../Src/Core/Repositories/PlaylistRepository.cs
+    startLine: 69
+  assemblies:
+  - MovieAppApi
+  namespace: MovieAppApi.Src.Core.Repositories
+  summary: Removes a specific movie from a playlist
+  example: []
+  syntax:
+    content: public Task<bool> RemoveMovieAsync(int playlistId, int tmdbId)
+    parameters:
+    - id: playlistId
+      type: System.Int32
+    - id: tmdbId
+      type: System.Int32
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Public Function RemoveMovieAsync(playlistId As Integer, tmdbId As Integer) As Task(Of Boolean)
+  overload: MovieAppApi.Src.Core.Repositories.PlaylistRepository.RemoveMovieAsync*
+  implements:
+  - MovieAppApi.Src.Core.Repositories.IPlaylistRepository.RemoveMovieAsync(System.Int32,System.Int32)
+  nameWithType.vb: PlaylistRepository.RemoveMovieAsync(Integer, Integer)
+  fullName.vb: MovieAppApi.Src.Core.Repositories.PlaylistRepository.RemoveMovieAsync(Integer, Integer)
+  name.vb: RemoveMovieAsync(Integer, Integer)
+- uid: MovieAppApi.Src.Core.Repositories.PlaylistRepository.UpdateAsync(System.Int32,System.String)
+  commentId: M:MovieAppApi.Src.Core.Repositories.PlaylistRepository.UpdateAsync(System.Int32,System.String)
+  id: UpdateAsync(System.Int32,System.String)
+  parent: MovieAppApi.Src.Core.Repositories.PlaylistRepository
+  langs:
+  - csharp
+  - vb
+  name: UpdateAsync(int, string)
+  nameWithType: PlaylistRepository.UpdateAsync(int, string)
+  fullName: MovieAppApi.Src.Core.Repositories.PlaylistRepository.UpdateAsync(int, string)
+  type: Method
+  source:
+    remote:
+      path: MovieAppApi/Src/Core/Repositories/PlaylistRepository.cs
+      branch: main
+      repo: git@github.com:benoit-bremaud/MovieAppApi.git
+    id: UpdateAsync
+    path: ../Src/Core/Repositories/PlaylistRepository.cs
+    startLine: 89
+  assemblies:
+  - MovieAppApi
+  namespace: MovieAppApi.Src.Core.Repositories
+  summary: Updates a playlist name
+  example: []
+  syntax:
+    content: public Task<PlaylistEntity> UpdateAsync(int id, string newName)
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: newName
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{MovieAppApi.Src.Core.Database.Entities.PlaylistEntity}
+    content.vb: Public Function UpdateAsync(id As Integer, newName As String) As Task(Of PlaylistEntity)
+  overload: MovieAppApi.Src.Core.Repositories.PlaylistRepository.UpdateAsync*
+  implements:
+  - MovieAppApi.Src.Core.Repositories.IPlaylistRepository.UpdateAsync(System.Int32,System.String)
+  nameWithType.vb: PlaylistRepository.UpdateAsync(Integer, String)
+  fullName.vb: MovieAppApi.Src.Core.Repositories.PlaylistRepository.UpdateAsync(Integer, String)
+  name.vb: UpdateAsync(Integer, String)
+references:
+- uid: MovieAppApi.Src.Core.Repositories
+  commentId: N:MovieAppApi.Src.Core.Repositories
+  href: MovieAppApi.html
+  name: MovieAppApi.Src.Core.Repositories
+  nameWithType: MovieAppApi.Src.Core.Repositories
+  fullName: MovieAppApi.Src.Core.Repositories
+  spec.csharp:
+  - uid: MovieAppApi
+    name: MovieAppApi
+    href: MovieAppApi.html
+  - name: .
+  - uid: MovieAppApi.Src
+    name: Src
+    href: MovieAppApi.Src.html
+  - name: .
+  - uid: MovieAppApi.Src.Core
+    name: Core
+    href: MovieAppApi.Src.Core.html
+  - name: .
+  - uid: MovieAppApi.Src.Core.Repositories
+    name: Repositories
+    href: MovieAppApi.Src.Core.Repositories.html
+  spec.vb:
+  - uid: MovieAppApi
+    name: MovieAppApi
+    href: MovieAppApi.html
+  - name: .
+  - uid: MovieAppApi.Src
+    name: Src
+    href: MovieAppApi.Src.html
+  - name: .
+  - uid: MovieAppApi.Src.Core
+    name: Core
+    href: MovieAppApi.Src.Core.html
+  - name: .
+  - uid: MovieAppApi.Src.Core.Repositories
+    name: Repositories
+    href: MovieAppApi.Src.Core.Repositories.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MovieAppApi.Src.Core.Repositories.IPlaylistRepository
+  commentId: T:MovieAppApi.Src.Core.Repositories.IPlaylistRepository
+  parent: MovieAppApi.Src.Core.Repositories
+  href: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.html
+  name: IPlaylistRepository
+  nameWithType: IPlaylistRepository
+  fullName: MovieAppApi.Src.Core.Repositories.IPlaylistRepository
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MovieAppApi.Src.Core.Repositories.PlaylistRepository.#ctor*
+  commentId: Overload:MovieAppApi.Src.Core.Repositories.PlaylistRepository.#ctor
+  href: MovieAppApi.Src.Core.Repositories.PlaylistRepository.html#MovieAppApi_Src_Core_Repositories_PlaylistRepository__ctor_MovieAppApi_Src_Core_Database_AppDbContext_Microsoft_Extensions_Logging_ILogger_MovieAppApi_Src_Core_Repositories_PlaylistRepository__
+  name: PlaylistRepository
+  nameWithType: PlaylistRepository.PlaylistRepository
+  fullName: MovieAppApi.Src.Core.Repositories.PlaylistRepository.PlaylistRepository
+  nameWithType.vb: PlaylistRepository.New
+  fullName.vb: MovieAppApi.Src.Core.Repositories.PlaylistRepository.New
+  name.vb: New
+- uid: MovieAppApi.Src.Core.Database.AppDbContext
+  commentId: T:MovieAppApi.Src.Core.Database.AppDbContext
+  parent: MovieAppApi.Src.Core.Database
+  href: MovieAppApi.Src.Core.Database.AppDbContext.html
+  name: AppDbContext
+  nameWithType: AppDbContext
+  fullName: MovieAppApi.Src.Core.Database.AppDbContext
+- uid: Microsoft.Extensions.Logging.ILogger{MovieAppApi.Src.Core.Repositories.PlaylistRepository}
+  commentId: T:Microsoft.Extensions.Logging.ILogger{MovieAppApi.Src.Core.Repositories.PlaylistRepository}
+  parent: Microsoft.Extensions.Logging
+  definition: Microsoft.Extensions.Logging.ILogger`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<PlaylistRepository>
+  nameWithType: ILogger<PlaylistRepository>
+  fullName: Microsoft.Extensions.Logging.ILogger<MovieAppApi.Src.Core.Repositories.PlaylistRepository>
+  nameWithType.vb: ILogger(Of PlaylistRepository)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of MovieAppApi.Src.Core.Repositories.PlaylistRepository)
+  name.vb: ILogger(Of PlaylistRepository)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - uid: MovieAppApi.Src.Core.Repositories.PlaylistRepository
+    name: PlaylistRepository
+    href: MovieAppApi.Src.Core.Repositories.PlaylistRepository.html
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MovieAppApi.Src.Core.Repositories.PlaylistRepository
+    name: PlaylistRepository
+    href: MovieAppApi.Src.Core.Repositories.PlaylistRepository.html
+  - name: )
+- uid: MovieAppApi.Src.Core.Database
+  commentId: N:MovieAppApi.Src.Core.Database
+  href: MovieAppApi.html
+  name: MovieAppApi.Src.Core.Database
+  nameWithType: MovieAppApi.Src.Core.Database
+  fullName: MovieAppApi.Src.Core.Database
+  spec.csharp:
+  - uid: MovieAppApi
+    name: MovieAppApi
+    href: MovieAppApi.html
+  - name: .
+  - uid: MovieAppApi.Src
+    name: Src
+    href: MovieAppApi.Src.html
+  - name: .
+  - uid: MovieAppApi.Src.Core
+    name: Core
+    href: MovieAppApi.Src.Core.html
+  - name: .
+  - uid: MovieAppApi.Src.Core.Database
+    name: Database
+    href: MovieAppApi.Src.Core.Database.html
+  spec.vb:
+  - uid: MovieAppApi
+    name: MovieAppApi
+    href: MovieAppApi.html
+  - name: .
+  - uid: MovieAppApi.Src
+    name: Src
+    href: MovieAppApi.Src.html
+  - name: .
+  - uid: MovieAppApi.Src.Core
+    name: Core
+    href: MovieAppApi.Src.Core.html
+  - name: .
+  - uid: MovieAppApi.Src.Core.Database
+    name: Database
+    href: MovieAppApi.Src.Core.Database.html
+- uid: Microsoft.Extensions.Logging.ILogger`1
+  commentId: T:Microsoft.Extensions.Logging.ILogger`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<TCategoryName>
+  nameWithType: ILogger<TCategoryName>
+  fullName: Microsoft.Extensions.Logging.ILogger<TCategoryName>
+  nameWithType.vb: ILogger(Of TCategoryName)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of TCategoryName)
+  name.vb: ILogger(Of TCategoryName)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - name: TCategoryName
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCategoryName
+  - name: )
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+- uid: MovieAppApi.Src.Core.Repositories.PlaylistRepository.GetAllAsync*
+  commentId: Overload:MovieAppApi.Src.Core.Repositories.PlaylistRepository.GetAllAsync
+  href: MovieAppApi.Src.Core.Repositories.PlaylistRepository.html#MovieAppApi_Src_Core_Repositories_PlaylistRepository_GetAllAsync
+  name: GetAllAsync
+  nameWithType: PlaylistRepository.GetAllAsync
+  fullName: MovieAppApi.Src.Core.Repositories.PlaylistRepository.GetAllAsync
+- uid: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.GetAllAsync
+  commentId: M:MovieAppApi.Src.Core.Repositories.IPlaylistRepository.GetAllAsync
+  parent: MovieAppApi.Src.Core.Repositories.IPlaylistRepository
+  href: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.html#MovieAppApi_Src_Core_Repositories_IPlaylistRepository_GetAllAsync
+  name: GetAllAsync()
+  nameWithType: IPlaylistRepository.GetAllAsync()
+  fullName: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.GetAllAsync()
+  spec.csharp:
+  - uid: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.GetAllAsync
+    name: GetAllAsync
+    href: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.html#MovieAppApi_Src_Core_Repositories_IPlaylistRepository_GetAllAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.GetAllAsync
+    name: GetAllAsync
+    href: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.html#MovieAppApi_Src_Core_Repositories_IPlaylistRepository_GetAllAsync
+  - name: (
+  - name: )
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{MovieAppApi.Src.Core.Database.Entities.PlaylistEntity}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{MovieAppApi.Src.Core.Database.Entities.PlaylistEntity}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<List<PlaylistEntity>>
+  nameWithType: Task<List<PlaylistEntity>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<MovieAppApi.Src.Core.Database.Entities.PlaylistEntity>>
+  nameWithType.vb: Task(Of List(Of PlaylistEntity))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of MovieAppApi.Src.Core.Database.Entities.PlaylistEntity))
+  name.vb: Task(Of List(Of PlaylistEntity))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: MovieAppApi.Src.Core.Database.Entities.PlaylistEntity
+    name: PlaylistEntity
+    href: MovieAppApi.Src.Core.Database.Entities.PlaylistEntity.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MovieAppApi.Src.Core.Database.Entities.PlaylistEntity
+    name: PlaylistEntity
+    href: MovieAppApi.Src.Core.Database.Entities.PlaylistEntity.html
+  - name: )
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: MovieAppApi.Src.Core.Repositories.PlaylistRepository.GetByIdAsync*
+  commentId: Overload:MovieAppApi.Src.Core.Repositories.PlaylistRepository.GetByIdAsync
+  href: MovieAppApi.Src.Core.Repositories.PlaylistRepository.html#MovieAppApi_Src_Core_Repositories_PlaylistRepository_GetByIdAsync_System_Int32_
+  name: GetByIdAsync
+  nameWithType: PlaylistRepository.GetByIdAsync
+  fullName: MovieAppApi.Src.Core.Repositories.PlaylistRepository.GetByIdAsync
+- uid: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.GetByIdAsync(System.Int32)
+  commentId: M:MovieAppApi.Src.Core.Repositories.IPlaylistRepository.GetByIdAsync(System.Int32)
+  parent: MovieAppApi.Src.Core.Repositories.IPlaylistRepository
+  isExternal: true
+  href: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.html#MovieAppApi_Src_Core_Repositories_IPlaylistRepository_GetByIdAsync_System_Int32_
+  name: GetByIdAsync(int)
+  nameWithType: IPlaylistRepository.GetByIdAsync(int)
+  fullName: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.GetByIdAsync(int)
+  nameWithType.vb: IPlaylistRepository.GetByIdAsync(Integer)
+  fullName.vb: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.GetByIdAsync(Integer)
+  name.vb: GetByIdAsync(Integer)
+  spec.csharp:
+  - uid: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.GetByIdAsync(System.Int32)
+    name: GetByIdAsync
+    href: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.html#MovieAppApi_Src_Core_Repositories_IPlaylistRepository_GetByIdAsync_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.GetByIdAsync(System.Int32)
+    name: GetByIdAsync
+    href: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.html#MovieAppApi_Src_Core_Repositories_IPlaylistRepository_GetByIdAsync_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Threading.Tasks.Task{MovieAppApi.Src.Core.Database.Entities.PlaylistEntity}
+  commentId: T:System.Threading.Tasks.Task{MovieAppApi.Src.Core.Database.Entities.PlaylistEntity}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<PlaylistEntity>
+  nameWithType: Task<PlaylistEntity>
+  fullName: System.Threading.Tasks.Task<MovieAppApi.Src.Core.Database.Entities.PlaylistEntity>
+  nameWithType.vb: Task(Of PlaylistEntity)
+  fullName.vb: System.Threading.Tasks.Task(Of MovieAppApi.Src.Core.Database.Entities.PlaylistEntity)
+  name.vb: Task(Of PlaylistEntity)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: MovieAppApi.Src.Core.Database.Entities.PlaylistEntity
+    name: PlaylistEntity
+    href: MovieAppApi.Src.Core.Database.Entities.PlaylistEntity.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MovieAppApi.Src.Core.Database.Entities.PlaylistEntity
+    name: PlaylistEntity
+    href: MovieAppApi.Src.Core.Database.Entities.PlaylistEntity.html
+  - name: )
+- uid: MovieAppApi.Src.Core.Repositories.PlaylistRepository.CreateAsync*
+  commentId: Overload:MovieAppApi.Src.Core.Repositories.PlaylistRepository.CreateAsync
+  href: MovieAppApi.Src.Core.Repositories.PlaylistRepository.html#MovieAppApi_Src_Core_Repositories_PlaylistRepository_CreateAsync_MovieAppApi_Src_Core_Database_Entities_PlaylistEntity_
+  name: CreateAsync
+  nameWithType: PlaylistRepository.CreateAsync
+  fullName: MovieAppApi.Src.Core.Repositories.PlaylistRepository.CreateAsync
+- uid: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.CreateAsync(MovieAppApi.Src.Core.Database.Entities.PlaylistEntity)
+  commentId: M:MovieAppApi.Src.Core.Repositories.IPlaylistRepository.CreateAsync(MovieAppApi.Src.Core.Database.Entities.PlaylistEntity)
+  parent: MovieAppApi.Src.Core.Repositories.IPlaylistRepository
+  href: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.html#MovieAppApi_Src_Core_Repositories_IPlaylistRepository_CreateAsync_MovieAppApi_Src_Core_Database_Entities_PlaylistEntity_
+  name: CreateAsync(PlaylistEntity)
+  nameWithType: IPlaylistRepository.CreateAsync(PlaylistEntity)
+  fullName: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.CreateAsync(MovieAppApi.Src.Core.Database.Entities.PlaylistEntity)
+  spec.csharp:
+  - uid: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.CreateAsync(MovieAppApi.Src.Core.Database.Entities.PlaylistEntity)
+    name: CreateAsync
+    href: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.html#MovieAppApi_Src_Core_Repositories_IPlaylistRepository_CreateAsync_MovieAppApi_Src_Core_Database_Entities_PlaylistEntity_
+  - name: (
+  - uid: MovieAppApi.Src.Core.Database.Entities.PlaylistEntity
+    name: PlaylistEntity
+    href: MovieAppApi.Src.Core.Database.Entities.PlaylistEntity.html
+  - name: )
+  spec.vb:
+  - uid: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.CreateAsync(MovieAppApi.Src.Core.Database.Entities.PlaylistEntity)
+    name: CreateAsync
+    href: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.html#MovieAppApi_Src_Core_Repositories_IPlaylistRepository_CreateAsync_MovieAppApi_Src_Core_Database_Entities_PlaylistEntity_
+  - name: (
+  - uid: MovieAppApi.Src.Core.Database.Entities.PlaylistEntity
+    name: PlaylistEntity
+    href: MovieAppApi.Src.Core.Database.Entities.PlaylistEntity.html
+  - name: )
+- uid: MovieAppApi.Src.Core.Database.Entities.PlaylistEntity
+  commentId: T:MovieAppApi.Src.Core.Database.Entities.PlaylistEntity
+  parent: MovieAppApi.Src.Core.Database.Entities
+  href: MovieAppApi.Src.Core.Database.Entities.PlaylistEntity.html
+  name: PlaylistEntity
+  nameWithType: PlaylistEntity
+  fullName: MovieAppApi.Src.Core.Database.Entities.PlaylistEntity
+- uid: MovieAppApi.Src.Core.Database.Entities
+  commentId: N:MovieAppApi.Src.Core.Database.Entities
+  href: MovieAppApi.html
+  name: MovieAppApi.Src.Core.Database.Entities
+  nameWithType: MovieAppApi.Src.Core.Database.Entities
+  fullName: MovieAppApi.Src.Core.Database.Entities
+  spec.csharp:
+  - uid: MovieAppApi
+    name: MovieAppApi
+    href: MovieAppApi.html
+  - name: .
+  - uid: MovieAppApi.Src
+    name: Src
+    href: MovieAppApi.Src.html
+  - name: .
+  - uid: MovieAppApi.Src.Core
+    name: Core
+    href: MovieAppApi.Src.Core.html
+  - name: .
+  - uid: MovieAppApi.Src.Core.Database
+    name: Database
+    href: MovieAppApi.Src.Core.Database.html
+  - name: .
+  - uid: MovieAppApi.Src.Core.Database.Entities
+    name: Entities
+    href: MovieAppApi.Src.Core.Database.Entities.html
+  spec.vb:
+  - uid: MovieAppApi
+    name: MovieAppApi
+    href: MovieAppApi.html
+  - name: .
+  - uid: MovieAppApi.Src
+    name: Src
+    href: MovieAppApi.Src.html
+  - name: .
+  - uid: MovieAppApi.Src.Core
+    name: Core
+    href: MovieAppApi.Src.Core.html
+  - name: .
+  - uid: MovieAppApi.Src.Core.Database
+    name: Database
+    href: MovieAppApi.Src.Core.Database.html
+  - name: .
+  - uid: MovieAppApi.Src.Core.Database.Entities
+    name: Entities
+    href: MovieAppApi.Src.Core.Database.Entities.html
+- uid: MovieAppApi.Src.Core.Repositories.PlaylistRepository.AddMovieAsync*
+  commentId: Overload:MovieAppApi.Src.Core.Repositories.PlaylistRepository.AddMovieAsync
+  href: MovieAppApi.Src.Core.Repositories.PlaylistRepository.html#MovieAppApi_Src_Core_Repositories_PlaylistRepository_AddMovieAsync_System_Int32_MovieAppApi_Src_Core_Database_Entities_PlaylistMovieEntity_
+  name: AddMovieAsync
+  nameWithType: PlaylistRepository.AddMovieAsync
+  fullName: MovieAppApi.Src.Core.Repositories.PlaylistRepository.AddMovieAsync
+- uid: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.AddMovieAsync(System.Int32,MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity)
+  commentId: M:MovieAppApi.Src.Core.Repositories.IPlaylistRepository.AddMovieAsync(System.Int32,MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity)
+  parent: MovieAppApi.Src.Core.Repositories.IPlaylistRepository
+  isExternal: true
+  href: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.html#MovieAppApi_Src_Core_Repositories_IPlaylistRepository_AddMovieAsync_System_Int32_MovieAppApi_Src_Core_Database_Entities_PlaylistMovieEntity_
+  name: AddMovieAsync(int, PlaylistMovieEntity)
+  nameWithType: IPlaylistRepository.AddMovieAsync(int, PlaylistMovieEntity)
+  fullName: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.AddMovieAsync(int, MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity)
+  nameWithType.vb: IPlaylistRepository.AddMovieAsync(Integer, PlaylistMovieEntity)
+  fullName.vb: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.AddMovieAsync(Integer, MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity)
+  name.vb: AddMovieAsync(Integer, PlaylistMovieEntity)
+  spec.csharp:
+  - uid: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.AddMovieAsync(System.Int32,MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity)
+    name: AddMovieAsync
+    href: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.html#MovieAppApi_Src_Core_Repositories_IPlaylistRepository_AddMovieAsync_System_Int32_MovieAppApi_Src_Core_Database_Entities_PlaylistMovieEntity_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity
+    name: PlaylistMovieEntity
+    href: MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.html
+  - name: )
+  spec.vb:
+  - uid: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.AddMovieAsync(System.Int32,MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity)
+    name: AddMovieAsync
+    href: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.html#MovieAppApi_Src_Core_Repositories_IPlaylistRepository_AddMovieAsync_System_Int32_MovieAppApi_Src_Core_Database_Entities_PlaylistMovieEntity_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity
+    name: PlaylistMovieEntity
+    href: MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.html
+  - name: )
+- uid: MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity
+  commentId: T:MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity
+  parent: MovieAppApi.Src.Core.Database.Entities
+  href: MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.html
+  name: PlaylistMovieEntity
+  nameWithType: PlaylistMovieEntity
+  fullName: MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: MovieAppApi.Src.Core.Repositories.PlaylistRepository.DeleteAsync*
+  commentId: Overload:MovieAppApi.Src.Core.Repositories.PlaylistRepository.DeleteAsync
+  href: MovieAppApi.Src.Core.Repositories.PlaylistRepository.html#MovieAppApi_Src_Core_Repositories_PlaylistRepository_DeleteAsync_System_Int32_
+  name: DeleteAsync
+  nameWithType: PlaylistRepository.DeleteAsync
+  fullName: MovieAppApi.Src.Core.Repositories.PlaylistRepository.DeleteAsync
+- uid: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.DeleteAsync(System.Int32)
+  commentId: M:MovieAppApi.Src.Core.Repositories.IPlaylistRepository.DeleteAsync(System.Int32)
+  parent: MovieAppApi.Src.Core.Repositories.IPlaylistRepository
+  isExternal: true
+  href: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.html#MovieAppApi_Src_Core_Repositories_IPlaylistRepository_DeleteAsync_System_Int32_
+  name: DeleteAsync(int)
+  nameWithType: IPlaylistRepository.DeleteAsync(int)
+  fullName: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.DeleteAsync(int)
+  nameWithType.vb: IPlaylistRepository.DeleteAsync(Integer)
+  fullName.vb: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.DeleteAsync(Integer)
+  name.vb: DeleteAsync(Integer)
+  spec.csharp:
+  - uid: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.DeleteAsync(System.Int32)
+    name: DeleteAsync
+    href: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.html#MovieAppApi_Src_Core_Repositories_IPlaylistRepository_DeleteAsync_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.DeleteAsync(System.Int32)
+    name: DeleteAsync
+    href: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.html#MovieAppApi_Src_Core_Repositories_IPlaylistRepository_DeleteAsync_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<bool>
+  nameWithType: Task<bool>
+  fullName: System.Threading.Tasks.Task<bool>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: MovieAppApi.Src.Core.Repositories.PlaylistRepository.RemoveMovieAsync*
+  commentId: Overload:MovieAppApi.Src.Core.Repositories.PlaylistRepository.RemoveMovieAsync
+  href: MovieAppApi.Src.Core.Repositories.PlaylistRepository.html#MovieAppApi_Src_Core_Repositories_PlaylistRepository_RemoveMovieAsync_System_Int32_System_Int32_
+  name: RemoveMovieAsync
+  nameWithType: PlaylistRepository.RemoveMovieAsync
+  fullName: MovieAppApi.Src.Core.Repositories.PlaylistRepository.RemoveMovieAsync
+- uid: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.RemoveMovieAsync(System.Int32,System.Int32)
+  commentId: M:MovieAppApi.Src.Core.Repositories.IPlaylistRepository.RemoveMovieAsync(System.Int32,System.Int32)
+  parent: MovieAppApi.Src.Core.Repositories.IPlaylistRepository
+  isExternal: true
+  href: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.html#MovieAppApi_Src_Core_Repositories_IPlaylistRepository_RemoveMovieAsync_System_Int32_System_Int32_
+  name: RemoveMovieAsync(int, int)
+  nameWithType: IPlaylistRepository.RemoveMovieAsync(int, int)
+  fullName: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.RemoveMovieAsync(int, int)
+  nameWithType.vb: IPlaylistRepository.RemoveMovieAsync(Integer, Integer)
+  fullName.vb: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.RemoveMovieAsync(Integer, Integer)
+  name.vb: RemoveMovieAsync(Integer, Integer)
+  spec.csharp:
+  - uid: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.RemoveMovieAsync(System.Int32,System.Int32)
+    name: RemoveMovieAsync
+    href: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.html#MovieAppApi_Src_Core_Repositories_IPlaylistRepository_RemoveMovieAsync_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.RemoveMovieAsync(System.Int32,System.Int32)
+    name: RemoveMovieAsync
+    href: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.html#MovieAppApi_Src_Core_Repositories_IPlaylistRepository_RemoveMovieAsync_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: MovieAppApi.Src.Core.Repositories.PlaylistRepository.UpdateAsync*
+  commentId: Overload:MovieAppApi.Src.Core.Repositories.PlaylistRepository.UpdateAsync
+  href: MovieAppApi.Src.Core.Repositories.PlaylistRepository.html#MovieAppApi_Src_Core_Repositories_PlaylistRepository_UpdateAsync_System_Int32_System_String_
+  name: UpdateAsync
+  nameWithType: PlaylistRepository.UpdateAsync
+  fullName: MovieAppApi.Src.Core.Repositories.PlaylistRepository.UpdateAsync
+- uid: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.UpdateAsync(System.Int32,System.String)
+  commentId: M:MovieAppApi.Src.Core.Repositories.IPlaylistRepository.UpdateAsync(System.Int32,System.String)
+  parent: MovieAppApi.Src.Core.Repositories.IPlaylistRepository
+  isExternal: true
+  href: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.html#MovieAppApi_Src_Core_Repositories_IPlaylistRepository_UpdateAsync_System_Int32_System_String_
+  name: UpdateAsync(int, string)
+  nameWithType: IPlaylistRepository.UpdateAsync(int, string)
+  fullName: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.UpdateAsync(int, string)
+  nameWithType.vb: IPlaylistRepository.UpdateAsync(Integer, String)
+  fullName.vb: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.UpdateAsync(Integer, String)
+  name.vb: UpdateAsync(Integer, String)
+  spec.csharp:
+  - uid: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.UpdateAsync(System.Int32,System.String)
+    name: UpdateAsync
+    href: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.html#MovieAppApi_Src_Core_Repositories_IPlaylistRepository_UpdateAsync_System_Int32_System_String_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.UpdateAsync(System.Int32,System.String)
+    name: UpdateAsync
+    href: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.html#MovieAppApi_Src_Core_Repositories_IPlaylistRepository_UpdateAsync_System_Int32_System_String_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

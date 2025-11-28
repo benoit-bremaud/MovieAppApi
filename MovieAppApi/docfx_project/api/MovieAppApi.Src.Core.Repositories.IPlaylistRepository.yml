@@ -1,0 +1,644 @@
+### YamlMime:ManagedReference
+items:
+- uid: MovieAppApi.Src.Core.Repositories.IPlaylistRepository
+  commentId: T:MovieAppApi.Src.Core.Repositories.IPlaylistRepository
+  id: IPlaylistRepository
+  parent: MovieAppApi.Src.Core.Repositories
+  children:
+  - MovieAppApi.Src.Core.Repositories.IPlaylistRepository.AddMovieAsync(System.Int32,MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity)
+  - MovieAppApi.Src.Core.Repositories.IPlaylistRepository.CreateAsync(MovieAppApi.Src.Core.Database.Entities.PlaylistEntity)
+  - MovieAppApi.Src.Core.Repositories.IPlaylistRepository.DeleteAsync(System.Int32)
+  - MovieAppApi.Src.Core.Repositories.IPlaylistRepository.GetAllAsync
+  - MovieAppApi.Src.Core.Repositories.IPlaylistRepository.GetByIdAsync(System.Int32)
+  - MovieAppApi.Src.Core.Repositories.IPlaylistRepository.RemoveMovieAsync(System.Int32,System.Int32)
+  - MovieAppApi.Src.Core.Repositories.IPlaylistRepository.UpdateAsync(System.Int32,System.String)
+  langs:
+  - csharp
+  - vb
+  name: IPlaylistRepository
+  nameWithType: IPlaylistRepository
+  fullName: MovieAppApi.Src.Core.Repositories.IPlaylistRepository
+  type: Interface
+  source:
+    remote:
+      path: MovieAppApi/Src/Core/Repositories/IPlaylistRepository.cs
+      branch: main
+      repo: git@github.com:benoit-bremaud/MovieAppApi.git
+    id: IPlaylistRepository
+    path: ../Src/Core/Repositories/IPlaylistRepository.cs
+    startLine: 7
+  assemblies:
+  - MovieAppApi
+  namespace: MovieAppApi.Src.Core.Repositories
+  summary: Repository interface for managing Playlist entities
+  example: []
+  syntax:
+    content: public interface IPlaylistRepository
+    content.vb: Public Interface IPlaylistRepository
+- uid: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.GetAllAsync
+  commentId: M:MovieAppApi.Src.Core.Repositories.IPlaylistRepository.GetAllAsync
+  id: GetAllAsync
+  parent: MovieAppApi.Src.Core.Repositories.IPlaylistRepository
+  langs:
+  - csharp
+  - vb
+  name: GetAllAsync()
+  nameWithType: IPlaylistRepository.GetAllAsync()
+  fullName: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.GetAllAsync()
+  type: Method
+  source:
+    remote:
+      path: MovieAppApi/Src/Core/Repositories/IPlaylistRepository.cs
+      branch: main
+      repo: git@github.com:benoit-bremaud/MovieAppApi.git
+    id: GetAllAsync
+    path: ../Src/Core/Repositories/IPlaylistRepository.cs
+    startLine: 12
+  assemblies:
+  - MovieAppApi
+  namespace: MovieAppApi.Src.Core.Repositories
+  summary: Gets all playlists with their movies
+  example: []
+  syntax:
+    content: Task<List<PlaylistEntity>> GetAllAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{MovieAppApi.Src.Core.Database.Entities.PlaylistEntity}}
+    content.vb: Function GetAllAsync() As Task(Of List(Of PlaylistEntity))
+  overload: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.GetAllAsync*
+- uid: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.GetByIdAsync(System.Int32)
+  commentId: M:MovieAppApi.Src.Core.Repositories.IPlaylistRepository.GetByIdAsync(System.Int32)
+  id: GetByIdAsync(System.Int32)
+  parent: MovieAppApi.Src.Core.Repositories.IPlaylistRepository
+  langs:
+  - csharp
+  - vb
+  name: GetByIdAsync(int)
+  nameWithType: IPlaylistRepository.GetByIdAsync(int)
+  fullName: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.GetByIdAsync(int)
+  type: Method
+  source:
+    remote:
+      path: MovieAppApi/Src/Core/Repositories/IPlaylistRepository.cs
+      branch: main
+      repo: git@github.com:benoit-bremaud/MovieAppApi.git
+    id: GetByIdAsync
+    path: ../Src/Core/Repositories/IPlaylistRepository.cs
+    startLine: 17
+  assemblies:
+  - MovieAppApi
+  namespace: MovieAppApi.Src.Core.Repositories
+  summary: Gets a specific playlist by ID including its movies
+  example: []
+  syntax:
+    content: Task<PlaylistEntity?> GetByIdAsync(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Threading.Tasks.Task{MovieAppApi.Src.Core.Database.Entities.PlaylistEntity}
+    content.vb: Function GetByIdAsync(id As Integer) As Task(Of PlaylistEntity)
+  overload: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.GetByIdAsync*
+  nameWithType.vb: IPlaylistRepository.GetByIdAsync(Integer)
+  fullName.vb: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.GetByIdAsync(Integer)
+  name.vb: GetByIdAsync(Integer)
+- uid: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.CreateAsync(MovieAppApi.Src.Core.Database.Entities.PlaylistEntity)
+  commentId: M:MovieAppApi.Src.Core.Repositories.IPlaylistRepository.CreateAsync(MovieAppApi.Src.Core.Database.Entities.PlaylistEntity)
+  id: CreateAsync(MovieAppApi.Src.Core.Database.Entities.PlaylistEntity)
+  parent: MovieAppApi.Src.Core.Repositories.IPlaylistRepository
+  langs:
+  - csharp
+  - vb
+  name: CreateAsync(PlaylistEntity)
+  nameWithType: IPlaylistRepository.CreateAsync(PlaylistEntity)
+  fullName: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.CreateAsync(MovieAppApi.Src.Core.Database.Entities.PlaylistEntity)
+  type: Method
+  source:
+    remote:
+      path: MovieAppApi/Src/Core/Repositories/IPlaylistRepository.cs
+      branch: main
+      repo: git@github.com:benoit-bremaud/MovieAppApi.git
+    id: CreateAsync
+    path: ../Src/Core/Repositories/IPlaylistRepository.cs
+    startLine: 22
+  assemblies:
+  - MovieAppApi
+  namespace: MovieAppApi.Src.Core.Repositories
+  summary: Creates a new playlist
+  example: []
+  syntax:
+    content: Task<PlaylistEntity> CreateAsync(PlaylistEntity playlist)
+    parameters:
+    - id: playlist
+      type: MovieAppApi.Src.Core.Database.Entities.PlaylistEntity
+    return:
+      type: System.Threading.Tasks.Task{MovieAppApi.Src.Core.Database.Entities.PlaylistEntity}
+    content.vb: Function CreateAsync(playlist As PlaylistEntity) As Task(Of PlaylistEntity)
+  overload: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.CreateAsync*
+- uid: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.AddMovieAsync(System.Int32,MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity)
+  commentId: M:MovieAppApi.Src.Core.Repositories.IPlaylistRepository.AddMovieAsync(System.Int32,MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity)
+  id: AddMovieAsync(System.Int32,MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity)
+  parent: MovieAppApi.Src.Core.Repositories.IPlaylistRepository
+  langs:
+  - csharp
+  - vb
+  name: AddMovieAsync(int, PlaylistMovieEntity)
+  nameWithType: IPlaylistRepository.AddMovieAsync(int, PlaylistMovieEntity)
+  fullName: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.AddMovieAsync(int, MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity)
+  type: Method
+  source:
+    remote:
+      path: MovieAppApi/Src/Core/Repositories/IPlaylistRepository.cs
+      branch: main
+      repo: git@github.com:benoit-bremaud/MovieAppApi.git
+    id: AddMovieAsync
+    path: ../Src/Core/Repositories/IPlaylistRepository.cs
+    startLine: 27
+  assemblies:
+  - MovieAppApi
+  namespace: MovieAppApi.Src.Core.Repositories
+  summary: Adds a movie to an existing playlist
+  example: []
+  syntax:
+    content: Task AddMovieAsync(int playlistId, PlaylistMovieEntity movie)
+    parameters:
+    - id: playlistId
+      type: System.Int32
+    - id: movie
+      type: MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function AddMovieAsync(playlistId As Integer, movie As PlaylistMovieEntity) As Task
+  overload: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.AddMovieAsync*
+  nameWithType.vb: IPlaylistRepository.AddMovieAsync(Integer, PlaylistMovieEntity)
+  fullName.vb: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.AddMovieAsync(Integer, MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity)
+  name.vb: AddMovieAsync(Integer, PlaylistMovieEntity)
+- uid: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.DeleteAsync(System.Int32)
+  commentId: M:MovieAppApi.Src.Core.Repositories.IPlaylistRepository.DeleteAsync(System.Int32)
+  id: DeleteAsync(System.Int32)
+  parent: MovieAppApi.Src.Core.Repositories.IPlaylistRepository
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync(int)
+  nameWithType: IPlaylistRepository.DeleteAsync(int)
+  fullName: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.DeleteAsync(int)
+  type: Method
+  source:
+    remote:
+      path: MovieAppApi/Src/Core/Repositories/IPlaylistRepository.cs
+      branch: main
+      repo: git@github.com:benoit-bremaud/MovieAppApi.git
+    id: DeleteAsync
+    path: ../Src/Core/Repositories/IPlaylistRepository.cs
+    startLine: 32
+  assemblies:
+  - MovieAppApi
+  namespace: MovieAppApi.Src.Core.Repositories
+  summary: Deletes a playlist by ID
+  example: []
+  syntax:
+    content: Task<bool> DeleteAsync(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Function DeleteAsync(id As Integer) As Task(Of Boolean)
+  overload: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.DeleteAsync*
+  nameWithType.vb: IPlaylistRepository.DeleteAsync(Integer)
+  fullName.vb: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.DeleteAsync(Integer)
+  name.vb: DeleteAsync(Integer)
+- uid: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.RemoveMovieAsync(System.Int32,System.Int32)
+  commentId: M:MovieAppApi.Src.Core.Repositories.IPlaylistRepository.RemoveMovieAsync(System.Int32,System.Int32)
+  id: RemoveMovieAsync(System.Int32,System.Int32)
+  parent: MovieAppApi.Src.Core.Repositories.IPlaylistRepository
+  langs:
+  - csharp
+  - vb
+  name: RemoveMovieAsync(int, int)
+  nameWithType: IPlaylistRepository.RemoveMovieAsync(int, int)
+  fullName: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.RemoveMovieAsync(int, int)
+  type: Method
+  source:
+    remote:
+      path: MovieAppApi/Src/Core/Repositories/IPlaylistRepository.cs
+      branch: main
+      repo: git@github.com:benoit-bremaud/MovieAppApi.git
+    id: RemoveMovieAsync
+    path: ../Src/Core/Repositories/IPlaylistRepository.cs
+    startLine: 37
+  assemblies:
+  - MovieAppApi
+  namespace: MovieAppApi.Src.Core.Repositories
+  summary: Removes a specific movie from a playlist
+  example: []
+  syntax:
+    content: Task<bool> RemoveMovieAsync(int playlistId, int tmdbId)
+    parameters:
+    - id: playlistId
+      type: System.Int32
+    - id: tmdbId
+      type: System.Int32
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Function RemoveMovieAsync(playlistId As Integer, tmdbId As Integer) As Task(Of Boolean)
+  overload: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.RemoveMovieAsync*
+  nameWithType.vb: IPlaylistRepository.RemoveMovieAsync(Integer, Integer)
+  fullName.vb: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.RemoveMovieAsync(Integer, Integer)
+  name.vb: RemoveMovieAsync(Integer, Integer)
+- uid: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.UpdateAsync(System.Int32,System.String)
+  commentId: M:MovieAppApi.Src.Core.Repositories.IPlaylistRepository.UpdateAsync(System.Int32,System.String)
+  id: UpdateAsync(System.Int32,System.String)
+  parent: MovieAppApi.Src.Core.Repositories.IPlaylistRepository
+  langs:
+  - csharp
+  - vb
+  name: UpdateAsync(int, string)
+  nameWithType: IPlaylistRepository.UpdateAsync(int, string)
+  fullName: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.UpdateAsync(int, string)
+  type: Method
+  source:
+    remote:
+      path: MovieAppApi/Src/Core/Repositories/IPlaylistRepository.cs
+      branch: main
+      repo: git@github.com:benoit-bremaud/MovieAppApi.git
+    id: UpdateAsync
+    path: ../Src/Core/Repositories/IPlaylistRepository.cs
+    startLine: 42
+  assemblies:
+  - MovieAppApi
+  namespace: MovieAppApi.Src.Core.Repositories
+  summary: Updates a playlist name
+  example: []
+  syntax:
+    content: Task<PlaylistEntity> UpdateAsync(int id, string newName)
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: newName
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{MovieAppApi.Src.Core.Database.Entities.PlaylistEntity}
+    content.vb: Function UpdateAsync(id As Integer, newName As String) As Task(Of PlaylistEntity)
+  overload: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.UpdateAsync*
+  nameWithType.vb: IPlaylistRepository.UpdateAsync(Integer, String)
+  fullName.vb: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.UpdateAsync(Integer, String)
+  name.vb: UpdateAsync(Integer, String)
+references:
+- uid: MovieAppApi.Src.Core.Repositories
+  commentId: N:MovieAppApi.Src.Core.Repositories
+  href: MovieAppApi.html
+  name: MovieAppApi.Src.Core.Repositories
+  nameWithType: MovieAppApi.Src.Core.Repositories
+  fullName: MovieAppApi.Src.Core.Repositories
+  spec.csharp:
+  - uid: MovieAppApi
+    name: MovieAppApi
+    href: MovieAppApi.html
+  - name: .
+  - uid: MovieAppApi.Src
+    name: Src
+    href: MovieAppApi.Src.html
+  - name: .
+  - uid: MovieAppApi.Src.Core
+    name: Core
+    href: MovieAppApi.Src.Core.html
+  - name: .
+  - uid: MovieAppApi.Src.Core.Repositories
+    name: Repositories
+    href: MovieAppApi.Src.Core.Repositories.html
+  spec.vb:
+  - uid: MovieAppApi
+    name: MovieAppApi
+    href: MovieAppApi.html
+  - name: .
+  - uid: MovieAppApi.Src
+    name: Src
+    href: MovieAppApi.Src.html
+  - name: .
+  - uid: MovieAppApi.Src.Core
+    name: Core
+    href: MovieAppApi.Src.Core.html
+  - name: .
+  - uid: MovieAppApi.Src.Core.Repositories
+    name: Repositories
+    href: MovieAppApi.Src.Core.Repositories.html
+- uid: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.GetAllAsync*
+  commentId: Overload:MovieAppApi.Src.Core.Repositories.IPlaylistRepository.GetAllAsync
+  href: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.html#MovieAppApi_Src_Core_Repositories_IPlaylistRepository_GetAllAsync
+  name: GetAllAsync
+  nameWithType: IPlaylistRepository.GetAllAsync
+  fullName: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.GetAllAsync
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{MovieAppApi.Src.Core.Database.Entities.PlaylistEntity}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{MovieAppApi.Src.Core.Database.Entities.PlaylistEntity}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<List<PlaylistEntity>>
+  nameWithType: Task<List<PlaylistEntity>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<MovieAppApi.Src.Core.Database.Entities.PlaylistEntity>>
+  nameWithType.vb: Task(Of List(Of PlaylistEntity))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of MovieAppApi.Src.Core.Database.Entities.PlaylistEntity))
+  name.vb: Task(Of List(Of PlaylistEntity))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: MovieAppApi.Src.Core.Database.Entities.PlaylistEntity
+    name: PlaylistEntity
+    href: MovieAppApi.Src.Core.Database.Entities.PlaylistEntity.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MovieAppApi.Src.Core.Database.Entities.PlaylistEntity
+    name: PlaylistEntity
+    href: MovieAppApi.Src.Core.Database.Entities.PlaylistEntity.html
+  - name: )
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.GetByIdAsync*
+  commentId: Overload:MovieAppApi.Src.Core.Repositories.IPlaylistRepository.GetByIdAsync
+  href: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.html#MovieAppApi_Src_Core_Repositories_IPlaylistRepository_GetByIdAsync_System_Int32_
+  name: GetByIdAsync
+  nameWithType: IPlaylistRepository.GetByIdAsync
+  fullName: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.GetByIdAsync
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Threading.Tasks.Task{MovieAppApi.Src.Core.Database.Entities.PlaylistEntity}
+  commentId: T:System.Threading.Tasks.Task{MovieAppApi.Src.Core.Database.Entities.PlaylistEntity}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<PlaylistEntity>
+  nameWithType: Task<PlaylistEntity>
+  fullName: System.Threading.Tasks.Task<MovieAppApi.Src.Core.Database.Entities.PlaylistEntity>
+  nameWithType.vb: Task(Of PlaylistEntity)
+  fullName.vb: System.Threading.Tasks.Task(Of MovieAppApi.Src.Core.Database.Entities.PlaylistEntity)
+  name.vb: Task(Of PlaylistEntity)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: MovieAppApi.Src.Core.Database.Entities.PlaylistEntity
+    name: PlaylistEntity
+    href: MovieAppApi.Src.Core.Database.Entities.PlaylistEntity.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MovieAppApi.Src.Core.Database.Entities.PlaylistEntity
+    name: PlaylistEntity
+    href: MovieAppApi.Src.Core.Database.Entities.PlaylistEntity.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.CreateAsync*
+  commentId: Overload:MovieAppApi.Src.Core.Repositories.IPlaylistRepository.CreateAsync
+  href: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.html#MovieAppApi_Src_Core_Repositories_IPlaylistRepository_CreateAsync_MovieAppApi_Src_Core_Database_Entities_PlaylistEntity_
+  name: CreateAsync
+  nameWithType: IPlaylistRepository.CreateAsync
+  fullName: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.CreateAsync
+- uid: MovieAppApi.Src.Core.Database.Entities.PlaylistEntity
+  commentId: T:MovieAppApi.Src.Core.Database.Entities.PlaylistEntity
+  parent: MovieAppApi.Src.Core.Database.Entities
+  href: MovieAppApi.Src.Core.Database.Entities.PlaylistEntity.html
+  name: PlaylistEntity
+  nameWithType: PlaylistEntity
+  fullName: MovieAppApi.Src.Core.Database.Entities.PlaylistEntity
+- uid: MovieAppApi.Src.Core.Database.Entities
+  commentId: N:MovieAppApi.Src.Core.Database.Entities
+  href: MovieAppApi.html
+  name: MovieAppApi.Src.Core.Database.Entities
+  nameWithType: MovieAppApi.Src.Core.Database.Entities
+  fullName: MovieAppApi.Src.Core.Database.Entities
+  spec.csharp:
+  - uid: MovieAppApi
+    name: MovieAppApi
+    href: MovieAppApi.html
+  - name: .
+  - uid: MovieAppApi.Src
+    name: Src
+    href: MovieAppApi.Src.html
+  - name: .
+  - uid: MovieAppApi.Src.Core
+    name: Core
+    href: MovieAppApi.Src.Core.html
+  - name: .
+  - uid: MovieAppApi.Src.Core.Database
+    name: Database
+    href: MovieAppApi.Src.Core.Database.html
+  - name: .
+  - uid: MovieAppApi.Src.Core.Database.Entities
+    name: Entities
+    href: MovieAppApi.Src.Core.Database.Entities.html
+  spec.vb:
+  - uid: MovieAppApi
+    name: MovieAppApi
+    href: MovieAppApi.html
+  - name: .
+  - uid: MovieAppApi.Src
+    name: Src
+    href: MovieAppApi.Src.html
+  - name: .
+  - uid: MovieAppApi.Src.Core
+    name: Core
+    href: MovieAppApi.Src.Core.html
+  - name: .
+  - uid: MovieAppApi.Src.Core.Database
+    name: Database
+    href: MovieAppApi.Src.Core.Database.html
+  - name: .
+  - uid: MovieAppApi.Src.Core.Database.Entities
+    name: Entities
+    href: MovieAppApi.Src.Core.Database.Entities.html
+- uid: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.AddMovieAsync*
+  commentId: Overload:MovieAppApi.Src.Core.Repositories.IPlaylistRepository.AddMovieAsync
+  href: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.html#MovieAppApi_Src_Core_Repositories_IPlaylistRepository_AddMovieAsync_System_Int32_MovieAppApi_Src_Core_Database_Entities_PlaylistMovieEntity_
+  name: AddMovieAsync
+  nameWithType: IPlaylistRepository.AddMovieAsync
+  fullName: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.AddMovieAsync
+- uid: MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity
+  commentId: T:MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity
+  parent: MovieAppApi.Src.Core.Database.Entities
+  href: MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity.html
+  name: PlaylistMovieEntity
+  nameWithType: PlaylistMovieEntity
+  fullName: MovieAppApi.Src.Core.Database.Entities.PlaylistMovieEntity
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.DeleteAsync*
+  commentId: Overload:MovieAppApi.Src.Core.Repositories.IPlaylistRepository.DeleteAsync
+  href: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.html#MovieAppApi_Src_Core_Repositories_IPlaylistRepository_DeleteAsync_System_Int32_
+  name: DeleteAsync
+  nameWithType: IPlaylistRepository.DeleteAsync
+  fullName: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.DeleteAsync
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<bool>
+  nameWithType: Task<bool>
+  fullName: System.Threading.Tasks.Task<bool>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.RemoveMovieAsync*
+  commentId: Overload:MovieAppApi.Src.Core.Repositories.IPlaylistRepository.RemoveMovieAsync
+  href: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.html#MovieAppApi_Src_Core_Repositories_IPlaylistRepository_RemoveMovieAsync_System_Int32_System_Int32_
+  name: RemoveMovieAsync
+  nameWithType: IPlaylistRepository.RemoveMovieAsync
+  fullName: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.RemoveMovieAsync
+- uid: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.UpdateAsync*
+  commentId: Overload:MovieAppApi.Src.Core.Repositories.IPlaylistRepository.UpdateAsync
+  href: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.html#MovieAppApi_Src_Core_Repositories_IPlaylistRepository_UpdateAsync_System_Int32_System_String_
+  name: UpdateAsync
+  nameWithType: IPlaylistRepository.UpdateAsync
+  fullName: MovieAppApi.Src.Core.Repositories.IPlaylistRepository.UpdateAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

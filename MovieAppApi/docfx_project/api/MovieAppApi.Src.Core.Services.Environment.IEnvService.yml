@@ -1,0 +1,171 @@
+### YamlMime:ManagedReference
+items:
+- uid: MovieAppApi.Src.Core.Services.Environment.IEnvService
+  commentId: T:MovieAppApi.Src.Core.Services.Environment.IEnvService
+  id: IEnvService
+  parent: MovieAppApi.Src.Core.Services.Environment
+  children:
+  - MovieAppApi.Src.Core.Services.Environment.IEnvService.Environment
+  - MovieAppApi.Src.Core.Services.Environment.IEnvService.TmdbApiKey
+  langs:
+  - csharp
+  - vb
+  name: IEnvService
+  nameWithType: IEnvService
+  fullName: MovieAppApi.Src.Core.Services.Environment.IEnvService
+  type: Interface
+  source:
+    remote:
+      path: MovieAppApi/Src/Core/Services/Environment/IEnvService.cs
+      branch: main
+      repo: git@github.com:benoit-bremaud/MovieAppApi.git
+    id: IEnvService
+    path: ../Src/Core/Services/Environment/IEnvService.cs
+    startLine: 5
+  assemblies:
+  - MovieAppApi
+  namespace: MovieAppApi.Src.Core.Services.Environment
+  summary: Service responsible for managing environment variables
+  example: []
+  syntax:
+    content: public interface IEnvService
+    content.vb: Public Interface IEnvService
+- uid: MovieAppApi.Src.Core.Services.Environment.IEnvService.TmdbApiKey
+  commentId: P:MovieAppApi.Src.Core.Services.Environment.IEnvService.TmdbApiKey
+  id: TmdbApiKey
+  parent: MovieAppApi.Src.Core.Services.Environment.IEnvService
+  langs:
+  - csharp
+  - vb
+  name: TmdbApiKey
+  nameWithType: IEnvService.TmdbApiKey
+  fullName: MovieAppApi.Src.Core.Services.Environment.IEnvService.TmdbApiKey
+  type: Property
+  source:
+    remote:
+      path: MovieAppApi/Src/Core/Services/Environment/IEnvService.cs
+      branch: main
+      repo: git@github.com:benoit-bremaud/MovieAppApi.git
+    id: TmdbApiKey
+    path: ../Src/Core/Services/Environment/IEnvService.cs
+    startLine: 10
+  assemblies:
+  - MovieAppApi
+  namespace: MovieAppApi.Src.Core.Services.Environment
+  summary: Gets the TMDB API key
+  example: []
+  syntax:
+    content: string TmdbApiKey { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property TmdbApiKey As String
+  overload: MovieAppApi.Src.Core.Services.Environment.IEnvService.TmdbApiKey*
+- uid: MovieAppApi.Src.Core.Services.Environment.IEnvService.Environment
+  commentId: P:MovieAppApi.Src.Core.Services.Environment.IEnvService.Environment
+  id: Environment
+  parent: MovieAppApi.Src.Core.Services.Environment.IEnvService
+  langs:
+  - csharp
+  - vb
+  name: Environment
+  nameWithType: IEnvService.Environment
+  fullName: MovieAppApi.Src.Core.Services.Environment.IEnvService.Environment
+  type: Property
+  source:
+    remote:
+      path: MovieAppApi/Src/Core/Services/Environment/IEnvService.cs
+      branch: main
+      repo: git@github.com:benoit-bremaud/MovieAppApi.git
+    id: Environment
+    path: ../Src/Core/Services/Environment/IEnvService.cs
+    startLine: 15
+  assemblies:
+  - MovieAppApi
+  namespace: MovieAppApi.Src.Core.Services.Environment
+  summary: Gets the current environment (Development, Production...)
+  example: []
+  syntax:
+    content: string Environment { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property Environment As String
+  overload: MovieAppApi.Src.Core.Services.Environment.IEnvService.Environment*
+references:
+- uid: MovieAppApi.Src.Core.Services.Environment
+  commentId: N:MovieAppApi.Src.Core.Services.Environment
+  href: MovieAppApi.html
+  name: MovieAppApi.Src.Core.Services.Environment
+  nameWithType: MovieAppApi.Src.Core.Services.Environment
+  fullName: MovieAppApi.Src.Core.Services.Environment
+  spec.csharp:
+  - uid: MovieAppApi
+    name: MovieAppApi
+    href: MovieAppApi.html
+  - name: .
+  - uid: MovieAppApi.Src
+    name: Src
+    href: MovieAppApi.Src.html
+  - name: .
+  - uid: MovieAppApi.Src.Core
+    name: Core
+    href: MovieAppApi.Src.Core.html
+  - name: .
+  - uid: MovieAppApi.Src.Core.Services
+    name: Services
+    href: MovieAppApi.Src.Core.Services.html
+  - name: .
+  - uid: MovieAppApi.Src.Core.Services.Environment
+    name: Environment
+    href: MovieAppApi.Src.Core.Services.Environment.html
+  spec.vb:
+  - uid: MovieAppApi
+    name: MovieAppApi
+    href: MovieAppApi.html
+  - name: .
+  - uid: MovieAppApi.Src
+    name: Src
+    href: MovieAppApi.Src.html
+  - name: .
+  - uid: MovieAppApi.Src.Core
+    name: Core
+    href: MovieAppApi.Src.Core.html
+  - name: .
+  - uid: MovieAppApi.Src.Core.Services
+    name: Services
+    href: MovieAppApi.Src.Core.Services.html
+  - name: .
+  - uid: MovieAppApi.Src.Core.Services.Environment
+    name: Environment
+    href: MovieAppApi.Src.Core.Services.Environment.html
+- uid: MovieAppApi.Src.Core.Services.Environment.IEnvService.TmdbApiKey*
+  commentId: Overload:MovieAppApi.Src.Core.Services.Environment.IEnvService.TmdbApiKey
+  href: MovieAppApi.Src.Core.Services.Environment.IEnvService.html#MovieAppApi_Src_Core_Services_Environment_IEnvService_TmdbApiKey
+  name: TmdbApiKey
+  nameWithType: IEnvService.TmdbApiKey
+  fullName: MovieAppApi.Src.Core.Services.Environment.IEnvService.TmdbApiKey
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MovieAppApi.Src.Core.Services.Environment.IEnvService.Environment*
+  commentId: Overload:MovieAppApi.Src.Core.Services.Environment.IEnvService.Environment
+  href: MovieAppApi.Src.Core.Services.Environment.IEnvService.html#MovieAppApi_Src_Core_Services_Environment_IEnvService_Environment
+  name: Environment
+  nameWithType: IEnvService.Environment
+  fullName: MovieAppApi.Src.Core.Services.Environment.IEnvService.Environment

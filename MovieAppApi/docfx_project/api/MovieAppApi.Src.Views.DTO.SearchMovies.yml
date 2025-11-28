@@ -1,0 +1,85 @@
+### YamlMime:ManagedReference
+items:
+- uid: MovieAppApi.Src.Views.DTO.SearchMovies
+  commentId: N:MovieAppApi.Src.Views.DTO.SearchMovies
+  id: MovieAppApi.Src.Views.DTO.SearchMovies
+  children:
+  - MovieAppApi.Src.Views.DTO.SearchMovies.MovieDto
+  - MovieAppApi.Src.Views.DTO.SearchMovies.SearchMoviesRequestQueryDto
+  - MovieAppApi.Src.Views.DTO.SearchMovies.SearchMoviesResponseDto
+  langs:
+  - csharp
+  - vb
+  name: MovieAppApi.Src.Views.DTO.SearchMovies
+  nameWithType: MovieAppApi.Src.Views.DTO.SearchMovies
+  fullName: MovieAppApi.Src.Views.DTO.SearchMovies
+  type: Namespace
+  assemblies:
+  - MovieAppApi
+references:
+- uid: MovieAppApi.Src.Views.DTO.SearchMovies.MovieDto
+  commentId: T:MovieAppApi.Src.Views.DTO.SearchMovies.MovieDto
+  parent: MovieAppApi.Src.Views.DTO.SearchMovies
+  href: MovieAppApi.Src.Views.DTO.SearchMovies.MovieDto.html
+  name: MovieDto
+  nameWithType: MovieDto
+  fullName: MovieAppApi.Src.Views.DTO.SearchMovies.MovieDto
+- uid: MovieAppApi.Src.Views.DTO.SearchMovies.SearchMoviesRequestQueryDto
+  commentId: T:MovieAppApi.Src.Views.DTO.SearchMovies.SearchMoviesRequestQueryDto
+  parent: MovieAppApi.Src.Views.DTO.SearchMovies
+  href: MovieAppApi.Src.Views.DTO.SearchMovies.SearchMoviesRequestQueryDto.html
+  name: SearchMoviesRequestQueryDto
+  nameWithType: SearchMoviesRequestQueryDto
+  fullName: MovieAppApi.Src.Views.DTO.SearchMovies.SearchMoviesRequestQueryDto
+- uid: MovieAppApi.Src.Views.DTO.SearchMovies.SearchMoviesResponseDto
+  commentId: T:MovieAppApi.Src.Views.DTO.SearchMovies.SearchMoviesResponseDto
+  href: MovieAppApi.Src.Views.DTO.SearchMovies.SearchMoviesResponseDto.html
+  name: SearchMoviesResponseDto
+  nameWithType: SearchMoviesResponseDto
+  fullName: MovieAppApi.Src.Views.DTO.SearchMovies.SearchMoviesResponseDto
+- uid: MovieAppApi.Src.Views.DTO.SearchMovies
+  commentId: N:MovieAppApi.Src.Views.DTO.SearchMovies
+  href: MovieAppApi.html
+  name: MovieAppApi.Src.Views.DTO.SearchMovies
+  nameWithType: MovieAppApi.Src.Views.DTO.SearchMovies
+  fullName: MovieAppApi.Src.Views.DTO.SearchMovies
+  spec.csharp:
+  - uid: MovieAppApi
+    name: MovieAppApi
+    href: MovieAppApi.html
+  - name: .
+  - uid: MovieAppApi.Src
+    name: Src
+    href: MovieAppApi.Src.html
+  - name: .
+  - uid: MovieAppApi.Src.Views
+    name: Views
+    href: MovieAppApi.Src.Views.html
+  - name: .
+  - uid: MovieAppApi.Src.Views.DTO
+    name: DTO
+    href: MovieAppApi.Src.Views.DTO.html
+  - name: .
+  - uid: MovieAppApi.Src.Views.DTO.SearchMovies
+    name: SearchMovies
+    href: MovieAppApi.Src.Views.DTO.SearchMovies.html
+  spec.vb:
+  - uid: MovieAppApi
+    name: MovieAppApi
+    href: MovieAppApi.html
+  - name: .
+  - uid: MovieAppApi.Src
+    name: Src
+    href: MovieAppApi.Src.html
+  - name: .
+  - uid: MovieAppApi.Src.Views
+    name: Views
+    href: MovieAppApi.Src.Views.html
+  - name: .
+  - uid: MovieAppApi.Src.Views.DTO
+    name: DTO
+    href: MovieAppApi.Src.Views.DTO.html
+  - name: .
+  - uid: MovieAppApi.Src.Views.DTO.SearchMovies
+    name: SearchMovies
+    href: MovieAppApi.Src.Views.DTO.SearchMovies.html

@@ -1,0 +1,62 @@
+### YamlMime:ManagedReference
+items:
+- uid: MovieAppApi.Src.Models.Movie
+  commentId: N:MovieAppApi.Src.Models.Movie
+  id: MovieAppApi.Src.Models.Movie
+  children:
+  - MovieAppApi.Src.Models.Movie.MovieModel
+  langs:
+  - csharp
+  - vb
+  name: MovieAppApi.Src.Models.Movie
+  nameWithType: MovieAppApi.Src.Models.Movie
+  fullName: MovieAppApi.Src.Models.Movie
+  type: Namespace
+  assemblies:
+  - MovieAppApi
+references:
+- uid: MovieAppApi.Src.Models.Movie.MovieModel
+  commentId: T:MovieAppApi.Src.Models.Movie.MovieModel
+  parent: MovieAppApi.Src.Models.Movie
+  href: MovieAppApi.Src.Models.Movie.MovieModel.html
+  name: MovieModel
+  nameWithType: MovieModel
+  fullName: MovieAppApi.Src.Models.Movie.MovieModel
+- uid: MovieAppApi.Src.Models.Movie
+  commentId: N:MovieAppApi.Src.Models.Movie
+  href: MovieAppApi.html
+  name: MovieAppApi.Src.Models.Movie
+  nameWithType: MovieAppApi.Src.Models.Movie
+  fullName: MovieAppApi.Src.Models.Movie
+  spec.csharp:
+  - uid: MovieAppApi
+    name: MovieAppApi
+    href: MovieAppApi.html
+  - name: .
+  - uid: MovieAppApi.Src
+    name: Src
+    href: MovieAppApi.Src.html
+  - name: .
+  - uid: MovieAppApi.Src.Models
+    name: Models
+    href: MovieAppApi.Src.Models.html
+  - name: .
+  - uid: MovieAppApi.Src.Models.Movie
+    name: Movie
+    href: MovieAppApi.Src.Models.Movie.html
+  spec.vb:
+  - uid: MovieAppApi
+    name: MovieAppApi
+    href: MovieAppApi.html
+  - name: .
+  - uid: MovieAppApi.Src
+    name: Src
+    href: MovieAppApi.Src.html
+  - name: .
+  - uid: MovieAppApi.Src.Models
+    name: Models
+    href: MovieAppApi.Src.Models.html
+  - name: .
+  - uid: MovieAppApi.Src.Models.Movie
+    name: Movie
+    href: MovieAppApi.Src.Models.Movie.html
