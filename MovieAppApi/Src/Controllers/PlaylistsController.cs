@@ -86,6 +86,23 @@ public class PlaylistsController : BaseController<PlaylistsController>
         return NoContent();
     }
 
+    [HttpDelete("{id}/movies/{tmdbId}")]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    public async Task<IActionResult> RemoveMovie(int id, int tmdbId)
+    {
+        Logger.LogInformation("Removing movie {TmdbId} from playlist {PlaylistId}", tmdbId, id);
+        
+        var result = await _playlistRepository.RemoveMovieAsync(id, tmdbId);
+        if (!result)
+        {
+            Logger.LogWarning("Movie {TmdbId} not found in playlist {PlaylistId}", tmdbId, id);
+            return NotFound(new { message = "Movie not found in playlist" });
+        }
+
+        return NoContent();
+    }
+    
     // Helper method to map Entity -> DTO
     private static PlaylistResponseDto MapToDto(PlaylistEntity entity)
     {

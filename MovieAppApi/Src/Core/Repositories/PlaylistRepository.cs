@@ -66,4 +66,25 @@ public class PlaylistRepository : IPlaylistRepository
         await _context.SaveChangesAsync();
         return true;
     }
+
+    public async Task<bool> RemoveMovieAsync(int playlistId, int tmdbId)
+    {
+        var movie = await _context.PlaylistMovies
+            .FirstOrDefaultAsync(m => m.PlaylistId == playlistId && m.TmdbId == tmdbId);
+
+        if (movie == null) return false;
+
+        _context.PlaylistMovies.Remove(movie);
+        
+        // Update playlist timestamp
+        var playlist = await _context.Playlists.FindAsync(playlistId);
+        if (playlist != null)
+        {
+            playlist.UpdatedAt = DateTime.UtcNow;
+        }
+
+        await _context.SaveChangesAsync();
+        return true;
+    }
 }
+

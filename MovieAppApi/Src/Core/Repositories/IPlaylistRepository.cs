@@ -31,4 +31,9 @@ public interface IPlaylistRepository
     /// Deletes a playlist by ID
     /// </summary>
     Task<bool> DeleteAsync(int id);
+
+    /// <summary>
+    /// Removes a specific movie from a playlist
+    /// </summary>
+    Task<bool> RemoveMovieAsync(int playlistId, int tmdbId);
 }
